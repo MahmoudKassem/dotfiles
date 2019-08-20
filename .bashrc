@@ -3,8 +3,8 @@
 
 #set default editor, terminal and browser
 export EDITOR="vim"
-export TERMINAL="konsole-256color"
-export TERM="konsole-256color"
+export TERMINAL="konsole"
+export TERM="konsole"
 export BROWSER="firefox"
 
 #enable powerline
