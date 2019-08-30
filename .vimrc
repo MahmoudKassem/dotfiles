@@ -9,7 +9,7 @@ set fileencoding=utf-8
 set tabstop=4
 set autoindent
 set number
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 set list
 set relativenumber
 set visualbell

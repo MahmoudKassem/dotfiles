@@ -3,8 +3,7 @@
 
 #set default editor, terminal and browser
 export EDITOR="vim"
-export TERMINAL="konsole"
-export TERM="konsole"
+export TERMINAL="xfce4-terminal"
 export BROWSER="firefox"
 
 #enable powerline
