@@ -4,7 +4,7 @@
 #set default editor, terminal and browser
 export EDITOR="vim"
 export TERMINAL="xfce4-terminal"
-export BROWSER="firefox"
+export BROWSER="brave"
 
 #enable powerline
 powerline-daemon -q
