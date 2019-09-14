@@ -1,21 +1,27 @@
-"set the look
+"set the gruvbox theme
 colorscheme gruvbox
-syntax on
-filetype plugin indent on
 set bg=dark
-set t_Co=256
-set encoding=utf-8
-set fileencoding=utf-8
-set tabstop=4
-set autoindent
-set number
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
-set list
-set relativenumber
-set visualbell
 
-"so that the terminal created with the :terminal command appears below
-set splitbelow
+"enable syntax highlighting
+syntax on filetype plugin
+
+"set the charset
+set encoding=utf-8 fileencoding=utf-8
+
+"set tab to be 4 characters wide
+set tabstop=4
+
+"make whitespace visible
+set listchars=eol:¬,tab:>>,trail:~,space:. list
+
+"enable the numberline with relative numbering
+set number relativenumber
+
+"set horizontal splits to appear below and vertical splits to appear on the right
+set splitbelow splitright
+
+"enable the visualbell
+set visualbell
 
 "configure powerline plug-in
 let g:powerline_pycmd="py3"

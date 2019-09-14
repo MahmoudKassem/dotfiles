@@ -1,6 +1,3 @@
-#if not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 #set default editor, terminal and browser
 export EDITOR="vim"
 export TERMINAL="xfce4-terminal"
