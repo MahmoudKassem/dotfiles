@@ -3,6 +3,9 @@ export EDITOR="vim"
 export TERMINAL="xfce4-terminal"
 export BROWSER="brave"
 
+#enable vi keybindings
+set -o vi
+
 #enable powerline
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1

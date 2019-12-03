@@ -20,13 +20,16 @@ set number relativenumber
 "set horizontal splits to appear below and vertical splits to appear on the right
 set splitbelow splitright
 
+"disable linewrap
+set nowrap
+
 "enable the visualbell
 set visualbell
 
 "configure powerline plug-in
 let g:powerline_pycmd="py3"
 set laststatus=2
-set rtp+=/usr/lib/python3.7/site-packages/powerline/bindings/vim
+set rtp+=/usr/lib/python3.8/site-packages/powerline/bindings/vim
 
 "make the background transparent
 hi Normal guibg=NONE ctermbg=NONE
