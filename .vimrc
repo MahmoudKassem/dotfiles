@@ -26,6 +26,13 @@ set nowrap
 "enable the visualbell
 set visualbell
 
+"configure netrw file browser
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_preview = 1
+let g:netrw_winsize = 66
+
 "configure powerline plug-in
 let g:powerline_pycmd="py3"
 set laststatus=2
