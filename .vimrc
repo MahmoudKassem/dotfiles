@@ -23,8 +23,6 @@ set nowrap
 "enable the visualbell
 set visualbell
 
-let g:stylish_haskell_command ="/usr/bin/stylish-haskell"
-
 "configure netrw file browser
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
