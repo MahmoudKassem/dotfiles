@@ -17,14 +17,13 @@ set listchars=eol:¬,tab:>>,trail:~,space:. list
 "enable the numberline with relative numbering
 set number relativenumber
 
-"set horizontal splits to appear below and vertical splits to appear on the right
-set splitbelow splitright
-
 "disable linewrap
 set nowrap
 
 "enable the visualbell
 set visualbell
+
+let g:stylish_haskell_command ="/usr/bin/stylish-haskell"
 
 "configure netrw file browser
 let g:netrw_banner = 0
