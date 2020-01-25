@@ -20,6 +20,9 @@ set number relativenumber
 "disable linewrap
 set nowrap
 
+"automatically change the directory when opening a new file
+set autochdir
+
 "enable the visualbell
 set visualbell
 
