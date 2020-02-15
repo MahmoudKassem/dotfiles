@@ -6,8 +6,7 @@ export BROWSER="brave"
 #enable vi keybindings
 set -o vi
 
-#enable powerline
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/share/powerline/bindings/bash/powerline.sh
+#enable pureline
+if [[ -r "/usr/share/pureline/pureline" ]]; then
+    source /usr/share/pureline/pureline ~/.pureline.conf
+fi
