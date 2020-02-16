@@ -33,6 +33,9 @@ let g:netrw_browse_split = 4
 let g:netrw_preview = 1
 let g:netrw_winsize = 80
 
+"use powerline glyphs in vim airline
+let g:airline_powerline_fonts = 1
+
 "make the background transparent
 hi Normal guibg=NONE ctermbg=NONE
 
