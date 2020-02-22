@@ -11,8 +11,8 @@ set encoding=utf-8 fileencoding=utf-8
 "set tab to be 4 characters wide
 set tabstop=4
 
-"make whitespace visible
-set listchars=eol:¬,tab:>>,trail:~,space:. list
+"assign characters to whitespace these can be made visible by running 'list'
+set listchars=eol:¬,tab:>>,trail:~,space:.
 
 "enable the numberline with relative numbering
 set number relativenumber
@@ -33,8 +33,9 @@ let g:netrw_browse_split = 4
 let g:netrw_preview = 1
 let g:netrw_winsize = 80
 
-"use powerline glyphs in vim airline
+"configure vim-airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_gruvbox_dark_hard'
 
 "make the background transparent
 hi Normal guibg=NONE ctermbg=NONE
