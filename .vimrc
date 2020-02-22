@@ -1,6 +1,10 @@
+"activate pathogen plugin manager
+execute pathogen#infect()
+
 "set the gruvbox theme
 colorscheme gruvbox
 set bg=dark
+let g:gruvbox_termcolors=16
 
 "enable syntax highlighting
 syntax on filetype plugin
@@ -42,6 +46,3 @@ hi Normal guibg=NONE ctermbg=NONE
 
 "recognize .pro as prolog files
 au BufNewFile,BufRead *.pro set filetype=prolog
-
-"activate pathogen plugin manager
-execute pathogen#infect()
