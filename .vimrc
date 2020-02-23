@@ -1,10 +1,11 @@
-"activate pathogen plugin manager
+"run plugins in ./vim/bundle folder
 execute pathogen#infect()
 
 "set the gruvbox theme
+set background=dark
 colorscheme gruvbox
-set bg=dark
 let g:gruvbox_termcolors=16
+let g:gruvbox_contrast_dark='hard'
 
 "enable syntax highlighting
 syntax on filetype plugin
