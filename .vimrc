@@ -16,7 +16,7 @@ set encoding=utf-8 fileencoding=utf-8
 "set tab to be 4 characters wide
 set tabstop=4
 
-"assign characters to whitespace these can be made visible by running 'list'
+"assign characters to whitespace these can be made visible by running ':set list'
 set listchars=eol:¬,tab:>>,trail:~,space:.
 
 "enable the numberline with relative numbering
