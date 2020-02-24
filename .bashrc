@@ -3,13 +3,12 @@ export EDITOR="vim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 
-#enable vi keybindings
+#enable vi modes and make them visible in trueline
 set -o vi
+export TRUELINE_SHOW_VIMODE=true
 
-#enable pureline
-if [[ -r "/usr/share/pureline/pureline" ]]; then
-    source /usr/share/pureline/pureline ~/.pureline.conf
-fi
+#load trueline
+source ~/trueline/trueline.sh
 
 #show systeminfo
 neofetch
