@@ -1,10 +1,12 @@
 "run plugins in ./vim/bundle folder
 execute pathogen#infect()
 
+"use true color mode
+set termguicolors
+
 "set the gruvbox theme
 set background=dark
 colorscheme gruvbox
-let g:gruvbox_termcolors=16
 let g:gruvbox_contrast_dark='hard'
 
 "enable syntax highlighting
@@ -15,6 +17,9 @@ set encoding=utf-8 fileencoding=utf-8
 
 "set tab to be 4 characters wide
 set tabstop=4
+
+"set horizontal splits to appear below and vertical splits to appear on the right
+set splitbelow splitright
 
 "assign characters to whitespace these can be made visible by running ':set list'
 set listchars=eol:¬,tab:>>,trail:~,space:.
@@ -31,16 +36,18 @@ set autochdir
 "enable the visualbell
 set visualbell
 
-"configure netrw file browser
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_preview = 1
-let g:netrw_winsize = 80
-
 "configure vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_gruvbox_dark_hard'
+
+"configure syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "make the background transparent
 hi Normal guibg=NONE ctermbg=NONE
