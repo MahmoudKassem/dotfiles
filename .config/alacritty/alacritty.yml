@@ -15,10 +15,12 @@ font:
   bold:
     family: Iosevka
     style: Regular
-  size: 8.0
+  size: 10.0
 
 draw_bold_text_with_bright_colors: false
 
+# gruvbox dark palette(hard contrast variant)
+# by Pavel Pertsev found on https://github.com/morhetz/gruvbox
 colors:
   primary:
     background: '0x1d2021'
@@ -51,3 +53,7 @@ mouse:
   url:
     launcher:
       program: brave
+
+key_bindings:
+  - { key: J, mods: Control, action: ScrollPageDown }
+  - { key: K, mods: Control, action: ScrollPageUp }
