@@ -1,0 +1,73 @@
+#set keyboard layout to de
+input * xkb_layout "de"
+
+# set mod key to Alt
+set $mod Mod1
+
+# enable support for X clients
+xwayland enable
+
+# home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# set terminal emulator to alacritty
+set $term alacritty
+
+#set bemenu as application launcher
+set $menu ls /usr/bin/ | bemenu | xargs swaymsg exec --
+
+#set wallpaper and resolution
+output eDP-1 {
+  background ~/pics/928550.jpg fill
+  resolution 1920x1080
+}
+
+# keybinding for starting terminal
+bindsym $mod+Return exec $term
+# keybinding for starting application launcher
+bindsym $mod+d exec $menu
+# keybinding for closing focused window
+bindsym $mod+Shift+q kill
+# keybinding to reload the configuration file
+bindsym $mod+Shift+c reload
+# keybinding for exiting sway
+bindsym $mod+Shift+e exec swaymsg exit
+# keybindings for moving the focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+# keybindings for moving focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+# keybindings to spawn next window in horizontal or vertical split
+bindsym $mod+b splith
+bindsym $mod+v splitv
+# keybinding to run focused window in fullscreen
+bindsym $mod+f fullscreen
+# keybindings for resize mode
+bindsym $mod+r mode "resize"
+mode "resize" {
+  bindsym $left resize shrink width 10px
+  bindsym $down resize grow height 10px
+  bindsym $up resize shrink height 10px
+  bindsym $right resize grow width 10px
+  bindsym Escape mode "default"
+}
+
+bar {
+  position top
+
+  # show current date and time.
+  status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
+
+  colors {
+      statusline #ebdbb2
+      background #1d2021
+  }
+}
