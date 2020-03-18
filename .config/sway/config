@@ -4,6 +4,9 @@ input * xkb_layout "de"
 # set mod key to Alt
 set $mod Mod1
 
+# set font
+font Iosevka 10
+
 # enable support for X clients
 xwayland enable
 
@@ -24,6 +27,11 @@ output eDP-1 {
   background ~/pics/928550.jpg fill
   resolution 1920x1080
 }
+
+# color for window decoration  title border  title background  title text  window border child window border
+client.focused                 #458588       #1d2021           #ebdbb2     #458588       #458588
+client.focused_inactive        #458588       #1d2021           #ebdbb2     #458588       #1d2021
+client.unfocused               #1d2021       #1d2021           #458588     #1d2021       #1d2021
 
 # keybinding for starting terminal
 bindsym $mod+Return exec $term
