@@ -72,6 +72,10 @@ bindsym $mod+Shift+$right move right
 # keybindings to spawn next window in horizontal or vertical split
 bindsym $mod+b splith
 bindsym $mod+v splitv
+# keybindings to switch between layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 # keybinding to run focused window in fullscreen
 bindsym $mod+f fullscreen
 # keybindings for resize mode
