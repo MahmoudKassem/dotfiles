@@ -40,14 +40,14 @@ exec_always {
 
 #set wallpaper and resolution
 output eDP-1 {
-  background ~/pics/928550.jpg fill
+  background ~/pics/Landscape-Wallpapers.jpg fill
   resolution 1920x1080
 }
 
 # color for window decoration  title border  title background  title text  window border child window border
-client.focused                 #d65d0e       #1d2021           #d65d0e     #d65d0e       #d65d0e
-client.focused_inactive        #d65d0e       #1d2021           #d65d0e     #d65d0e       #1d2021
-client.unfocused               #1d2021       #1d2021           #d65d0e     #1d2021       #1d2021
+client.focused                 #83a598       #1d2021           #83a598     #83a598       #83a598
+client.focused_inactive        #83a598       #1d2021           #83a598     #83a598       #1d2021
+client.unfocused               #1d2021       #1d2021           #83a598     #1d2021       #1d2021
 
 # keybinding for starting terminal
 bindsym $mod+Return exec $term
