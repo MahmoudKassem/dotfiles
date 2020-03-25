@@ -2,7 +2,7 @@
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
-export FILE="pcmanfm-qt"
+export FILE="pcmanfm"
 export PATH="$PATH:$HOME/scripts"
 
 #set colors for less which is used in man to have colored man pages
