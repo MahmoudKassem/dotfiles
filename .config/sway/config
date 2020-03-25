@@ -5,7 +5,7 @@ input * xkb_layout "de"
 set $mod Mod1
 
 #set font
-font Iosevka 10
+font pango: Iosevka 10
 
 #enable support for X clients
 xwayland enable
@@ -38,11 +38,8 @@ exec_always {
     gsettings set $gnome-schema cursor-theme 'Breeze'
 }
 
-#set wallpaper and resolution
-output eDP-1 {
-  background ~/pics/Landscape-Wallpapers.jpg fill
-  resolution 1920x1080
-}
+#set resolution
+output eDP-1 resolution 1920x1080
 
 #color for window decoration  title border  title background  title text  window border child window border
 client.focused                 #83a598       #1d2021           #83a598     #83a598       #83a598
@@ -79,8 +76,12 @@ bindsym $mod+e layout toggle split
 #keybinding to run focused window in fullscreen
 bindsym $mod+f fullscreen
 #keybindings for brightness controls
-bindsym XF86MonBrightnessDown exec doas -- light -U 5
-bindsym XF86MonBrightnessUp exec doas -- light -A 5
+bindsym XF86MonBrightnessDown exec doas -- light -U 4
+bindsym XF86MonBrightnessUp exec doas -- light -A 4
+#keybindings for volume controls
+bindsym XF86AudioRaiseVolume exec amixer set Master 4%+
+bindsym XF86AudioLowerVolume exec amixer set Master 4%-
+bindsym XF86AudioMute exec amixer set Master toggle
 #keybindings for resize mode
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -97,11 +98,16 @@ bar {
   #show current date and time.
   status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
 
+  font pango: Iosevka 10
+
   colors {
       statusline #ebdbb2
       background #1d2021
   }
 }
+
+#run script tp switch background every 30 minutes
+exec ~/scripts/switch-desktop-background.sh &
 
 #run redshift
 exec redshift &
