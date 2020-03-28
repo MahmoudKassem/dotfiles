@@ -1,34 +1,15 @@
-#set keyboard layout to de
-input * xkb_layout "de"
-
-#set mod key to Alt
-set $mod Mod1
+#set mod key to Super
+set $mod Mod4
 
 #set font
-font pango: Iosevka 10
+font pango:Iosevka Nerd Font 12
 
-#enable support for X clients
-xwayland enable
-
-#home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-
-#enable gaps between windows
-gaps outer 0
-gaps inner 8
-smart_gaps on
-
-#disable title bar
-default_border pixel
-
-#set terminal emulator to alacritty
-set $term alacritty
-
-#set albert as application launcher
-set $menu albert show
+#set keyboard layout and touchpad settings
+input * {
+    xkb_layout "de(nodeadkeys)"
+    tap enabled
+    natural_scroll disabled
+}
 
 #gtk settings
 set $gnome-schema org.gnome.desktop.interface
@@ -38,83 +19,102 @@ exec_always {
     gsettings set $gnome-schema cursor-theme 'Breeze'
 }
 
+#enable support for X clients
+xwayland enable
+
+#enable gaps between windows
+gaps outer 0
+gaps inner 8
+smart_gaps on
+
 #set resolution
 output eDP-1 resolution 1920x1080
 
-#color for window decoration  title border  title background  title text  window border child window border
-client.focused                 #83a598       #1d2021           #83a598     #83a598       #83a598
-client.focused_inactive        #83a598       #1d2021           #83a598     #83a598       #1d2021
-client.unfocused               #1d2021       #1d2021           #83a598     #1d2021       #1d2021
+#disable title bar
+default_border pixel
 
-#keybinding for starting terminal
-bindsym $mod+Return exec $term
-#keybinding for starting application launcher
-bindsym $mod+d exec $menu
-#keybinding for closing focused window
-bindsym $mod+Shift+q kill
-#keybinding to reload the configuration file
+#color for window decoration  title border  title background  title text  window border child window border
+client.focused                #83a598       #1d2021           #83a598     #83a598       #83a598
+client.focused_inactive       #83a598       #1d2021           #83a598     #83a598       #1d2021
+client.unfocused              #1d2021       #1d2021           #83a598     #1d2021       #1d2021
+
+#home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+#keybindings for applications
+bindsym $mod+t exec alacritty
+bindsym $mod+b exec brave
+bindsym $mod+f exec pcmanfm ~
+bindsym $mod+m exec claws-mail
+bindsym $mod+g exec steam
+bindsym $mod+p exec grafx2
+bindsym $mod+z exec zathura
+
+#keybinding for general sway commands
 bindsym $mod+Shift+c reload
-#keybinding for exiting sway
 bindsym $mod+Shift+e exec swaymsg exit
+
 #keybindings for moving the focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
+
 #keybindings for moving focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
-#keybindings to spawn next window in horizontal or vertical split
-bindsym $mod+b splith
-bindsym $mod+v splitv
+
+#keybindings for commands on current window
+bindsym $mod+Shift+f fullscreen
+bindsym $mod+Shift+q kill
+bindsym $mod+r splith
+bindsym $mod+d splitv
+
 #keybindings to switch between layout styles
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-#keybinding to run focused window in fullscreen
-bindsym $mod+f fullscreen
+
 #keybindings for brightness controls
-bindsym XF86MonBrightnessDown exec doas -- light -U 4
-bindsym XF86MonBrightnessUp exec doas -- light -A 4
+bindsym XF86MonBrightnessDown exec doas -- light -U 1
+bindsym XF86MonBrightnessUp exec doas -- light -A 1
+
 #keybindings for volume controls
-bindsym XF86AudioRaiseVolume exec amixer set Master 4%+
-bindsym XF86AudioLowerVolume exec amixer set Master 4%-
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 #keybindings for resize mode
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+r mode "resize"
 mode "resize" {
-  bindsym $left resize shrink width 10px
-  bindsym $down resize grow height 10px
-  bindsym $up resize shrink height 10px
-  bindsym $right resize grow width 10px
+  bindsym $left resize shrink width 16px
+  bindsym $down resize grow height 16x
+  bindsym $up resize shrink height 16px
+  bindsym $right resize grow width 16px
   bindsym Escape mode "default"
 }
 
+#settings for statusbar
 bar {
   position top
-
-  #show current date and time.
-  status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-
-  font pango: Iosevka 10
-
+  workspace_buttons no
+  status_command i3blocks
   colors {
       statusline #ebdbb2
       background #1d2021
   }
 }
 
-#run script tp switch background every 30 minutes
+#run script which switches the desktop background every 30 minutes
 exec ~/scripts/switch-desktop-background.sh &
 
-#run redshift
+#run day/night aware redshift
 exec redshift &
 
 #set screen light
-exec doas -- light -A 100
-exec doas -- light -U 68
-
-#start albert
-exec albert &
+exec doas -- light -S 32

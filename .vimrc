@@ -36,6 +36,10 @@ set autochdir
 "enable the visualbell
 set visualbell
 
+"settings for the integrated terminal emulator of neovim
+autocmd TermOpen * startinsert
+tnoremap <Esc> <C-\><C-n>
+
 "configure vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_gruvbox_dark_hard'
