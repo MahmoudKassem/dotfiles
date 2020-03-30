@@ -56,6 +56,7 @@ bindsym $mod+z exec zathura
 #keybinding for general sway commands
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
+bindsym $mod+Shift+z exec swaylock --color "#1d2021" --indicator-idle-visible
 
 #keybindings for moving the focus
 bindsym $mod+$left focus left
@@ -71,7 +72,7 @@ bindsym $mod+Shift+$right move right
 
 #keybindings for commands on current window
 bindsym $mod+Shift+f fullscreen
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 bindsym $mod+r splith
 bindsym $mod+d splitv
 
@@ -81,8 +82,8 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 #keybindings for brightness controls
-bindsym XF86MonBrightnessDown exec doas -- light -U 1
-bindsym XF86MonBrightnessUp exec doas -- light -A 1
+bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +2
+bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -2
 
 #keybindings for volume controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute
@@ -116,5 +117,5 @@ exec ~/scripts/switch-desktop-background.sh &
 #run day/night aware redshift
 exec redshift &
 
-#set screen light
-exec doas -- light -S 32
+#set screen light to 32%
+exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness > /dev/null
