@@ -117,5 +117,5 @@ exec ~/scripts/switch-desktop-background.sh &
 #run day/night aware redshift
 exec redshift &
 
-#set screen light to 32%
+#set screen brightness to 32%
 exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness > /dev/null
