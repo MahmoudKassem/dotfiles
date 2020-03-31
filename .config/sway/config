@@ -2,7 +2,7 @@
 set $mod Mod4
 
 #set font
-font pango:Iosevka Nerd Font 12
+font pango:Iosevka 12
 
 #set keyboard layout
 input type:keyboard {
