@@ -4,9 +4,13 @@ set $mod Mod4
 #set font
 font pango:Iosevka Nerd Font 12
 
-#set keyboard layout and touchpad settings
-input * {
+#set keyboard layout
+input type:keyboard {
     xkb_layout "de(nodeadkeys)"
+}
+
+#set touchpad settings
+input type:touchpad {
     tap enabled
     natural_scroll disabled
 }
@@ -43,6 +47,10 @@ set $left h
 set $down j
 set $up k
 set $right l
+
+#keybindings for system commands
+bindsym $mod+F4 exec doas poweroff
+bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
 bindsym $mod+t exec alacritty
