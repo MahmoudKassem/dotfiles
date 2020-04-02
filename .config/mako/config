@@ -1,0 +1,9 @@
+max-visible=8
+font=Iosevka
+background-color=#1d2021E6
+text-color=#ebdbb2E6
+width=512
+height=256
+border-size=4
+border-color=#83a598
+default-timeout=4000
