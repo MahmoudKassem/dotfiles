@@ -2,7 +2,7 @@
 set $mod Mod4
 
 #set font
-font pango:Iosevka 12
+font pango:Iosevka Nerd Font 12
 
 #set keyboard layout
 input type:keyboard {
@@ -13,14 +13,6 @@ input type:keyboard {
 input type:touchpad {
     tap enabled
     natural_scroll disabled
-}
-
-#gtk settings
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'Arc-Dark'
-    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-    gsettings set $gnome-schema cursor-theme 'Breeze'
 }
 
 #enable support for X clients
@@ -38,9 +30,9 @@ output eDP-1 resolution 1920x1080
 default_border pixel
 
 #color for window decoration  title border  title background  title text  window border child window border
-client.focused                #83a598       #1d2021           #83a598     #83a598       #83a598
-client.focused_inactive       #83a598       #1d2021           #83a598     #83a598       #1d2021
-client.unfocused              #1d2021       #1d2021           #83a598     #1d2021       #1d2021
+client.focused                #83a598       #1d2021E6         #83a598     #83a598       #83a598
+client.focused_inactive       #83a598       #1d2021E6         #83a598     #83a598       #1d2021E6
+client.unfocused              #1d2021E6     #1d2021E6         #83a598     #1d2021E6     #1d2021E6
 
 #home row direction keys, like vim
 set $left h
@@ -60,11 +52,12 @@ bindsym $mod+m exec claws-mail
 bindsym $mod+g exec steam
 bindsym $mod+p exec grafx2
 bindsym $mod+z exec zathura
+bindsym $mod+a exec pavucontrol-qt
 
 #keybinding for general sway commands
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
-bindsym $mod+Shift+z exec swaylock --color "#1d2021" --indicator-idle-visible
+bindsym $mod+Shift+z exec swaylock --color "#1d2021E6" --indicator-idle-visible
 
 #keybindings for moving the focus
 bindsym $mod+$left focus left
@@ -93,11 +86,6 @@ bindsym $mod+e layout toggle split
 bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +2
 bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -2
 
-#keybindings for volume controls
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
-
 #keybindings for resize mode
 bindsym $mod+Shift+r mode "resize"
 mode "resize" {
@@ -114,8 +102,8 @@ bar {
   workspace_buttons no
   status_command i3blocks
   colors {
-      statusline #ebdbb2
-      background #1d2021
+      statusline #ebdbb2E6
+      background #1d2021E6
   }
 }
 
@@ -127,3 +115,9 @@ exec redshift &
 
 #set screen brightness to 32%
 exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness > /dev/null
+
+#start pulseaudio service
+exec pulseaudio --daemonize=yes --start
+
+#start notification daemon
+exec mako
