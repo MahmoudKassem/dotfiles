@@ -29,10 +29,15 @@ output eDP-1 resolution 1920x1080
 #disable title bar
 default_border pixel
 
+#define colors the E6 at the end causes transparency of about 8%
+set $black "#1d2021E6"
+set $blue "#83a598"
+set $white "#ebdbb2E6"
+
 #color for window decoration  title border  title background  title text  window border child window border
-client.focused                #83a598       #1d2021E6         #83a598     #83a598       #83a598
-client.focused_inactive       #83a598       #1d2021E6         #83a598     #83a598       #1d2021E6
-client.unfocused              #1d2021E6     #1d2021E6         #83a598     #1d2021E6     #1d2021E6
+client.focused                $blue         $black            $blue       $blue         $blue
+client.focused_inactive       $blue         $black            $blue       $blue         $black
+client.unfocused              $black        $black            $blue       $black        $black
 
 #home row direction keys, like vim
 set $left h
@@ -57,7 +62,7 @@ bindsym $mod+a exec pavucontrol-qt
 #keybinding for general sway commands
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
-bindsym $mod+Shift+z exec swaylock --color "#1d2021E6" --indicator-idle-visible
+bindsym $mod+Shift+z exec swaylock --color $black --indicator-idle-visible
 
 #keybindings for moving the focus
 bindsym $mod+$left focus left
@@ -102,8 +107,8 @@ bar {
   workspace_buttons no
   status_command i3blocks
   colors {
-      statusline #ebdbb2E6
-      background #1d2021E6
+      statusline $white
+      background $black
   }
 }
 
