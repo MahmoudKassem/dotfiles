@@ -1,22 +1,17 @@
-#set mod key to Super
-set $mod Mod4
+#set mod key to altgr
+set $mod mod5
 
 #set font
 font pango:Iosevka Nerd Font 12
 
 #set keyboard layout
-input type:keyboard {
-    xkb_layout "de(nodeadkeys)"
-}
+input type:keyboard xkb_layout "de(nodeadkeys)"
 
 #set touchpad settings
 input type:touchpad {
     tap enabled
     natural_scroll disabled
 }
-
-#enable support for X clients
-xwayland enable
 
 #enable gaps between windows
 gaps outer 0
@@ -57,12 +52,11 @@ bindsym $mod+m exec claws-mail
 bindsym $mod+g exec steam
 bindsym $mod+p exec grafx2
 bindsym $mod+z exec zathura
-bindsym $mod+a exec pavucontrol-qt
 
 #keybinding for general sway commands
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+e exec swaymsg exit
-bindsym $mod+Shift+z exec swaylock --color $black --indicator-idle-visible
+bindsym $mod+shift+c reload
+bindsym $mod+shift+e exec swaymsg exit
+bindsym $mod+shift+z exec swaylock --color $black --indicator-idle-visible
 
 #keybindings for moving the focus
 bindsym $mod+$left focus left
@@ -71,13 +65,13 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 #keybindings for moving focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+bindsym $mod+shift+$left move left
+bindsym $mod+shift+$down move down
+bindsym $mod+shift+$up move up
+bindsym $mod+shift+$right move right
 
 #keybindings for commands on current window
-bindsym $mod+Shift+f fullscreen
+bindsym $mod+shift+f fullscreen
 bindsym $mod+q kill
 bindsym $mod+r splith
 bindsym $mod+d splitv
@@ -91,12 +85,17 @@ bindsym $mod+e layout toggle split
 bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +2
 bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -2
 
+#keybindings for volume controls
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 #keybindings for resize mode
-bindsym $mod+Shift+r mode "resize"
+bindsym $mod+shift+r mode "resize"
 mode "resize" {
   bindsym $left resize shrink width 16px
-  bindsym $down resize grow height 16x
-  bindsym $up resize shrink height 16px
+  bindsym $down resize shrink height 16x
+  bindsym $up resize grow height 16px
   bindsym $right resize grow width 16px
   bindsym Escape mode "default"
 }
@@ -116,13 +115,13 @@ bar {
 exec ~/scripts/switch-desktop-background.sh &
 
 #run day/night aware redshift
-exec redshift &
+exec redshift
 
 #set screen brightness to 32%
 exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness > /dev/null
 
-#start pulseaudio service
-exec pulseaudio --daemonize=yes --start
+#start jack daemon
+exec jackd -d alsa -d hw:Generic_1 -r 48000 &
 
 #start notification daemon
 exec mako
