@@ -82,13 +82,13 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 #keybindings for brightness controls
-bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +2
-bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -2
+bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +4 && pkill -SIGRTMIN+11 i3blocks
+bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -4 && pkill -SIGRTMIN+11 i3blocks
 
 #keybindings for volume controls
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -SIGRTMIN+10 i3blocks
 
 #keybindings for resize mode
 bindsym $mod+shift+r mode "resize"
@@ -111,17 +111,17 @@ bar {
   }
 }
 
-#run script which switches the desktop background every 30 minutes
-exec ~/scripts/switch-desktop-background.sh &
+#run deamon which switches the desktop background every 30 minutes
+exec ~/scripts/switch-desktop-background.sh 1800 &
 
-#run day/night aware redshift
-exec redshift
-
-#set screen brightness to 32%
-exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness > /dev/null
+#run day/night aware redshift deamon
+exec redshift &
 
 #start jack daemon
 exec jackd -d alsa -d hw:Generic_1 -r 48000 &
 
 #start notification daemon
-exec mako
+exec mako &
+
+#set screen brightness to 32%
+exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
