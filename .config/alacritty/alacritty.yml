@@ -6,8 +6,6 @@ window:
     x: 0
     y: 0
 
-tabspaces: 4
-
 font:
   normal:
     family: Iosevka Nerd Font
@@ -15,7 +13,7 @@ font:
   bold:
     family: Iosevka Nerd Font
     style: Regular
-  size: 12.0
+  size: 14.0
 
 draw_bold_text_with_bright_colors: false
 
