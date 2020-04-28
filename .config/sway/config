@@ -72,7 +72,7 @@ bindsym $mod+shift+$right move right
 
 #keybindings for commands on current window
 bindsym $mod+shift+f fullscreen
-bindsym $mod+q kill
+bindsym $mod+c kill
 bindsym $mod+r splith
 bindsym $mod+d splitv
 
@@ -82,8 +82,8 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 #keybindings for brightness controls
-bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +4 && pkill -SIGRTMIN+11 i3blocks
-bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -4 && pkill -SIGRTMIN+11 i3blocks
+bindsym XF86MonBrightnessUp exec ~/scripts/change-screen-brightness.sh +10 && pkill -SIGRTMIN+11 i3blocks
+bindsym XF86MonBrightnessDown exec ~/scripts/change-screen-brightness.sh -10 && pkill -SIGRTMIN+11 i3blocks
 
 #keybindings for volume controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute && pkill -SIGRTMIN+10 i3blocks
