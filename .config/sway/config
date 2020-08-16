@@ -116,6 +116,9 @@ exec ~/scripts/switch-desktop-background.sh 1800 &
 #run day/night aware redshift deamon
 exec redshift &
 
+#listen for acpi events like headphones being plugged in
+exec acpi_listen &
+
 #start jack daemon
 exec jackd -d alsa -d hw:Generic_1 -r 48000 &
 
