@@ -13,7 +13,7 @@ font:
   bold:
     family: Iosevka Nerd Font
     style: Regular
-  size: 14.0
+  size: 16.0
 
 draw_bold_text_with_bright_colors: false
 
@@ -51,7 +51,4 @@ mouse:
   url:
     launcher:
       program: brave
-
-key_bindings:
-  - { key: J, mods: Control, action: ScrollPageDown }
-  - { key: K, mods: Control, action: ScrollPageUp }
+      args: [-incognito]
