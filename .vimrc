@@ -4,6 +4,23 @@ execute pathogen#infect()
 "use true color mode
 set termguicolors
 
+"write file to disk after 128 milliseconds without typing
+set updatetime=128
+
+"no swap files
+set noswapfile
+
+"custom key bindings
+let mapleader = " "
+map <leader>t :sp term://zsh<CR>
+map <leader>c :
+map <leader>h :wincmd h<CR>
+map <leader>j :wincmd j<CR>
+map <leader>k :wincmd k<CR>
+map <leader>l :wincmd l<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>gs :G<CR>
+
 "set the gruvbox theme
 set background=dark
 colorscheme gruvbox
@@ -16,7 +33,7 @@ syntax on filetype plugin
 set encoding=utf-8 fileencoding=utf-8
 
 "set tab to be 4 characters wide
-set tabstop=4
+set tabstop=4 shiftwidth=4 expandtab
 
 "set horizontal splits to appear below and vertical splits to appear on the right
 set splitbelow splitright
@@ -32,9 +49,6 @@ set nowrap
 
 "automatically change the directory when opening a new file
 set autochdir
-
-"enable the visualbell
-set visualbell
 
 "settings for the integrated terminal emulator of neovim
 autocmd TermOpen * startinsert
