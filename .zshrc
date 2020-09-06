@@ -42,5 +42,8 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #load starship prompt
 eval "$(starship init zsh)"
 
+#load direnv
+eval "$(direnv hook zsh)"
+
 #show systeminfo
 neofetch
