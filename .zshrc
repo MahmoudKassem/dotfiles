@@ -1,6 +1,7 @@
 #set default editor, terminal and browser
 export EDITOR="nvim"
 export TERMINAL="alacritty"
+export SHELL="zsh"
 export BROWSER="brave"
 export FILE="pcmanfm"
 export PATH="$PATH:$HOME/scripts"
@@ -32,8 +33,9 @@ zmodload zsh/complist
 _comp_options+=(globdots)
 compinit
 
-#alias for system update including AUR packages
+#aliases
 alias syu="doas -- pacman -Syu && update-aur-packages.sh"
+alias ls="ls -A --color=auto"
 
 #load plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -44,6 +46,10 @@ eval "$(starship init zsh)"
 
 #load direnv
 eval "$(direnv hook zsh)"
+
+if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
+  exec bicon
+fi
 
 #show systeminfo
 neofetch
