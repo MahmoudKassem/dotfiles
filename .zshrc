@@ -47,9 +47,5 @@ eval "$(starship init zsh)"
 #load direnv
 eval "$(direnv hook zsh)"
 
-if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
-  exec bicon
-fi
-
 #show systeminfo
 neofetch
