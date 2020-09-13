@@ -1,20 +1,3 @@
-#set default editor, terminal and browser
-export EDITOR="nvim"
-export TERMINAL="alacritty"
-export SHELL="zsh"
-export BROWSER="brave"
-export FILE="pcmanfm"
-export PATH="$PATH:$HOME/scripts"
-
-#set colors for less which is used in man to have colored man pages
-export LESS_TERMCAP_mb=$(printf "\e[1;36m")
-export LESS_TERMCAP_md=$(printf "\e[1;36m")
-export LESS_TERMCAP_me=$(printf "\e[0m")
-export LESS_TERMCAP_se=$(printf "\e[0m")
-export LESS_TERMCAP_so=$(printf "\e[1;30;32m")
-export LESS_TERMCAP_ue=$(printf "\e[0m")
-export LESS_TERMCAP_us=$(printf "\e[1;32m")
-
 # history settings
 HISTFILE=~/.cache/histfile
 HISTSIZE=16384
