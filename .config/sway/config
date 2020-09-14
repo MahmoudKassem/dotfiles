@@ -125,5 +125,8 @@ exec jackd -d alsa -d hw:Generic_1 -r 48000 &
 #start notification daemon
 exec mako &
 
+#start pcmanfm daemon to listen for and mount removable drives
+exec pcmanfm -d
+
 #set screen brightness to 32%
 exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
