@@ -9,6 +9,9 @@ setopt autocd nomatch
 #enable vi modes
 bindkey -v
 
+#enable backwards search
+bindkey "^R" history-incremental-search-backward
+
 #enable menu auto complete suggestion including hidden files
 autoload -U compinit
 zstyle ':completion:*' menu select
