@@ -51,6 +51,7 @@ bindsym $mod+f exec pcmanfm ~
 bindsym $mod+m exec claws-mail
 bindsym $mod+p exec grafx2
 bindsym $mod+z exec zathura
+bindsym $mod+a exec pcmanfm menu://applications/
 
 #keybinding for general sway commands
 bindsym $mod+shift+c reload
