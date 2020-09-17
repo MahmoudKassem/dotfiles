@@ -1,14 +1,18 @@
 if [ "$(tty)" = "/dev/tty1" ]
   then
-    #set default editor, terminal and browser
+    #set default applications
     export EDITOR="nvim"
     export TERMINAL="alacritty"
     export SHELL="zsh"
     export BROWSER="brave"
     export FILE="pcmanfm"
+    export READER="zathura"
+
+    #add custom scripts to path
     export PATH="$PATH:$HOME/scripts"
 
-    #set colors for less which is used in man to have colored man pages
+    #set colors for less and disable its history file
+    export LESSHISTFILE="-"
     export LESS_TERMCAP_mb=$(printf "\e[1;36m")
     export LESS_TERMCAP_md=$(printf "\e[1;36m")
     export LESS_TERMCAP_me=$(printf "\e[0m")
