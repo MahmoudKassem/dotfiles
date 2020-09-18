@@ -1,0 +1,54 @@
+#general settings
+set editor = nvim
+set my_pass = `gpg -dq $HOME/.config/neomutt/password.gpg`
+set mailcap_path = $HOME/.config/neomutt/mailcap
+auto_view text/html
+alternative_order text/plain text/html
+
+#receive settings
+set folder = "imaps://mahmoud_k@mail.com@imap.mail.com:993"
+set imap_user = "mahmoud_k@mail.com"
+set imap_pass = $my_pass
+
+#send settings
+set smtp_url = "smtp://mahmoud_k@mail.com@smtp.mail.com:587"
+set from = "mahmoud_k@mail.com"
+set realname = "Mahmoud Kassem"
+set smtp_pass = $my_pass
+
+#mailbox settings
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set my_spam = "+Spam"
+mailboxes =INBOX =Sent =Trash =Drafts =Spam
+
+#sidebar settings
+set sidebar_visible = yes
+set sidebar_width = 32
+set mail_check_stats
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager \Cp sidebar-prev-new
+bind index,pager \Cn sidebar-next-new
+bind index,pager B sidebar-toggle-visible
+
+#colors
+color hdrdefault cyan default
+color quoted cyan default
+color signature blue default
+color attachment green default
+color prompt blue default
+color message default default
+color error red default
+color indicator default blue
+color status blue default
+color tree default default
+color normal default default
+color markers blue default
+color search default default
+color tilde red default
+color index blue default "~F"
+color index yellow default "~N|~O"
