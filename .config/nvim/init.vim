@@ -1,5 +1,16 @@
-"run plugins in ./vim/bundle folder
-execute pathogen#infect()
+"load plugins with vim-plug
+call plug#begin('~/.local/share/nvim/site/plugged')
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'neovimhaskell/haskell-vim'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'mahmoudkassem/gruvbox'
+  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
+call plug#end()
 
 "use true color mode
 set termguicolors
