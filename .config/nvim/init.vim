@@ -24,13 +24,16 @@ set noswapfile
 "custom key bindings
 let mapleader = " "
 map <leader>t :sp term://zsh<CR>
-map <leader>c :
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
+map <leader>q :q!<CR>
+map <leader>i :PlugInstall<CR>
+map <leader>g :PlugUpgrade<CR>
+map <leader>u :PlugUpdate<CR>
+map <leader>c :PlugClean<CR>
 map <leader>n :NERDTreeToggle<CR>
-map <leader>gs :G<CR>
 
 "set the gruvbox theme
 set background=dark
