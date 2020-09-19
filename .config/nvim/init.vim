@@ -33,6 +33,7 @@ map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 map <leader>q :q!<CR>
 map <leader>t :sp term://zsh<CR>
+map <leader>u :Explore<CR>
 
 "configure netrw
 let g:netrw_banner = 0
