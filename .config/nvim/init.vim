@@ -6,10 +6,8 @@ call plug#begin('~/.local/share/nvim/site/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'neovimhaskell/haskell-vim'
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'mahmoudkassem/vim-devicons'
   Plug 'mahmoudkassem/gruvbox'
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
 "use true color mode
@@ -20,6 +18,27 @@ set updatetime=128
 
 "no swap files
 set noswapfile
+
+"configure netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+let g:NetrwIsOpen=0
+function! ToggleNetrw()
+    if g:NetrwIsOpen
+        let i = bufnr("$")
+        while (i >= 1)
+            if (getbufvar(i, "&filetype") == "netrw")
+                silent exe "bwipeout " . i
+            endif
+            let i-=1
+        endwhile
+        let g:NetrwIsOpen=0
+    else
+        let g:NetrwIsOpen=1
+        silent 25Lexplore
+    endif
+endfunction
 
 "custom key bindings
 let mapleader = " "
@@ -33,12 +52,16 @@ map <leader>i :PlugInstall<CR>
 map <leader>g :PlugUpgrade<CR>
 map <leader>u :PlugUpdate<CR>
 map <leader>c :PlugClean<CR>
-map <leader>n :NERDTreeToggle<CR>
+map <leader>n :call ToggleNetrw()<CR>
 
 "set the gruvbox theme
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_contrast_dark='hard'
+
+"configure vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_gruvbox_dark_hard'
 
 "enable syntax highlighting
 syntax on filetype plugin
@@ -67,10 +90,6 @@ set autochdir
 "settings for the integrated terminal emulator of neovim
 autocmd TermOpen * startinsert
 tnoremap <Esc> <C-\><C-n>
-
-"configure vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_gruvbox_dark_hard'
 
 "make the background transparent
 hi Normal guibg=NONE ctermbg=NONE
