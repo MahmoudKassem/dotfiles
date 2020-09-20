@@ -3,6 +3,7 @@ set background=dark
 set encoding=utf-8
 set noswapfile
 set nowrap
+set noshowmode
 set number
 set relativenumber
 set splitbelow
@@ -25,13 +26,13 @@ au BufNewFile,BufRead *.pro set filetype=prolog
 
 "custom key bindings
 map <space>d :Lexplore<CR>
-map <space>f :Rg<CR>
+map <space>f :Files<CR>
 map <space>h :wincmd h<CR>
 map <space>j :wincmd j<CR>
 map <space>k :wincmd k<CR>
 map <space>l :wincmd l<CR>
 map <space>q :q!<CR>
-map <space>s :Files<CR>
+map <space>s :Rg<CR>
 map <space>t :sp term://zsh<CR>
 map <space>u :Explore<CR>
 
@@ -42,7 +43,7 @@ let g:gruvbox_contrast_dark='hard'
 let $FZF_DEFAULT_OPTS='--extended'
 let $FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
-let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7 } }
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --iglob !\.git --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
