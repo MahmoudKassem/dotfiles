@@ -24,16 +24,20 @@ hi Normal guibg=NONE ctermbg=NONE
 "recognize .pro as prolog files
 au BufNewFile,BufRead *.pro set filetype=prolog
 
+"extend FZFs'Files command to look from the root if inside a git project
+command! GitProjectFiles execute 'Files' system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+
 "custom key bindings
-let mapleader = " "
-map <leader>f :Lexplore<CR>
-map <leader>h :wincmd h<CR>
-map <leader>j :wincmd j<CR>
-map <leader>k :wincmd k<CR>
-map <leader>l :wincmd l<CR>
-map <leader>q :q!<CR>
-map <leader>t :sp term://zsh<CR>
-map <leader>u :Explore<CR>
+map <space>d :Lexplore<CR>
+map <space>f :Rg<CR>
+map <space>h :wincmd h<CR>
+map <space>j :wincmd j<CR>
+map <space>k :wincmd k<CR>
+map <space>l :wincmd l<CR>
+map <space>q :q!<CR>
+map <space>s :GitProjectFiles<CR>
+map <space>t :sp term://zsh<CR>
+map <space>u :Explore<CR>
 
 "configure netrw
 let g:netrw_banner = 0
@@ -48,11 +52,12 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_gruvbox_dark_hard'
 
 "load plugins
+packadd fzf.vim
 packadd gruvbox
 packadd haskell-vim
-packadd vim-devicons
 packadd vim-airline
 packadd vim-airline-themes
+packadd vim-devicons
 packadd vim-fugitive
 packadd vim-gitgutter
 packadd vim-surround
