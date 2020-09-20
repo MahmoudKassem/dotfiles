@@ -40,12 +40,12 @@ let g:gruvbox_contrast_dark='hard'
 
 "configure fzf
 let $FZF_DEFAULT_OPTS='--extended'
-let $FZF_DEFAULT_COMMAND='rg --files --hidden'
+let $FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7 } }
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --column --hidden --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   'rg --hidden --iglob !\.git --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
 "configure netrw
