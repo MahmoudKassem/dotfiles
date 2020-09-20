@@ -43,6 +43,10 @@ let $FZF_DEFAULT_OPTS='--extended'
 let $FZF_DEFAULT_COMMAND='rg --files --hidden'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7 } }
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --hidden --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)
 
 "configure netrw
 let g:netrw_banner = 0
