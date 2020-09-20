@@ -9,9 +9,6 @@ setopt autocd nomatch
 #enable vi modes
 bindkey -v
 
-#enable backwards search
-bindkey "^R" history-incremental-search-backward
-
 #enable menu auto complete suggestion including hidden files
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -25,15 +22,22 @@ alias npu='update-git-repos-in-directory.sh "NeoVim plugins" "$(find $HOME/.loca
 alias syu='doas -- pacman -Syu && aur && npu'
 alias ls="ls -A --color=auto"
 
-#load plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 #load starship prompt
 eval "$(starship init zsh)"
 
 #load direnv
 eval "$(direnv hook zsh)"
+
+#load and configure fzf completions and keybindings
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+export FZF_DEFAULT_OPS='--extended'
+export FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+#load zsh plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #show systeminfo
 neofetch
