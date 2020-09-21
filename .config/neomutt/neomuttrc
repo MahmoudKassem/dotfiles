@@ -2,6 +2,8 @@
 set editor = nvim
 set my_pass = `gpg -dq $HOME/.config/neomutt/password.gpg`
 set mailcap_path = $HOME/.config/neomutt/mailcap
+set sort = 'reverse-date'
+set sleep_time = 0
 auto_view text/html
 alternative_order text/plain text/html
 
