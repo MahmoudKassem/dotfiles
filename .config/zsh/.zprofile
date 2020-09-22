@@ -4,7 +4,7 @@ if [ "$(tty)" = "/dev/tty1" ]
     export EDITOR="nvim"
     export TERMINAL="alacritty"
     export SHELL="zsh"
-    export BROWSER="brave"
+    export BROWSER="firefox"
     export FILE="pcmanfm"
     export READER="zathura"
 
