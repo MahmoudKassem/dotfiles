@@ -1,6 +1,5 @@
 "load plugins
 packadd! completion-nvim
-packadd! diagnostic-nvim
 packadd! fzf.vim
 packadd! gruvbox
 packadd! haskell-vim
@@ -81,10 +80,7 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
 "configure nvim-lsp
-lua << EOF
-  require'nvim_lsp'.gopls.setup{on_attach=require'completion'.on_attach}
-  require'nvim_lsp'.gopls.setup{on_attach=require'diagnostic'.on_attach}
-EOF
+lua require'nvim_lsp'.gopls.setup{on_attach=require'completion'.on_attach}
 
 "configure vim-airline
 let g:airline_powerline_fonts = 1
