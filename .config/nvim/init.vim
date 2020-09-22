@@ -1,6 +1,21 @@
+"load plugins
+packadd! completion-nvim
+packadd! fzf.vim
+packadd! gruvbox
+packadd! haskell-vim
+packadd! nvim-lspconfig
+packadd! vim-airline
+packadd! vim-airline-themes
+packadd! vim-devicons
+packadd! vim-fugitive
+packadd! vim-gitgutter
+packadd! vim-rooter
+packadd! vim-surround
+
 "general settings
 set background=dark
 set encoding=utf-8
+set expandtab
 set noswapfile
 set nowrap
 set noshowmode
@@ -9,6 +24,8 @@ set relativenumber
 set splitbelow
 set splitright
 set termguicolors
+set tabstop=2
+set shiftwidth=2
 set updatetime=128
 filetype indent plugin on
 syntax on
@@ -25,16 +42,24 @@ hi Normal guibg=NONE ctermbg=NONE
 au BufNewFile,BufRead *.pro set filetype=prolog
 
 "custom key bindings
-map <space>d :Lexplore<CR>
-map <space>f :Files<CR>
-map <space>h :wincmd h<CR>
-map <space>j :wincmd j<CR>
-map <space>k :wincmd k<CR>
-map <space>l :wincmd l<CR>
-map <space>q :q!<CR>
-map <space>s :Rg<CR>
-map <space>t :cd %:p:h<CR>:sp term://zsh<CR>
-map <space>u :Explore<CR>
+nnoremap <silent> <space>d <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <space>e :Lexplore<CR>
+nnoremap <silent> <space>f :FZF<CR>
+nnoremap <silent> <space>h :wincmd h<CR>
+nnoremap <silent> <space>i <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <space>j :wincmd j<CR>
+nnoremap <silent> <space>k :wincmd k<CR>
+nnoremap <silent> <space>l :wincmd l<CR>
+nnoremap <silent> <space>q :q!<CR>
+nnoremap <silent> <space>s :Rg<CR>
+nnoremap <silent> <space>t :cd %:p:h<CR>:16sp term://zsh<CR>
+nnoremap <silent> <space>u :Explore<CR>
+nnoremap <silent> <space>v <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <space>y <cmd>lua vim.lsp.buf.type_definition()<CR>
+
+"configure completion-nvim
+set completeopt=menuone,noinsert,noselect
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 "configure gruvbox
 let g:gruvbox_contrast_dark='hard'
@@ -54,6 +79,10 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
+"configure nvim-lsp
+lua require'nvim_lsp'.gopls.setup{on_attach=require'completion'.on_attach}
+lua require'nvim_lsp'.hls.setup{on_attach=require'completion'.on_attach}
+
 "configure vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_gruvbox_dark_hard'
@@ -63,15 +92,3 @@ let g:rooter_patterns = ['.git']
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_silent_chdir = 1
 let g:rooter_resolve_links = 1
-
-"load plugins
-packadd fzf.vim
-packadd gruvbox
-packadd haskell-vim
-packadd vim-airline
-packadd vim-airline-themes
-packadd vim-devicons
-packadd vim-fugitive
-packadd vim-gitgutter
-packadd vim-rooter
-packadd vim-surround
