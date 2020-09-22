@@ -33,7 +33,7 @@ map <space>k :wincmd k<CR>
 map <space>l :wincmd l<CR>
 map <space>q :q!<CR>
 map <space>s :Rg<CR>
-map <space>t :sp term://zsh<CR>
+map <space>t :cd %:p:h<CR>:sp term://zsh<CR>
 map <space>u :Explore<CR>
 
 "configure gruvbox
