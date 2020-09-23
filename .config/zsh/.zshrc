@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+#add custom scripts to path
+export PATH="$PATH:$HOME/scripts"
+
 # history settings
 HISTFILE=~/.cache/histfile
 HISTSIZE=16384

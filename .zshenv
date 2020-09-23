@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-#add custom scripts to path
-export PATH="$PATH:$HOME/scripts"
-
 #set default applications
 export EDITOR="nvim"
 export TERMINAL="alacritty"
