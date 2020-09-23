@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # history settings
 HISTFILE=~/.cache/histfile
 HISTSIZE=16384
@@ -31,10 +33,6 @@ eval "$(direnv hook zsh)"
 #load and configure fzf completions and keybindings
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
-export FZF_ALT_C_COMMAND="rg --hidden --files --null 2> /dev/null | xargs -0 dirname | uniq"
-export FZF_CTRL_T_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
-export FZF_DEFAULT_OPS='--extended'
-export FZF_DEFAULT_COMMAND="$FZF_CTRL_T_COMMAND"
 
 #load zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
