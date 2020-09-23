@@ -6,6 +6,9 @@ window:
     x: 0
     y: 0
 
+scrolling:
+  history: 16384
+
 font:
   normal:
     family: Iosevka Nerd Font
@@ -50,5 +53,5 @@ selection:
 mouse:
   url:
     launcher:
-      program: brave
-      args: [-incognito]
+      program: firefox
+      args: [--private-window]
