@@ -27,9 +27,6 @@ alias ls="ls -A --color=auto"
 #load starship prompt
 eval "$(starship init zsh)"
 
-#load direnv
-eval "$(direnv hook zsh)"
-
 #load and configure fzf completions and keybindings
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
