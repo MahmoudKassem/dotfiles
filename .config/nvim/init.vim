@@ -49,6 +49,10 @@ tnoremap <silent> <Esc> <C-\><C-n>
 "configure completion-nvim
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
+"configure diagnostic-nvim
+let g:diagnostic_enable_virtual_text = 1
+let g:diagnostic_virtual_text_prefix = ' '
+
 "configure gruvbox
 let g:gruvbox_contrast_dark='hard'
 
@@ -79,9 +83,11 @@ let g:rooter_resolve_links = 1
 
 "load plugins
 packadd completion-nvim
+packadd diagnostic-nvim
 packadd fzf.vim
 packadd gruvbox
 packadd haskell-vim
+packadd lsp-status.nvim
 packadd nvim-lspconfig
 packadd vim-airline
 packadd vim-airline-themes
@@ -92,18 +98,22 @@ packadd vim-rooter
 packadd vim-surround
 
 "setup language servers
-lua << EOF
-local nvim_lsp = require'nvim_lsp'
-local completion = require'completion'.on_attach
+lua << END
+local nvim_lsp = require('nvim_lsp')
+local lsp_status = require('lsp-status')
+local on_attach = function ()
+  require('completion').on_attach()
+  require('diagnostic').on_attach()
+end
 
 --gopls for golang
 nvim_lsp.gopls.setup {
-  on_attach = completion
+  on_attach = on_attach
 }
 
 --haskell language server for haskell
 nvim_lsp.hls.setup {
-  on_attach = completion,
+  on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern(
     "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
   )
@@ -111,6 +121,6 @@ nvim_lsp.hls.setup {
 
 --vim language server for vim
 nvim_lsp.vimls.setup {
-  on_attach = completion
+  on_attach = on_attach
 }
-EOF
+END
