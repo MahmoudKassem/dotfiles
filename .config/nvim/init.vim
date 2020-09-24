@@ -109,4 +109,9 @@ nvim_lsp.hls.setup {
     "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
   )
 }
+
+--vim language server for vim
+nvim_lsp.vimls.setup {
+  on_attach = completion
+}
 EOF
