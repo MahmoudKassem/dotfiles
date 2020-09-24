@@ -87,7 +87,6 @@ packadd diagnostic-nvim
 packadd fzf.vim
 packadd gruvbox
 packadd haskell-vim
-packadd lsp-status.nvim
 packadd nvim-lspconfig
 packadd vim-airline
 packadd vim-airline-themes
@@ -100,7 +99,6 @@ packadd vim-surround
 "setup language servers
 lua << END
 local nvim_lsp = require('nvim_lsp')
-local lsp_status = require('lsp-status')
 local on_attach = function ()
   require('completion').on_attach()
   require('diagnostic').on_attach()
