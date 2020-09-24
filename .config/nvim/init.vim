@@ -4,15 +4,14 @@ syntax on
 
 "general settings
 set background=dark
-set cmdheight=2
 set completeopt=menuone,noinsert,noselect
 set encoding=utf-8
 set expandtab
 set noswapfile
-set nowrap
 set noshowmode
 set number
 set relativenumber
+set signcolumn=yes
 set splitbelow
 set splitright
 set termguicolors
