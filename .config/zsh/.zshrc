@@ -1,4 +1,4 @@
-#!bin/zsh
+#!/bin/zsh
 
 #add custom scripts to path
 export PATH="$PATH:$HOME/scripts"
