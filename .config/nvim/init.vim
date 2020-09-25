@@ -3,10 +3,14 @@ filetype indent plugin on
 syntax on
 
 "general settings
+set autowrite
 set background=dark
 set completeopt=menuone,noinsert,noselect
 set encoding=utf-8
 set expandtab
+set hidden
+set incsearch
+set nobackup
 set noswapfile
 set noshowmode
 set number
@@ -29,11 +33,11 @@ au TermOpen * startinsert
 au TextYankPost * silent! lua vim.highlight.on_yank()
 
 "custom key bindings
+nnoremap <silent> <space>a <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent> <space>d <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <space>e :Lexplore<CR>
 nnoremap <silent> <space>f :FZF<CR>
 nnoremap <silent> <space>h :wincmd h<CR>
-nnoremap <silent> <space>i <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> <space>j :wincmd j<CR>
 nnoremap <silent> <space>k :wincmd k<CR>
 nnoremap <silent> <space>l :wincmd l<CR>
@@ -43,7 +47,6 @@ nnoremap <silent> <space>s :Rg<CR>
 nnoremap <silent> <space>t :cd %:p:h<CR>:16sp term://zsh<CR>
 nnoremap <silent> <space>u :Explore<CR>
 nnoremap <silent> <space>v <cmd>lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> <space>y <cmd>lua vim.lsp.buf.type_definition()<CR>
 tnoremap <silent> <Esc> <C-\><C-n>
 
 "configure completion-nvim
@@ -92,8 +95,8 @@ packadd vim-airline
 packadd vim-airline-themes
 packadd vim-devicons
 packadd vim-fugitive
-packadd vim-gitgutter
 packadd vim-rooter
+packadd vim-signify
 packadd vim-surround
 
 "setup language servers
