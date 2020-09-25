@@ -11,6 +11,7 @@ set expandtab
 set hidden
 set incsearch
 set nobackup
+set nowritebackup
 set noswapfile
 set noshowmode
 set number
