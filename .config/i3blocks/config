@@ -7,7 +7,7 @@ background=#1d2021
 color=#b16286
 
 [audio]
-command=~/scripts/get-volume.sh
+command=~/.local/bin/get-volume.sh
 interval=once
 signal=10
 background=#b16286
@@ -18,7 +18,7 @@ background=#b16286
 color=#458588
 
 [brightness]
-command=~/scripts/get-screen-brightness.sh
+command=~/.local/bin/get-screen-brightness.sh
 interval=once
 signal=11
 background=#458588
@@ -29,7 +29,7 @@ background=#458588
 color=#689d6a
 
 [battery]
-command=~/scripts/get-battery-status.sh
+command=~/.local/bin/get-battery-status.sh
 interval=300
 background=#689d6a
 color=#1d2021
@@ -39,7 +39,7 @@ background=#689d6a
 color=#98971a
 
 [network]
-command=~/scripts/get-network-status.sh
+command=~/.local/bin/get-network-status.sh
 interval=300
 background=#98971a
 color=#1d2021
@@ -49,7 +49,7 @@ background=#98971a
 color=#d79921
 
 [weather]
-command=~/scripts/get-weather-info.sh
+command=~/.local/bin/get-weather-info.sh
 interval=1800
 background=#d79921
 color=#1d2021

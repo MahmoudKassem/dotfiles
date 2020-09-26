@@ -112,7 +112,7 @@ bar {
 }
 
 #run deamon which switches the desktop background every 30 minutes
-exec ~/scripts/switch-desktop-background.sh 1800 &
+exec ~/.local/bin/switch-desktop-background.sh 1800 &
 
 #run day/night aware redshift deamon
 exec redshift &
