@@ -33,5 +33,5 @@ export FZF_CTRL_T_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 export FZF_DEFAULT_OPS='--extended'
 export FZF_DEFAULT_COMMAND=$FZF_CTRL_T_COMMAND
 
-#use xwayland to render GTK 3 apps are rendered properly
+#use xwayland to render GTK 3 apps properly
 export GDK_BACKEND=x11
