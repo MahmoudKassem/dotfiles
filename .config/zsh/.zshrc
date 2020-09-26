@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-#add custom scripts to path
-export PATH="$PATH:$HOME/scripts"
+#add user specific programs to path
+export PATH="$PATH:$HOME/.local/bin"
 
 # history settings
 HISTFILE=~/.cache/histfile
