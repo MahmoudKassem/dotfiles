@@ -101,28 +101,4 @@ packadd vim-signify
 packadd vim-surround
 
 "setup language servers
-lua << END
-local nvim_lsp = require('nvim_lsp')
-local on_attach = function ()
-  require('completion').on_attach()
-  require('diagnostic').on_attach()
-end
-
---gopls for golang
-nvim_lsp.gopls.setup {
-  on_attach = on_attach
-}
-
---haskell language server for haskell
-nvim_lsp.hls.setup {
-  on_attach = on_attach,
-  root_dir = nvim_lsp.util.root_pattern(
-    "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
-  )
-}
-
---vim language server for vim
-nvim_lsp.vimls.setup {
-  on_attach = on_attach
-}
-END
+lua require('lsp_config')
