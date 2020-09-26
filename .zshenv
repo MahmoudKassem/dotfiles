@@ -19,13 +19,13 @@ export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 #set colors for less and disable its history file
 export LESSHISTFILE="-"
-export LESS_TERMCAP_mb=$(printf "\e[1;36m")
-export LESS_TERMCAP_md=$(printf "\e[1;36m")
+export LESS_TERMCAP_mb=$(printf "\e[1;34m")
+export LESS_TERMCAP_md=$(printf "\e[1;34m")
 export LESS_TERMCAP_me=$(printf "\e[0m")
 export LESS_TERMCAP_se=$(printf "\e[0m")
-export LESS_TERMCAP_so=$(printf "\e[1;30;32m")
+export LESS_TERMCAP_so=$(printf "\e[1;33m")
 export LESS_TERMCAP_ue=$(printf "\e[0m")
-export LESS_TERMCAP_us=$(printf "\e[1;32m")
+export LESS_TERMCAP_us=$(printf "\e[1;36m")
 
 #setting for fzf
 export FZF_ALT_C_COMMAND="rg --hidden --files --null 2> /dev/null | xargs -0 dirname | uniq"
