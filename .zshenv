@@ -14,6 +14,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
 export GOPATH=$XDG_DATA_HOME/go
+export STACK_ROOT=$XDG_DATA_HOME/stack
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 #set colors for less and disable its history file
@@ -31,3 +32,6 @@ export FZF_ALT_C_COMMAND="rg --hidden --files --null 2> /dev/null | xargs -0 dir
 export FZF_CTRL_T_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 export FZF_DEFAULT_OPS='--extended'
 export FZF_DEFAULT_COMMAND=$FZF_CTRL_T_COMMAND
+
+#use xwayland to render GTK 3 apps are rendered properly
+export GDK_BACKEND=x11
