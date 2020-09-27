@@ -46,13 +46,14 @@ bindsym $mod+F4 exec doas poweroff
 bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
-bindsym $mod+t exec alacritty
+bindsym $mod+a exec pcmanfm menu://applications/
 bindsym $mod+b exec firefox --private-window
 bindsym $mod+f exec pcmanfm ~
 bindsym $mod+m exec alacritty -e neomutt
 bindsym $mod+p exec grafx2
+bindsym $mod+s exec syncthing
+bindsym $mod+t exec alacritty
 bindsym $mod+z exec zathura
-bindsym $mod+a exec pcmanfm menu://applications/
 
 #keybinding for general sway commands
 bindsym $mod+shift+c reload
