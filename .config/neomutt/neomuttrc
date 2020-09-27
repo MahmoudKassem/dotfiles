@@ -1,6 +1,6 @@
 #general settings
 set editor = nvim
-set my_pass = `gpg -dq $HOME/.config/neomutt/password.gpg`
+set my_pass = `pass mail`
 set mailcap_path = $HOME/.config/neomutt/mailcap
 set sort = 'reverse-date'
 set sleep_time = 0

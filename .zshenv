@@ -14,7 +14,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
 export GOPATH=$XDG_DATA_HOME/go
+export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
 export STACK_ROOT=$XDG_DATA_HOME/stack
+export PASSWORD_STORE_DIR=$XDG_DATA_HOME/pass
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 #set colors for less and disable its history file
@@ -32,5 +34,5 @@ export FZF_CTRL_T_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 export FZF_DEFAULT_OPS='--extended'
 export FZF_DEFAULT_COMMAND=$FZF_CTRL_T_COMMAND
 
-#use xwayland to render GTK 3 apps properly
+#use xwayland to render GTK 3 apps properly in sway
 export GDK_BACKEND=x11
