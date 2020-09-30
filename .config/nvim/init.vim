@@ -6,6 +6,7 @@ syntax on
 set autowrite
 set background=dark
 set completeopt=menuone,noinsert,noselect
+set colorcolumn=128
 set encoding=utf-8
 set expandtab
 set hidden
@@ -23,10 +24,6 @@ set termguicolors
 set tabstop=2
 set shiftwidth=2
 set updatetime=128
-
-"set theme and enable transparency
-colorscheme gruvbox
-hi Normal guibg=NONE
 
 "auto commands
 au BufNewFile,BufRead *.pro set filetype=prolog
@@ -55,10 +52,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 "configure diagnostic-nvim
 let g:diagnostic_enable_virtual_text = 1
-let g:diagnostic_virtual_text_prefix = ' '
-
-"configure gruvbox
-let g:gruvbox_contrast_dark='hard'
+let g:diagnostic_virtual_text_prefix = ''
 
 "configure fzf
 let $FZF_DEFAULT_OPTS='--extended'
@@ -75,9 +69,14 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
+"set gruvbox-material
+let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_material_disable_italic_comment = 1
+let g:gruvbox_material_background = 'soft'
+
 "configure vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_theme = 'gruvbox_material'
 
 "configure vim-rooter
 let g:rooter_patterns = ['.git']
@@ -89,16 +88,19 @@ let g:rooter_resolve_links = 1
 packadd completion-nvim
 packadd diagnostic-nvim
 packadd fzf.vim
-packadd gruvbox
-packadd haskell-vim
+packadd gruvbox-material
 packadd nvim-lspconfig
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-devicons
 packadd vim-fugitive
+packadd vim-polyglot
 packadd vim-rooter
 packadd vim-signify
 packadd vim-surround
+
+"set colorscheme
+colorscheme gruvbox-material
 
 "setup language servers
 lua require('lsp_config')
