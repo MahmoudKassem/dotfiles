@@ -12,17 +12,17 @@ set expandtab
 set hidden
 set incsearch
 set nobackup
-set nowritebackup
-set noswapfile
 set noshowmode
+set noswapfile
+set nowritebackup
 set number
 set relativenumber
+set shiftwidth=2
 set signcolumn=yes
 set splitbelow
 set splitright
-set termguicolors
 set tabstop=2
-set shiftwidth=2
+set termguicolors
 set updatetime=128
 
 "auto commands
