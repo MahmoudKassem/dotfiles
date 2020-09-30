@@ -9,9 +9,10 @@ export SHELL="zsh"
 export TERMINAL="alacritty"
 
 #follow XDG Base Dir Spec
+export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CACHE_HOME=$HOME/.cache
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
 export GOPATH=$XDG_DATA_HOME/go
 export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
