@@ -1,7 +1,3 @@
-"enable syntax highlighting and file specific indenting
-filetype indent plugin on
-syntax on
-
 "general settings
 set autowrite
 set background=dark
@@ -22,7 +18,6 @@ set signcolumn=yes
 set splitbelow
 set splitright
 set tabstop=2
-set termguicolors
 set updatetime=128
 
 "auto commands
@@ -55,8 +50,8 @@ let g:diagnostic_enable_virtual_text = 1
 let g:diagnostic_virtual_text_prefix = ''
 
 "configure fzf
-let $FZF_DEFAULT_OPTS='--extended'
 let $FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
+let $FZF_DEFAULT_OPTS='--extended'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 command! -bang -nargs=* Rg
@@ -70,28 +65,24 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
 "set gruvbox-material
-let g:gruvbox_material_transparent_background = 1
 let g:gruvbox_material_disable_italic_comment = 1
-let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_transparent_background = 1
 
 "configure vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'gruvbox_material'
 
 "configure vim-rooter
-let g:rooter_patterns = ['.git']
 let g:rooter_change_directory_for_non_project_files = 'current'
-let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['.git']
 let g:rooter_resolve_links = 1
+let g:rooter_silent_chdir = 1
 
 "load plugins
 packadd completion-nvim
 packadd diagnostic-nvim
 packadd fzf.vim
-packadd gruvbox-material
 packadd nvim-lspconfig
-packadd vim-airline
-packadd vim-airline-themes
 packadd vim-devicons
 packadd vim-fugitive
 packadd vim-polyglot
@@ -99,8 +90,15 @@ packadd vim-rooter
 packadd vim-signify
 packadd vim-surround
 
-"set colorscheme
+"enable syntax highlighting
+syntax on
+
+"set gruvbox-material colorscheme and vim-airline with true color
+packadd gruvbox-material
 colorscheme gruvbox-material
+set termguicolors
+packadd vim-airline
+packadd vim-airline-themes
 
 "setup language servers
 lua require('lsp_config')
