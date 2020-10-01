@@ -47,6 +47,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 "configure diagnostic-nvim
 let g:diagnostic_enable_virtual_text = 1
+let g:diagnostic_show_sign = 0
 let g:diagnostic_virtual_text_prefix = ''
 
 "configure fzf
@@ -79,11 +80,12 @@ let g:rooter_resolve_links = 1
 let g:rooter_silent_chdir = 1
 
 "load plugins
+packadd auto-pairs
 packadd completion-nvim
 packadd diagnostic-nvim
 packadd fzf.vim
 packadd nvim-lspconfig
-packadd vim-devicons
+packadd vim-commentary
 packadd vim-fugitive
 packadd vim-polyglot
 packadd vim-rooter
@@ -91,7 +93,7 @@ packadd vim-signify
 packadd vim-surround
 
 "enable syntax highlighting
-syntax on
+syntax enable
 
 "set gruvbox-material colorscheme and vim-airline with true color
 packadd gruvbox-material
@@ -99,6 +101,7 @@ colorscheme gruvbox-material
 set termguicolors
 packadd vim-airline
 packadd vim-airline-themes
+packadd vim-devicons
 
 "setup language servers
 lua require('lsp_config')
