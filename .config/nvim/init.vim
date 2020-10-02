@@ -27,20 +27,21 @@ au TermOpen * startinsert
 au TextYankPost * silent! lua vim.highlight.on_yank()
 
 "custom key bindings
-nnoremap <silent> <space>a <cmd>lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <space>d <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <space>e :Lexplore<CR>
-nnoremap <silent> <space>f :FZF<CR>
-nnoremap <silent> <space>h :wincmd h<CR>
-nnoremap <silent> <space>j :wincmd j<CR>
-nnoremap <silent> <space>k :wincmd k<CR>
-nnoremap <silent> <space>l :wincmd l<CR>
-nnoremap <silent> <space>q :q!<CR>
-nnoremap <silent> <space>r <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <silent> <space>s :Rg<CR>
-nnoremap <silent> <space>t :cd %:p:h<CR>:16sp term://zsh<CR>
-nnoremap <silent> <space>u :Explore<CR>
-nnoremap <silent> <space>v <cmd>lua vim.lsp.buf.hover()<CR>
+let mapleader = " "
+nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <leader>e :Lexplore<CR>
+nnoremap <silent> <leader>f :FZF<CR>
+nnoremap <silent> <leader>h :wincmd h<CR>
+nnoremap <silent> <leader>j :wincmd j<CR>
+nnoremap <silent> <leader>k :wincmd k<CR>
+nnoremap <silent> <leader>l :wincmd l<CR>
+nnoremap <silent> <leader>q :q!<CR>
+nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <leader>s :Rg<CR>
+nnoremap <silent> <leader>t :cd %:p:h<CR>:16sp term://zsh<CR>
+nnoremap <silent> <leader>u :Explore<CR>
+nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<CR>
 tnoremap <silent> <Esc> <C-\><C-n>
 
 "configure completion-nvim
