@@ -18,6 +18,7 @@ set signcolumn=yes
 set splitbelow
 set splitright
 set tabstop=2
+set termguicolors
 set updatetime=128
 
 "auto commands
@@ -66,12 +67,13 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
 "set gruvbox-material
-let g:gruvbox_material_disable_italic_comment = 1
-let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_filetype_hi_groups = 1
+let g:gruvbox_italics = 0
+let g:gruvbox_transp_bg = 1
 
 "configure vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'base16_gruvbox_dark_hard'
 
 "configure vim-rooter
 let g:rooter_change_directory_for_non_project_files = 'current'
@@ -85,9 +87,12 @@ packadd completion-nvim
 packadd diagnostic-nvim
 packadd fzf.vim
 packadd nvim-lspconfig
+packadd nvim-treesitter
+packadd vim-airline
+packadd vim-airline-themes
 packadd vim-commentary
+packadd vim-devicons
 packadd vim-fugitive
-packadd vim-polyglot
 packadd vim-rooter
 packadd vim-signify
 packadd vim-surround
@@ -95,13 +100,11 @@ packadd vim-surround
 "enable syntax highlighting
 syntax enable
 
-"set gruvbox-material colorscheme and vim-airline with true color
-packadd gruvbox-material
-colorscheme gruvbox-material
-set termguicolors
-packadd vim-airline
-packadd vim-airline-themes
-packadd vim-devicons
+"set colorscheme
+colorscheme gruvbox8_hard
+
+"setup treesitter
+lua require('treesitter_config')
 
 "setup language servers
 lua require('lsp_config')
