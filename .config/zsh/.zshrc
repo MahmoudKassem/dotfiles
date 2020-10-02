@@ -26,6 +26,7 @@ alias aur='update-git-repos-in-directory.sh "AUR packages" "$(find $HOME/aur/* -
 alias npu='update-git-repos-in-directory.sh "NeoVim plugins" "$(find $HOME/.local/share/nvim/site/pack/plugins/opt/* -maxdepth 0 -type d)" "true"'
 alias syu='doas -- pacman -Syu && aur && npu'
 alias ls="ls -A --color=auto"
+alias v="nvim"
 
 #load starship prompt
 eval "$(starship init zsh)"
