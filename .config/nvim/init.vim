@@ -22,7 +22,7 @@ set termguicolors
 set updatetime=128
 
 "auto commands
-au BufNewFile,BufRead *.pro set filetype=prolog
+au BufNewFile,BufRead *.pro set filetype=logtalk
 au TermOpen * startinsert
 au TextYankPost * silent! lua vim.highlight.on_yank()
 
@@ -68,7 +68,6 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 
 "set gruvbox-material
-let g:gruvbox_filetype_hi_groups = 1
 let g:gruvbox_italics = 0
 let g:gruvbox_transp_bg = 1
 
@@ -87,6 +86,7 @@ packadd auto-pairs
 packadd completion-nvim
 packadd diagnostic-nvim
 packadd fzf.vim
+packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
 packadd vim-airline
