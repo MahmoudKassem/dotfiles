@@ -3,7 +3,7 @@ separator=false
 separator_block_width=0
 
 [seperator]
-background=#1d2021
+background=#282828EC
 color=#b16286
 
 [audio]
@@ -11,7 +11,7 @@ command=~/.local/bin/get-volume.sh
 interval=once
 signal=10
 background=#b16286
-color=#1d2021
+color=#282828EC
 
 [seperator]
 background=#b16286
@@ -22,7 +22,7 @@ command=~/.local/bin/get-screen-brightness.sh
 interval=once
 signal=11
 background=#458588
-color=#1d2021
+color=#282828EC
 
 [seperator]
 background=#458588
@@ -32,7 +32,7 @@ color=#689d6a
 command=~/.local/bin/get-battery-status.sh
 interval=300
 background=#689d6a
-color=#1d2021
+color=#282828EC
 
 [seperator]
 background=#689d6a
@@ -42,7 +42,7 @@ color=#98971a
 command=~/.local/bin/get-network-status.sh
 interval=300
 background=#98971a
-color=#1d2021
+color=#282828EC
 
 [seperator]
 background=#98971a
@@ -52,7 +52,7 @@ color=#d79921
 command=~/.local/bin/get-weather-info.sh
 interval=1800
 background=#d79921
-color=#1d2021
+color=#282828EC
 
 [seperator]
 background=#d79921
@@ -62,4 +62,4 @@ color=#d65d0e
 command=echo "   $(date)  "
 interval=1
 background=#d65d0e
-color=#1d2021
+color=#282828EC

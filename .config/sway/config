@@ -49,10 +49,11 @@ bindsym $mod+F3 exec doas reboot
 bindsym $mod+a exec pcmanfm menu://applications/
 bindsym $mod+b exec firefox --private-window
 bindsym $mod+f exec pcmanfm ~
-bindsym $mod+m exec alacritty -e neomutt
+bindsym $mod+m exec konsole -e neomutt
+bindsym $mod+n exec konsole -e newsboat
 bindsym $mod+p exec grafx2
-bindsym $mod+s exec syncthing
-bindsym $mod+t exec alacritty
+bindsym $mod+t exec konsole
+bindsym $mod+y exec syncthing
 bindsym $mod+z exec zathura
 
 #keybinding for general sway commands
