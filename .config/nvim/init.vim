@@ -89,6 +89,7 @@ packadd fzf.vim
 packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
+" packadd nvim-treesitter-refactor
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-commentary
@@ -103,6 +104,42 @@ syntax enable
 
 "set colorscheme
 colorscheme gruvbox8_hard
+
+"gray
+hi Comment guifg=#928374
+hi Todo guifg=#928374
+
+"light green
+hi Constant guifg=#b8bb26
+hi String guifg=#b8bb26
+hi Character guifg=#b8bb26
+hi Number guifg=#b8bb26
+hi Boolean guifg=#b8bb26
+hi Float guifg=#b8bb26
+
+"light blue
+hi Function guifg=#83a598
+hi Type guifg=#83a598
+
+"light cyan
+hi Conditional guifg=#8ec07c
+hi Debug guifg=#8ec07c
+hi Exception guifg=#8ec07c
+hi Keyword guifg=#8ec07c
+hi Label guifg=#8ec07c
+hi Repeat guifg=#8ec07c
+hi Special guifg=#8ec07c
+hi Statement guifg=#8ec07c
+hi StorageClass guifg=#8ec07c
+hi Structure guifg=#8ec07c
+
+"light magenta
+hi Operator guifg=#d3869b
+hi SpecialComment guifg=#d3869b
+
+"light orange
+hi Delimiter guifg=#fe8019
+hi SpecialChar guifg=#fe8019
 
 "setup treesitter
 lua require('treesitter_config')
