@@ -26,7 +26,7 @@ output eDP-1 resolution 1920x1080
 default_border pixel
 
 #define colors the E6 at the end causes transparency of about 8%
-set $black "#1d2021E6"
+set $black "#1d2021"
 set $blue "#83a598"
 set $white "#ebdbb2E6"
 
@@ -133,4 +133,4 @@ exec mako &
 exec pcmanfm -d &> /dev/null &
 
 #set screen brightness to 32%
-exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
+exec echo 41 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
