@@ -81,24 +81,6 @@ let g:rooter_patterns = ['.git']
 let g:rooter_resolve_links = 1
 let g:rooter_silent_chdir = 1
 
-"load plugins
-packadd auto-pairs
-packadd completion-nvim
-packadd diagnostic-nvim
-packadd fzf.vim
-packadd haskell-vim
-packadd nvim-lspconfig
-packadd nvim-treesitter
-" packadd nvim-treesitter-refactor
-packadd vim-airline
-packadd vim-airline-themes
-packadd vim-commentary
-packadd vim-devicons
-packadd vim-fugitive
-packadd vim-rooter
-packadd vim-signify
-packadd vim-surround
-
 "enable syntax highlighting
 syntax enable
 
@@ -140,6 +122,24 @@ hi SpecialComment guifg=#d3869b
 "light orange
 hi Delimiter guifg=#fe8019
 hi SpecialChar guifg=#fe8019
+
+"load plugins
+packadd auto-pairs
+packadd completion-nvim
+packadd diagnostic-nvim
+packadd fzf.vim
+packadd haskell-vim
+packadd nvim-lspconfig
+packadd nvim-treesitter
+" packadd nvim-treesitter-refactor
+packadd vim-airline
+packadd vim-airline-themes
+packadd vim-commentary
+packadd vim-devicons
+packadd vim-fugitive
+packadd vim-rooter
+packadd vim-signify
+packadd vim-surround
 
 "setup treesitter
 lua require('treesitter_config')
