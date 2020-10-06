@@ -26,8 +26,8 @@ output eDP-1 resolution 1920x1080
 default_border pixel
 
 #define colors the E6 at the end causes transparency of about 8%
-set $black "#1d2021"
-set $blue "#83a598"
+set $black "#1d2021E6"
+set $blue "#83a598E6"
 set $white "#ebdbb2E6"
 
 #color for window decoration  title border  title background  title text  window border child window border
