@@ -46,9 +46,9 @@ bindsym $mod+F4 exec doas poweroff
 bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
-bindsym $mod+a exec pcmanfm menu://applications/
+bindsym $mod+a exec pcmanfm-qt menu://applications/
 bindsym $mod+b exec firefox --private-window
-bindsym $mod+f exec pcmanfm ~
+bindsym $mod+f exec pcmanfm-qt ~
 bindsym $mod+m exec konsole -e neomutt
 bindsym $mod+n exec konsole -e newsboat
 bindsym $mod+p exec grafx2
