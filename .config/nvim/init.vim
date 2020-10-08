@@ -73,7 +73,7 @@ let g:gruvbox_transp_bg = 1
 
 "configure vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16_gruvbox_dark_hard'
+let g:airline_theme = 'base16_vim'
 
 "configure vim-rooter
 let g:rooter_change_directory_for_non_project_files = 'current'
@@ -131,7 +131,7 @@ packadd fzf.vim
 packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
-" packadd nvim-treesitter-refactor
+packadd nvim-treesitter-refactor
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-commentary
@@ -141,8 +141,8 @@ packadd vim-gitgutter
 packadd vim-rooter
 packadd vim-surround
 
-"setup treesitter
-lua require('treesitter_config')
-
 "setup language servers
 lua require('lsp_config')
+
+"setup treesitter
+lua require('treesitter_config')
