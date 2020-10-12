@@ -29,6 +29,7 @@ au TextYankPost * silent! lua vim.highlight.on_yank()
 "custom key bindings
 let mapleader = " "
 nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <leader>c :bdelete<CR>
 nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <leader>e :Lexplore<CR>
 nnoremap <silent> <leader>f :FZF<CR>
@@ -41,7 +42,9 @@ nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <leader>s :Rg<CR>
 nnoremap <silent> <leader>t :cd %:p:h<CR>:16sp term://zsh<CR>
 nnoremap <silent> <leader>u :Explore<CR>
-nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<CR>
+noremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <tab> :bnext<CR>
+nnoremap <silent> <s-tab> :bprevious<CR>
 tnoremap <silent> <Esc> <C-\><C-n>
 
 "configure completion-nvim
@@ -74,6 +77,7 @@ let g:gruvbox_transp_bg = 1
 "configure vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'base16_vim'
+let g:airline#extensions#tabline#enabled = 1
 
 "configure vim-rooter
 let g:rooter_change_directory_for_non_project_files = 'current'
