@@ -28,24 +28,26 @@ au TextYankPost * silent! lua vim.highlight.on_yank()
 
 "custom key bindings
 let mapleader = " "
-nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <leader>c :bdelete<CR>
-nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <leader>e :Lexplore<CR>
-nnoremap <silent> <leader>f :FZF<CR>
-nnoremap <silent> <leader>h :wincmd h<CR>
-nnoremap <silent> <leader>j :wincmd j<CR>
-nnoremap <silent> <leader>k :wincmd k<CR>
-nnoremap <silent> <leader>l :wincmd l<CR>
-nnoremap <silent> <leader>q :q!<CR>
-nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <silent> <leader>s :Rg<CR>
-nnoremap <silent> <leader>t :cd %:p:h<CR>:16sp term://zsh<CR>
-nnoremap <silent> <leader>u :Explore<CR>
-noremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> <tab> :bnext<CR>
-nnoremap <silent> <s-tab> :bprevious<CR>
-tnoremap <silent> <Esc> <C-\><C-n>
+nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
+nnoremap <silent> <leader>c :bdelete<cr>
+nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
+nnoremap <silent> <leader>e :Lexplore<cr>
+nnoremap <silent> <leader>f :FZF<cr>
+nnoremap <silent> <leader>h :wincmd h<cr>
+nnoremap <silent> <leader>j :wincmd j<cr>
+nnoremap <silent> <leader>k :wincmd k<cr>
+nnoremap <silent> <leader>l :wincmd l<cr>
+nnoremap <silent> <leader>o :badd<space>
+nnoremap <silent> <leader>q :q!<cr>
+nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.references()<cr>
+nnoremap <silent> <leader>s :Rg<cr>
+nnoremap <silent> <leader>t :cd %:p:h<cr>:16sp term://zsh<cr>
+nnoremap <silent> <leader>u :Explore<cr>
+nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<cr>
+nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <tab> :bnext<cr>
+nnoremap <silent> <s-tab> :bprevious<cr>
+tnoremap <silent> <esc> <c-\><c-n>
 
 "configure completion-nvim
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
