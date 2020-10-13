@@ -3,10 +3,10 @@
 #default applications
 export BROWSER="firefox"
 export EDITOR="nvim"
-export FILE="pcmanfm"
+export FILE="pcmanfm-qt"
 export READER="zathura"
 export SHELL="zsh"
-export TERMINAL="alacritty"
+export TERMINAL="konsole"
 
 #follow XDG Base Dir Spec
 export XDG_CACHE_HOME=$HOME/.cache
