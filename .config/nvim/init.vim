@@ -5,7 +5,6 @@ set completeopt=menuone,noinsert,noselect
 set colorcolumn=128
 set encoding=utf-8
 set expandtab
-set hidden
 set incsearch
 set nobackup
 set noshowmode
@@ -19,7 +18,7 @@ set splitbelow
 set splitright
 set tabstop=2
 set termguicolors
-set updatetime=128
+set updatetime=64
 
 "auto commands
 au BufNewFile,BufRead *.pro set filetype=logtalk
@@ -78,7 +77,7 @@ let g:gruvbox_transp_bg = 1
 
 "configure vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16_vim'
+let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline#extensions#tabline#enabled = 1
 
 "configure vim-rooter
