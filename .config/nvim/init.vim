@@ -142,9 +142,9 @@ packadd vim-airline-themes
 packadd vim-commentary
 packadd vim-devicons
 packadd vim-fugitive
-packadd vim-gitgutter
 packadd vim-rooter
 packadd vim-surround
+packadd vim-signify
 
 "setup language servers
 lua require('lsp_config')
