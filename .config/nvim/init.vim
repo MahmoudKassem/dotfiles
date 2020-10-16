@@ -21,14 +21,14 @@ set termguicolors
 set updatetime=64
 
 "auto commands
-au BufNewFile,BufRead *.pro set filetype=logtalk
-au TermOpen * startinsert
-au TextYankPost * silent! lua vim.highlight.on_yank()
+autocmd BufNewFile,BufRead *.pro set filetype=logtalk
+autocmd TermOpen * startinsert
+autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 
 "custom key bindings
 let mapleader = " "
 nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
-nnoremap <silent> <leader>b :ls<cr>:b<space>
+nnoremap <silent> <leader>b :buffers<cr>:buffer<space>
 nnoremap <silent> <leader>c :bdelete<cr>
 nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap <silent> <leader>e :Lexplore<cr>
@@ -44,7 +44,8 @@ nnoremap <silent> <leader>s :Rg<cr>
 nnoremap <silent> <leader>t :cd %:p:h<cr>:16sp term://zsh<cr>
 nnoremap <silent> <leader>u :Explore<cr>
 nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<cr>
-nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <leader>w :write<cr>
+nnoremap <silent> <leader>x :xit<cr>
 nnoremap <silent> <tab> :bnext<cr>
 nnoremap <silent> <s-tab> :bprevious<cr>
 tnoremap <silent> <esc> <c-\><c-n>
@@ -94,40 +95,40 @@ syntax enable
 colorscheme gruvbox8_hard
 
 "gray
-hi Comment guifg=#928374
-hi Todo guifg=#928374
+highlight Comment guifg=#928374
+highlight Todo guifg=#928374
 
 "light green
-hi Constant guifg=#b8bb26
-hi String guifg=#b8bb26
-hi Character guifg=#b8bb26
-hi Number guifg=#b8bb26
-hi Boolean guifg=#b8bb26
-hi Float guifg=#b8bb26
+highlight Constant guifg=#b8bb26
+highlight String guifg=#b8bb26
+highlight Character guifg=#b8bb26
+highlight Number guifg=#b8bb26
+highlight Boolean guifg=#b8bb26
+highlight Float guifg=#b8bb26
 
 "light blue
-hi Function guifg=#83a598
-hi Type guifg=#83a598
+highlight Function guifg=#83a598
+highlight Type guifg=#83a598
 
 "light cyan
-hi Conditional guifg=#8ec07c
-hi Debug guifg=#8ec07c
-hi Exception guifg=#8ec07c
-hi Keyword guifg=#8ec07c
-hi Label guifg=#8ec07c
-hi Repeat guifg=#8ec07c
-hi Special guifg=#8ec07c
-hi Statement guifg=#8ec07c
-hi StorageClass guifg=#8ec07c
-hi Structure guifg=#8ec07c
+highlight Conditional guifg=#8ec07c
+highlight Debug guifg=#8ec07c
+highlight Exception guifg=#8ec07c
+highlight Keyword guifg=#8ec07c
+highlight Label guifg=#8ec07c
+highlight Repeat guifg=#8ec07c
+highlight Special guifg=#8ec07c
+highlight Statement guifg=#8ec07c
+highlight StorageClass guifg=#8ec07c
+highlight Structure guifg=#8ec07c
 
 "light magenta
-hi Operator guifg=#d3869b
-hi SpecialComment guifg=#d3869b
+highlight Operator guifg=#d3869b
+highlight SpecialComment guifg=#d3869b
 
 "light orange
-hi Delimiter guifg=#fe8019
-hi SpecialChar guifg=#fe8019
+highlight Delimiter guifg=#fe8019
+highlight SpecialChar guifg=#fe8019
 
 "load plugins
 packadd auto-pairs
