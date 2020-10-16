@@ -28,6 +28,7 @@ au TextYankPost * silent! lua vim.highlight.on_yank()
 "custom key bindings
 let mapleader = " "
 nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
+nnoremap <silent> <leader>b :ls<cr>:b<space>
 nnoremap <silent> <leader>c :bdelete<cr>
 nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap <silent> <leader>e :Lexplore<cr>
