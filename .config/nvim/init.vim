@@ -22,7 +22,7 @@ set updatetime=64
 
 "auto commands
 autocmd BufNewFile,BufRead *.pro set filetype=logtalk
-autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
+autocmd FileType qf nnoremap <buffer> <cr> <cr>:cclose<cr>
 autocmd TermOpen * startinsert
 autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 
@@ -42,7 +42,7 @@ nnoremap <silent> <leader>o :badd<space>
 nnoremap <silent> <leader>q :quit!<cr>
 nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.references()<cr>
 nnoremap <silent> <leader>s :Rg<cr>
-nnoremap <silent> <leader>t :ch %:p:h<cr>:16sp term://zsh<cr>
+nnoremap <silent> <leader>t :chdir %:p:h<cr>:16sp term://zsh<cr>
 nnoremap <silent> <leader>u :Explore<cr>
 nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <silent> <leader>w :write<cr>
