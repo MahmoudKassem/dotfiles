@@ -5,8 +5,8 @@ set completeopt=menuone,noinsert,noselect
 set colorcolumn=128
 set encoding=utf-8
 set expandtab
-set incsearch
 set nobackup
+set nohlsearch
 set noshowmode
 set noswapfile
 set nowritebackup
@@ -140,7 +140,6 @@ packadd fzf.vim
 packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
-packadd nvim-treesitter-refactor
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-commentary
