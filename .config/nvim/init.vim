@@ -47,6 +47,7 @@ nnoremap <silent> <leader>u :Explore<cr>
 nnoremap <silent> <leader>v <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <silent> <leader>w :write<cr>
 nnoremap <silent> <leader>x :xit<cr>
+nnoremap <silent> <leader><leader> :
 nnoremap <silent> <s-k> :bnext<cr>
 nnoremap <silent> <s-j> :bprevious<cr>
 tnoremap <silent> <esc> <c-\><c-n>
