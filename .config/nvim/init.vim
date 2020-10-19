@@ -29,7 +29,7 @@ autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 let mapleader = " "
 nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
 nnoremap <silent> <leader>b :buffers<cr>:buffer<space>
-nnoremap <silent> <leader>c :bdelete<cr>
+nnoremap <silent> <leader>c :bwipeout<cr>
 nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap <silent> <leader>e :Lexplore<cr>
 nnoremap <silent> <leader>f :FZF<cr>
