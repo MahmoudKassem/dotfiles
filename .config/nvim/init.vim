@@ -5,6 +5,7 @@ set completeopt=menuone,noinsert,noselect
 set colorcolumn=128
 set encoding=utf-8
 set expandtab
+set ignorecase
 set nobackup
 set nohlsearch
 set noshowmode
@@ -14,6 +15,7 @@ set number
 set relativenumber
 set shiftwidth=2
 set signcolumn=yes
+set smartcase
 set splitbelow
 set splitright
 set tabstop=2
