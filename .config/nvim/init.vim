@@ -122,6 +122,7 @@ highlight Character guifg=#b8bb26
 highlight Number guifg=#b8bb26
 highlight Boolean guifg=#b8bb26
 highlight Float guifg=#b8bb26
+highlight SignifySignAdd guifg=#b8bb26
 
 "light blue
 highlight Function guifg=#83a598
@@ -134,6 +135,7 @@ highlight Exception guifg=#8ec07c
 highlight Keyword guifg=#8ec07c
 highlight Label guifg=#8ec07c
 highlight Repeat guifg=#8ec07c
+highlight SignifySignChange guifg=#8ec07c
 highlight Special guifg=#8ec07c
 highlight Statement guifg=#8ec07c
 highlight StorageClass guifg=#8ec07c
@@ -146,6 +148,9 @@ highlight SpecialComment guifg=#d3869b
 "light orange
 highlight Delimiter guifg=#fe8019
 highlight SpecialChar guifg=#fe8019
+
+"light red
+highlight SignifySignDelete guifg=#fb4934
 
 "load plugins
 packadd auto-pairs
