@@ -1,6 +1,7 @@
 "general settings
 set autowrite
 set background=dark
+set clipboard=unnamedplus
 set completeopt=menuone,noinsert,noselect
 set colorcolumn=128
 set cursorline
