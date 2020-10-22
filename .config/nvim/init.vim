@@ -37,7 +37,7 @@ nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
 nnoremap <silent> <leader>b :buffers<cr>:buffer<space>
 nnoremap <silent> <leader>c :bwipeout<cr>
 nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
-nnoremap <silent> <leader>e :Lexplore<cr>
+nnoremap <silent> <leader>e :call ToggleNetrw()<cr>
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>h :wincmd h<cr>
 nnoremap <silent> <leader>j :wincmd j<cr>
