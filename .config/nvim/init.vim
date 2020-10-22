@@ -3,6 +3,7 @@ set autowrite
 set background=dark
 set completeopt=menuone,noinsert,noselect
 set colorcolumn=128
+set cursorline
 set encoding=utf-8
 set expandtab
 set ignorecase
@@ -13,6 +14,7 @@ set noswapfile
 set nowritebackup
 set number
 set relativenumber
+set scrolloff=2
 set shiftwidth=2
 set signcolumn=yes
 set smartcase
