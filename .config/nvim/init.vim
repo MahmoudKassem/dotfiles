@@ -77,9 +77,18 @@ command! -bang -nargs=* Rg
 
 "configure netrw
 let g:netrw_banner = 0
-let g:netrw_bufsettings = 'number relativenumber'
+let g:netrw_browse_split = 4
+let g:netrw_bufsettings = 'nobuflisted number relativenumber'
 let g:netrw_liststyle = 3
+let g:netrw_preview = 1
 let g:netrw_winsize = 25
+function ToggleNetrw()
+  if exists("g:netrw_buffer") && bufexists(g:netrw_buffer)
+    exe "bwipeout" . g:netrw_buffer | unlet g:netrw_buffer
+  else
+    Vexplore | let g:netrw_buffer=bufnr("%")
+  endif
+endfunction
 
 "set gruvbox-material
 let g:gruvbox_italics = 0
