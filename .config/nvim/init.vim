@@ -134,6 +134,7 @@ highlight Debug guifg=#8ec07c
 highlight Exception guifg=#8ec07c
 highlight Keyword guifg=#8ec07c
 highlight Label guifg=#8ec07c
+highlight LspDiagnosticsInformation guifg=#8ec07c
 highlight Repeat guifg=#8ec07c
 highlight SignifySignChange guifg=#8ec07c
 highlight Special guifg=#8ec07c
@@ -142,14 +143,17 @@ highlight StorageClass guifg=#8ec07c
 highlight Structure guifg=#8ec07c
 
 "light magenta
+highlight LspDiagnosticsHint guifg=#d3869b
 highlight Operator guifg=#d3869b
 highlight SpecialComment guifg=#d3869b
 
 "light orange
 highlight Delimiter guifg=#fe8019
+highlight LspDiagnosticsWarning guifg=#fe8019
 highlight SpecialChar guifg=#fe8019
 
 "light red
+highlight LspDiagnosticsError guifg=#fb4934
 highlight SignifySignDelete guifg=#fb4934
 
 "load plugins
