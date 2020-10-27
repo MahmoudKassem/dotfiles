@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #default applications
-export BROWSER="brave"
+export BROWSER="firefox"
 export EDITOR="nvim"
 export FILE="pcmanfm-qt"
 export READER="zathura"
