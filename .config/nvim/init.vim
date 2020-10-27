@@ -26,7 +26,7 @@ set termguicolors
 set updatetime=64
 
 "auto commands
-autocmd BufNewFile,BufRead *.pro set filetype=logtalk
+autocmd BufNewFile,BufRead *.pro set filetype=prolog
 autocmd FileType qf nnoremap <buffer> <cr> <cr>:cclose<cr>
 autocmd TermOpen * startinsert
 autocmd TextYankPost * silent! lua vim.highlight.on_yank()
