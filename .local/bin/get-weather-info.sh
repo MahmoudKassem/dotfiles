@@ -17,6 +17,7 @@ case $weatherCondition in
   "Light sleet showers") icon=ﭽ  ;;
   "Light snow") icon= ;;
   "Light snow showers") icon= ;;
+  "Mist") icon=  ;;
   "Overcast") icon=摒 ;;
   "Partly cloudy") icon=  ;;
   "Sunny") icon=  ;;
