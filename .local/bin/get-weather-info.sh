@@ -20,6 +20,7 @@ case $weatherCondition in
   "Mist") icon=  ;;
   "Overcast") icon=摒 ;;
   "Partly cloudy") icon=  ;;
+  "Patches of fog") icon=  ;;
   "Sunny") icon=  ;;
   "Thundery heavy rain") icon=  ;;
   "Thundery showers") icon=ﭼ  ;;
