@@ -1,8 +1,7 @@
---setup language servers
+--configure completion
 local nvim_lsp = require('nvim_lsp')
-local on_attach = function ()
-  require('completion').on_attach()
-  require('diagnostic').on_attach()
+local on_attach = function (client)
+  require('completion').on_attach(client)
 end
 
 --gopls for golang
@@ -32,3 +31,16 @@ nvim_lsp.sumneko_lua.setup {
     "-E", string.format("%s/sumneko_lua/lu--language-server/main.lua", language_server_path)
   }
 }
+
+--configure diagnostics
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    signs = false,
+    underline = true,
+    update_in_insert = false,
+    virtual_text = {
+      spacing = 2,
+      prefix = ''
+    },
+  }
+)

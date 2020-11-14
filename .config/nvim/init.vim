@@ -40,6 +40,7 @@ nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap <silent> <leader>e :call ToggleNetrw()<cr>
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>h :wincmd h<cr>
+nnoremap <silent> <leader>g :w<cr>:!groff -e -ms % -T pdf > %:r.pdf<cr><cr>
 nnoremap <silent> <leader>j :wincmd j<cr>
 nnoremap <silent> <leader>k :wincmd k<cr>
 nnoremap <silent> <leader>l :wincmd l<cr>
@@ -59,11 +60,6 @@ tnoremap <silent> <esc> <c-\><c-n>
 
 "configure completion-nvim
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-
-"configure diagnostic-nvim
-let g:diagnostic_enable_virtual_text = 1
-let g:diagnostic_show_sign = 0
-let g:diagnostic_virtual_text_prefix = ''
 
 "configure fzf
 let $FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
@@ -126,7 +122,7 @@ highlight Debug guifg=#8ec07c
 highlight Exception guifg=#8ec07c
 highlight Keyword guifg=#8ec07c
 highlight Label guifg=#8ec07c
-highlight LspDiagnosticsInformation guifg=#8ec07c
+highlight LspDiagnosticsDefaultInformation guifg=#8ec07c
 highlight Repeat guifg=#8ec07c
 highlight SignifySignChange guifg=#8ec07c
 highlight Special guifg=#8ec07c
@@ -144,17 +140,17 @@ highlight Float guifg=#b8bb26
 highlight SignifySignAdd guifg=#b8bb26
 
 "light magenta
-highlight LspDiagnosticsHint guifg=#d3869b
+highlight LspDiagnosticsDefaultHint guifg=#d3869b
 highlight Operator guifg=#d3869b
 highlight SpecialComment guifg=#d3869b
 
 "light orange
 highlight Delimiter guifg=#fe8019
-highlight LspDiagnosticsWarning guifg=#fe8019
+highlight LspDiagnosticsDefaultWarning guifg=#fe8019
 highlight SpecialChar guifg=#fe8019
 
 "light red
-highlight LspDiagnosticsError guifg=#fb4934
+highlight LspDiagnosticsDefaultError guifg=#fb4934
 highlight SignifySignDelete guifg=#fb4934
 
 "white
@@ -163,7 +159,6 @@ highlight Identifier guifg=#ebdbb2
 "load plugins
 packadd auto-pairs
 packadd completion-nvim
-packadd diagnostic-nvim
 packadd fzf.vim
 packadd haskell-vim
 packadd nvim-lspconfig
