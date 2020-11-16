@@ -1,30 +1,30 @@
 --configure completion
-local nvim_lsp = require('nvim_lsp')
+local lsp_config = require('lspconfig')
 local on_attach = function (client)
   require('completion').on_attach(client)
 end
 
 --gopls for golang
-nvim_lsp.gopls.setup {
+lsp_config.gopls.setup {
   on_attach = on_attach
 }
 
 --haskell language server for haskell
-nvim_lsp.hls.setup {
+lsp_config.hls.setup {
   on_attach = on_attach,
-  root_dir = nvim_lsp.util.root_pattern(
+  root_dir = lsp_config.util.root_pattern(
     "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
   )
 }
 
 --vim language server for vim
-nvim_lsp.vimls.setup {
+lsp_config.vimls.setup {
   on_attach = on_attach
 }
 
 --sumneko for lua
 local language_server_path = os.getenv("XDG_CACHE_HOME") .. "/nvim/nvim_lsp/sumneko_lua"
-nvim_lsp.sumneko_lua.setup {
+lsp_config.sumneko_lua.setup {
   on_attach = on_attach,
   cmd = {
     string.format("%s/lua-language-server/bin/Linux/lua-language-server", language_server_path),
