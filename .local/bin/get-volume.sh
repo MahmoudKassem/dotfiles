@@ -1,8 +1,9 @@
 #!/bin/sh
 
-soundInfo="amixer -M get Master"
-currentVolume=$($soundInfo | awk '/%/ {gsub("[%\\[\\]]",""); print $4}')
-$soundInfo | grep -q off && printf "婢 $currentVolume%% \\n" && exit
+masterInfo="amixer -M get Master"
+pcmInfo="amixer -M get PCM"
+currentVolume=$($pcmInfo | grep 'Front Left' | awk '/%/ {gsub("[%\\[\\]]",""); print $5}')
+$masterInfo | grep -q off && printf "婢 $currentVolume%% \\n" && exit
 if [ "$currentVolume" -gt 70 ]
   then icon=墳
 elif [ "$currentVolume" -lt 30 ]

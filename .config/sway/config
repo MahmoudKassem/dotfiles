@@ -47,7 +47,7 @@ bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
 bindsym $mod+a exec pcmanfm-qt menu://applications/
-bindsym $mod+b exec firefox --private-window
+bindsym $mod+b exec brave -incognito
 bindsym $mod+f exec pcmanfm-qt ~
 bindsym $mod+m exec konsole -e neomutt
 bindsym $mod+n exec konsole -e newsboat
@@ -89,8 +89,8 @@ bindsym XF86MonBrightnessUp exec ~/.local/bin/change-screen-brightness.sh +10 &&
 bindsym XF86MonBrightnessDown exec ~/.local/bin/change-screen-brightness.sh -10 && pkill -SIGRTMIN+11 i3blocks
 
 #keybindings for volume controls
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute && pkill -SIGRTMIN+10 i3blocks
-bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec amixer -q set PCM 4%+ unmute && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec amixer -q set PCM 4%- unmute && pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -SIGRTMIN+10 i3blocks
 
 #keybindings for resize mode
@@ -123,8 +123,8 @@ exec redshift &
 #listen for acpi events like headphones being plugged in
 exec acpi_listen &
 
-#start jack daemon
-exec jackd -d alsa -d hw:Generic_1 -r 48000 &> /dev/null &
+#start pipewire multimedia system
+exec pipewire &> /dev/null &
 
 #start notification daemon
 exec mako &
@@ -132,5 +132,5 @@ exec mako &
 #start pcmanfm daemon to listen for and mount removable drives
 exec pcmanfm-qt -d &> /dev/null &
 
-#set screen brightness to 32%
+#set screen brightness to 16%
 exec echo 41 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
