@@ -6,7 +6,7 @@ export EDITOR="nvim"
 export FILE="pcmanfm-qt"
 export READER="zathura"
 export SHELL="zsh"
-export TERMINAL="konsole"
+export TERMINAL="qterminal"
 
 #follow XDG Base Dir Spec
 export XDG_CACHE_HOME=$HOME/.cache

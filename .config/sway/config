@@ -52,7 +52,7 @@ bindsym $mod+f exec pcmanfm-qt ~
 bindsym $mod+m exec konsole -e neomutt
 bindsym $mod+n exec konsole -e newsboat
 bindsym $mod+p exec grafx2
-bindsym $mod+t exec konsole
+bindsym $mod+t exec qterminal
 bindsym $mod+y exec syncthing
 bindsym $mod+z exec zathura
 
