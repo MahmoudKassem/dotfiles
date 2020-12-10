@@ -1,8 +1,8 @@
 #!/bin/sh
 
 weatherInfo=$(curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs)
-weatherCondition=$(printf "%s" "$weatherInfo" | sed -r 's/([^0-9]+)([0-9]+.*)/\1/' | xargs)
-temperature=$(printf "%s" "$weatherInfo" | sed -r 's/([^0-9]+)([0-9]+.*)/\2/')
+weatherCondition=$(printf "%s" "$weatherInfo" | sed -r 's/([^0-9|\-]+)(\-?[0-9]+.*)/\1/' | xargs)
+temperature=$(printf "%s" "$weatherInfo" | sed -r 's/([^0-9|\-]+)(\-?[0-9]+.*)/\2/')
 case $weatherCondition in
   "Clear") icon= ;;
   "Cloudy") icon=摒 ;;
