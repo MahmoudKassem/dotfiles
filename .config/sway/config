@@ -49,8 +49,8 @@ bindsym $mod+F3 exec doas reboot
 bindsym $mod+a exec pcmanfm-qt menu://applications/
 bindsym $mod+b exec brave-nightly -incognito
 bindsym $mod+f exec pcmanfm-qt ~
-bindsym $mod+m exec konsole -e neomutt
-bindsym $mod+n exec konsole -e newsboat
+bindsym $mod+m exec qterminal -e neomutt
+bindsym $mod+n exec qterminal -e newsboat
 bindsym $mod+p exec grafx2
 bindsym $mod+t exec qterminal
 bindsym $mod+y exec syncthing
