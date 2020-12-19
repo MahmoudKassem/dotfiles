@@ -120,9 +120,6 @@ exec ~/.local/bin/switch-desktop-background.sh 1800 &
 #run day/night aware redshift deamon
 exec redshift &
 
-#listen for acpi events like headphones being plugged in
-exec acpi_listen &
-
 #start notification daemon
 exec mako &
 
