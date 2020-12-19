@@ -123,14 +123,11 @@ exec redshift &
 #listen for acpi events like headphones being plugged in
 exec acpi_listen &
 
-#start pipewire multimedia system
-exec pipewire &> /dev/null &
-
 #start notification daemon
 exec mako &
 
 #start pcmanfm daemon to listen for and mount removable drives
 exec pcmanfm-qt -d &> /dev/null &
 
-#set screen brightness to 16%
-exec echo 41 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
+#set screen brightness to 32%
+exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
