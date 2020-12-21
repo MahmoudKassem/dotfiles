@@ -2,7 +2,7 @@
 set $mod mod5
 
 #set font
-font pango:Iosevka Nerd Font 12
+font pango:Iosevka Nerd Font 13.5
 
 #set keyboard layout
 input type:keyboard xkb_layout "de(nodeadkeys)"
