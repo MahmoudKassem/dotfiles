@@ -11,6 +11,7 @@ case $weatherCondition in
   "Heavy showers") icon=  ;;
   "Heavy snow") icon= ;;
   "Heavy snow showers") icon= ;;
+  "Light drizzle") icon=  ;;
   "Light rain") icon=  ;;
   "Light rain shower") icon=  ;;
   "Light showers") icon=  ;;
