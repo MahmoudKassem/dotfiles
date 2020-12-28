@@ -24,6 +24,7 @@ case $weatherCondition in
   "Overcast") icon=摒 ;;
   "Partly cloudy") icon=  ;;
   "Patches of fog") icon=  ;;
+  "Patchy moderate snow") icon=ﭽ  ;;
   "Patchy rain possible") icon=  ;;
   "Sunny") icon=  ;;
   "Thundery heavy rain") icon=  ;;
