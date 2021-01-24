@@ -2,6 +2,7 @@ asix-ax88179-dkms
 brave-nightly-bin
 doas
 haskell-language-server-bin
+lua-language-server-git
 neovim-nightly-bin
 nerd-fonts-iosevka
 redshift-wlr-gamma-control-git
