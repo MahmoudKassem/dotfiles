@@ -1,9 +1,11 @@
 asix-ax88179-dkms
+brave-nightly-bin
 doas
 haskell-language-server-bin
-neovim-nightly
+neovim-nightly-bin
 nerd-fonts-iosevka
 redshift-wlr-gamma-control-git
 starship
 unimatrix-git
 vim-language-server
+wlrobs
