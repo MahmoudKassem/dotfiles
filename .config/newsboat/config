@@ -1,6 +1,6 @@
 auto-reload yes
 reload-threads 4
-browser "brave-nightly -incognito"
+browser "librewolf"
 
 bind-key h quit
 bind-key j down
@@ -22,4 +22,4 @@ highlight article ":.*\\(link\\)$" blue default
 highlight article ":.*\\(image\\)$" blue default
 
 #open youtube links in mpv
-macro y set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler; set browser "brave-nightly -incognito"
+macro y set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler; set browser "librewolf"
