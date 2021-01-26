@@ -46,9 +46,9 @@ bindsym $mod+F4 exec doas poweroff
 bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
-bindsym $mod+a exec pcmanfm-qt menu://applications/
+bindsym $mod+a exec pcmanfm menu://applications/
 bindsym $mod+b exec librewolf
-bindsym $mod+f exec pcmanfm-qt ~
+bindsym $mod+f exec pcmanfm ~
 bindsym $mod+m exec qterminal -e neomutt
 bindsym $mod+n exec qterminal -e newsboat
 bindsym $mod+p exec grafx2
@@ -124,7 +124,7 @@ exec redshift &
 exec mako &
 
 #start pcmanfm daemon to listen for and mount removable drives
-exec pcmanfm-qt -d &> /dev/null &
+exec pcmanfm -d &> /dev/null &
 
 #set screen brightness to 32%
 exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness

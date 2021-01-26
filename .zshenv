@@ -3,7 +3,7 @@
 #default applications
 export BROWSER="librewolf"
 export EDITOR="nvim"
-export FILE="pcmanfm-qt"
+export FILE="pcmanfm"
 export READER="zathura"
 export SHELL="zsh"
 export TERMINAL="qterminal"
