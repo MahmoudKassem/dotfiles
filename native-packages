@@ -46,6 +46,7 @@ networkmanager-openrc
 newsboat
 ntfs-3g
 obs-studio
+opendoas
 openrc
 papirus-icon-theme
 pass
@@ -55,7 +56,6 @@ pcmanfm
 pkgconf
 python-gobject
 python-pyxdg
-qbittorrent
 qt5-styleplugins
 qt5-wayland
 qt5ct
