@@ -28,6 +28,8 @@ set updatetime=64
 "auto commands
 autocmd BufNewFile,BufRead *.pro set filetype=prolog
 autocmd FileType qf nnoremap <buffer> <cr> <cr>:cclose<cr>
+autocmd FileType qf nnoremap <s-k> :cnext<cr>:wincmd j<cr>
+autocmd FileType qf nnoremap <s-j> :cprev<cr>:wincmd j<cr>
 autocmd TermOpen * startinsert
 autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 
