@@ -21,7 +21,6 @@ go
 gopls
 grafx2
 grub
-gtk-engine-murrine
 gvfs
 haskell-random
 htop
@@ -57,7 +56,6 @@ pkgconf
 python-gobject
 python-pyxdg
 qt5-styleplugins
-qt5-wayland
 qt5ct
 qterminal
 ripgrep
