@@ -4,7 +4,7 @@ librewolf-bin
 lua-language-server-git
 neovim-nightly-bin
 nerd-fonts-iosevka
-redshift-wlr-gamma-control-git
+redshift-wayland-git
 starship
 unimatrix-git
 vim-language-server
