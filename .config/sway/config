@@ -120,6 +120,9 @@ bar {
 #run deamon which switches the desktop background every 30 minutes
 exec ~/.local/bin/switch-desktop-background.sh 1800 &
 
+#enable geoclue agent
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+
 #run day/night aware redshift deamon
 exec redshift &
 
