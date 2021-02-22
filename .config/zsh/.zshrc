@@ -22,6 +22,7 @@ _comp_options+=(globdots)
 compinit
 
 #aliases
+alias music='mpv --shuffle --loop-playlist=inf $HOME/music'
 alias aur='update-git-repos-in-directory.sh "AUR packages" "$(find $HOME/aur/* -maxdepth 0 -type d)" "makepkg -sirc"'
 alias npu='update-git-repos-in-directory.sh "NeoVim plugins" "$(find $HOME/.local/share/nvim/site/pack/plugins/opt/* -maxdepth 0 -type d)" "true"'
 alias syu='doas -- pacman -Syu && aur && npu'
