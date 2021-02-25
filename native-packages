@@ -28,9 +28,9 @@ i3blocks
 imv
 jack
 libnotify
-linux
 linux-firmware
-linux-headers
+linux-zen
+linux-zen-headers
 lynx
 m4
 make
