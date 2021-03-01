@@ -10,4 +10,4 @@ elif [ "$currentVolume" -lt 30 ]
   then icon=奄
   else icon=奔
 fi
-printf "%s %s%% \\n" $icon "$currentVolume"
+printf " %s %s%% \\n" $icon "$currentVolume"

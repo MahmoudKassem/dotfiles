@@ -15,4 +15,4 @@ elif [ "$currentBatteryCapacity" -lt 10 ]
   then icon= && notify-send "battery low"
   else icon=
 fi
-printf "%s %s%% \\n" $icon "$currentBatteryCapacity"
+printf " %s %s%% \\n" $icon "$currentBatteryCapacity"

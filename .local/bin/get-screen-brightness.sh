@@ -9,4 +9,4 @@ elif [ $currentBrightness -lt 30 ]
   then icon=
   else icon=
 fi
-printf "%s %s%% \\n" $icon $currentBrightness
+printf " %s %s%% \\n" $icon $currentBrightness

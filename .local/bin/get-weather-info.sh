@@ -36,4 +36,4 @@ case $weatherCondition in
   "Very cloudy") icon=  ;;
   *) icon="???" ;;
 esac
-printf "%s  %s \\n" "$icon" "$temperature"
+printf " %s  %s \\n" "$icon" "$temperature"

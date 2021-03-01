@@ -8,4 +8,4 @@ if [ "$connectionType" = "wifi" ]
 elif [ "$connectionType" = "ethernet" ]
   then icon=
 fi
-printf "%s  %s \\n" $icon "$connectionName"
+printf " %s  %s \\n" $icon "$connectionName"
