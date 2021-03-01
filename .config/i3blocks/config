@@ -58,8 +58,18 @@ color=#1d2021
 background=#d79921
 color=#d65d0e
 
+[system]
+command=~/.local/bin/get-cpu-and-ram-usage.sh
+interval=1
+background=#d65d0e
+color=#1d2021
+
+[seperator]
+background=#d65d0e
+color=#cc241d
+
 [date]
 command=echo "   $(date) "
 interval=1
-background=#d65d0e
+background=#cc241d
 color=#1d2021
