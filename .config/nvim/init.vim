@@ -42,7 +42,7 @@ nnoremap <silent> <leader>d <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap <silent> <leader>e :call ToggleNetrw()<cr>
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>h :wincmd h<cr>
-nnoremap <silent> <leader>g :w<cr>:!groff -e -ms % -T pdf > %:r.pdf<cr><cr>
+nnoremap <silent> <leader>g :w<cr>:!groff -k -ms % -T pdf -U > %:r.pdf<cr><cr>
 nnoremap <silent> <leader>j :wincmd j<cr>
 nnoremap <silent> <leader>k :wincmd k<cr>
 nnoremap <silent> <leader>l :wincmd l<cr>
