@@ -1,4 +1,5 @@
-"general settings
+--general settings
+vim.cmd [[
 set autowrite
 set background=dark
 set clipboard=unnamedplus
@@ -23,17 +24,19 @@ set splitbelow
 set splitright
 set tabstop=2
 set termguicolors
-set updatetime=64
+set updatetime=64 ]]
 
-"auto commands
+--auto commands
+vim.cmd [[
 autocmd BufNewFile,BufRead *.pro set filetype=prolog
 autocmd FileType qf nnoremap <buffer> <cr> <cr>:cclose<cr>
 autocmd FileType qf nnoremap <s-k> :cnext<cr>:wincmd j<cr>
 autocmd FileType qf nnoremap <s-j> :cprev<cr>:wincmd j<cr>
 autocmd TermOpen * startinsert
-autocmd TextYankPost * silent! lua vim.highlight.on_yank()
+autocmd TextYankPost * silent! lua vim.highlight.on_yank() ]]
 
-"custom key bindings
+--custom key bindings
+vim.cmd [[
 let mapleader = " "
 nnoremap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
 nnoremap <silent> <leader>b :buffers<cr>:buffer<space>
@@ -58,12 +61,13 @@ nnoremap <silent> <leader>x :xit<cr>
 nnoremap <silent> <leader><leader> :
 nnoremap <silent> <s-k> :bnext<cr>
 nnoremap <silent> <s-j> :bprevious<cr>
-tnoremap <silent> <esc> <c-\><c-n>
+tnoremap <silent> <esc> <c-\><c-n> ]]
 
-"configure completion-nvim
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+--configure completion-nvim
+vim.cmd [[ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy'] ]]
 
-"configure fzf
+--configure fzf
+vim.cmd [[
 let $FZF_DEFAULT_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
 let $FZF_DEFAULT_OPTS='--extended'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
@@ -71,9 +75,10 @@ let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --iglob !\.git --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
+  \   fzf#vim#with_preview(), <bang>0) ]]
 
-"configure netrw
+--configure netrw
+vim.cmd [[
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
 let g:netrw_bufsettings = 'nobuflisted number relativenumber'
@@ -86,39 +91,45 @@ function ToggleNetrw()
   else
     Vexplore | let g:netrw_buffer=bufnr("%")
   endif
-endfunction
+endfunction ]]
 
-"set gruvbox-material
+--set gruvbox-material
+vim.cmd [[
 let g:gruvbox_italics = 0
-let g:gruvbox_transp_bg = 1
+let g:gruvbox_transp_bg = 1 ]]
 
-"configure vim-airline
+--configure vim-airline
+vim.cmd [[
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'base16_gruvbox_dark_hard'
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1 ]]
 
-"configure vim-rooter
+--configure vim-rooter
+vim.cmd [[
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_patterns = ['.git']
 let g:rooter_resolve_links = 1
-let g:rooter_silent_chdir = 1
+let g:rooter_silent_chdir = 1 ]]
 
-"enable syntax highlighting
-syntax enable
+--enable syntax highlighting
+vim.cmd [[ syntax enable ]]
 
-"set colorscheme
-colorscheme gruvbox8_hard
+--set colorscheme
+vim.cmd [[ colorscheme gruvbox8_hard ]]
 
-"gray
+--gray
+vim.cmd [[
 highlight Comment guifg=#928374
-highlight Todo guifg=#928374
+highlight Todo guifg=#928374 ]]
 
-"light blue
+--light blue
+vim.cmd [[
 highlight Function guifg=#83a598
 highlight Type guifg=#83a598
-highlight Typedef guifg=#83a598
+highlight Typedef guifg=#83a598 ]]
 
-"light cyan
+--light cyan
+vim.cmd [[
 highlight Conditional guifg=#8ec07c
 highlight Debug guifg=#8ec07c
 highlight Exception guifg=#8ec07c
@@ -130,35 +141,40 @@ highlight SignifySignChange guifg=#8ec07c
 highlight Special guifg=#8ec07c
 highlight Statement guifg=#8ec07c
 highlight StorageClass guifg=#8ec07c
-highlight Structure guifg=#8ec07c
+highlight Structure guifg=#8ec07c ]]
 
-"light green
+--light green
+vim.cmd [[
 highlight Constant guifg=#b8bb26
 highlight String guifg=#b8bb26
 highlight Character guifg=#b8bb26
 highlight Number guifg=#b8bb26
 highlight Boolean guifg=#b8bb26
 highlight Float guifg=#b8bb26
-highlight SignifySignAdd guifg=#b8bb26
+highlight SignifySignAdd guifg=#b8bb26 ]]
 
-"light magenta
+--light magenta
+vim.cmd [[
 highlight LspDiagnosticsDefaultHint guifg=#d3869b
 highlight Operator guifg=#d3869b
-highlight SpecialComment guifg=#d3869b
+highlight SpecialComment guifg=#d3869b ]]
 
-"light orange
+--light orange
+vim.cmd [[
 highlight Delimiter guifg=#fe8019
 highlight LspDiagnosticsDefaultWarning guifg=#fe8019
-highlight SpecialChar guifg=#fe8019
+highlight SpecialChar guifg=#fe8019 ]]
 
-"light red
+--light red
+vim.cmd [[
 highlight LspDiagnosticsDefaultError guifg=#fb4934
-highlight SignifySignDelete guifg=#fb4934
+highlight SignifySignDelete guifg=#fb4934 ]]
 
-"white
-highlight Identifier guifg=#ebdbb2
+--white
+vim.cmd [[ highlight Identifier guifg=#ebdbb2 ]]
 
-"load plugins
+--load plugins
+vim.cmd [[
 packadd auto-pairs
 packadd completion-nvim
 packadd fzf.vim
@@ -172,10 +188,10 @@ packadd vim-devicons
 packadd vim-fugitive
 packadd vim-rooter
 packadd vim-surround
-packadd vim-signify
+packadd vim-signify ]]
 
-"setup language servers
-lua require('lsp_config')
+--setup language servers
+require('lsp_config')
 
-"setup treesitter
-lua require('treesitter_config')
+--setup treesitter
+require('treesitter_config')

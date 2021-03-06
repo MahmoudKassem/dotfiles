@@ -17,11 +17,6 @@ lsp_config.hls.setup {
   )
 }
 
---vim language server for vim
-lsp_config.vimls.setup {
-  on_attach = on_attach
-}
-
 --sumneko for lua
 lsp_config.sumneko_lua.setup {
   on_attach = on_attach,
