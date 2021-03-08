@@ -1,0 +1,28 @@
+local keyMapping = vim.api.nvim_set_keymap
+local keyMappingOptions = {noremap = true, silent = true}
+
+vim.g.mapleader = ' '
+keyMapping('n', '<leader>a', '<cmd>lua vim.lsp.buf.code_action()<cr>', keyMappingOptions)
+keyMapping('n', '<leader>b', ':buffers<cr>:buffer<space>', keyMappingOptions)
+keyMapping('n', '<leader>c', ':bwipeout<cr>', keyMappingOptions)
+keyMapping('n', '<leader>d', '<cmd>lua vim.lsp.buf.definition()<cr>', keyMappingOptions)
+keyMapping('n', '<leader>e', ':call ToggleNetrw()<cr>', keyMappingOptions)
+keyMapping('n', '<leader>f', ':FZF<cr>', keyMappingOptions)
+keyMapping('n', '<leader>h', ':wincmd h<cr>', keyMappingOptions)
+keyMapping('n', '<leader>g', ':w<cr>:!groff -k -ms % -T pdf -U > %:r.pdf<cr><cr>', keyMappingOptions)
+keyMapping('n', '<leader>j', ':wincmd j<cr>', keyMappingOptions)
+keyMapping('n', '<leader>k', ':wincmd k<cr>', keyMappingOptions)
+keyMapping('n', '<leader>l', ':wincmd l<cr>', keyMappingOptions)
+keyMapping('n', '<leader>o', ':badd<space>', keyMappingOptions)
+keyMapping('n', '<leader>q', ':quit!<cr>', keyMappingOptions)
+keyMapping('n', '<leader>r', '<cmd>lua vim.lsp.buf.references()<cr>', keyMappingOptions)
+keyMapping('n', '<leader>s', ':Rg<cr>', keyMappingOptions)
+keyMapping('n', '<leader>t', ':chdir %:p:h<cr>:16sp term://zsh<cr>', keyMappingOptions)
+keyMapping('n', '<leader>u', ':Explore<cr>', keyMappingOptions)
+keyMapping('n', '<leader>v', '<cmd>lua vim.lsp.buf.hover()<cr>', keyMappingOptions)
+keyMapping('n', '<leader>w', ':write<cr>', keyMappingOptions)
+keyMapping('n', '<leader>x', ':xit<cr>', keyMappingOptions)
+keyMapping('n', '<leader><leader>', ':', keyMappingOptions)
+keyMapping('n', '<s-k>', ':bnext<cr>', keyMappingOptions)
+keyMapping('n', '<s-j>', ':bprevious<cr>', keyMappingOptions)
+keyMapping('t', '<esc>', '<c-\\><c-n>', keyMappingOptions)
