@@ -1,4 +1,4 @@
-local command = vim.cmd
+local command = vim.api.nvim_command
 local globalVariables = vim.g
 
 --enable syntax highlighting

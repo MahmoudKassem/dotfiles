@@ -1,10 +1,12 @@
-vim.cmd([[
+vim.api.nvim_command([[
 packadd auto-pairs
 packadd completion-nvim
-packadd fzf.vim
 packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
+packadd plenary.nvim
+packadd popup.nvim
+packadd telescope.nvim
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-commentary

@@ -1,5 +1,5 @@
 local function autoCommand(command)
-  vim.cmd('autocmd ' .. command)
+  vim.api.nvim_command('autocmd ' .. command)
 end
 
 autoCommand('BufNewFile,BufRead *.pro set filetype=prolog')

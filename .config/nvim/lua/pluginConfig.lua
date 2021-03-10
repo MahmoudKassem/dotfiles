@@ -1,16 +1,8 @@
-local command = vim.cmd
+local command = vim.api.nvim_command
 local globalVariables = vim.g
-local environmentVariables = vim.env
 
 --completion-nvim
 globalVariables.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
-
---fzf
-environmentVariables.FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g "!{.git}/*"'
-environmentVariables.FZF_DEFAULT_OPTS = '--extended'
-globalVariables.fzf_history_dir = '~/.local/share/fzf-history'
-globalVariables.fzf_layout = { window = { width = 0.8, height = 0.8 } }
-command([[ command! -bang -nargs=* Rg call fzf#vim#grep('rg --hidden --iglob !\.git --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1, fzf#vim#with_preview(), <bang>0) ]])
 
 --netrw
 globalVariables.netrw_banner = 0
