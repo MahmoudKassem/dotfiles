@@ -4,6 +4,7 @@ packadd completion-nvim
 packadd haskell-vim
 packadd nvim-lspconfig
 packadd nvim-treesitter
+packadd nvim-web-devicons
 packadd plenary.nvim
 packadd popup.nvim
 packadd telescope.nvim
