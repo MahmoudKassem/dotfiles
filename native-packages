@@ -13,7 +13,7 @@ fakeroot
 ffmpeg
 flac
 flex
-fzf
+fzy
 geoclue
 ghc
 ghc-static
