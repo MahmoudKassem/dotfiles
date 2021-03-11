@@ -4,72 +4,72 @@ separator_block_width=0
 
 [seperator]
 background=#1d2021E6
-color=#d3869b
+color=#83a598E6
 
 [audio]
 command=~/.local/bin/get-volume.sh
 interval=once
 signal=10
 background=#1d2021E6
-color=#d3869b
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#83a598
+color=#83a598E6
 
 [brightness]
 command=~/.local/bin/get-screen-brightness.sh
 interval=once
 signal=11
 background=#1d2021E6
-color=#83a598
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#8ec07c
+color=#83a598E6
 
 [battery]
 command=~/.local/bin/get-battery-status.sh
 interval=300
 background=#1d2021E6
-color=#8ec07c
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#b8bb26
+color=#83a598E6
 
 [network]
 command=~/.local/bin/get-network-status.sh
 interval=300
 background=#1d2021E6
-color=#b8bb26
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#fabd2f
+color=#83a598E6
 
 [weather]
 command=~/.local/bin/get-weather-info.sh
 interval=1800
 background=#1d2021E6
-color=#fabd2f
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#fe8019
+color=#83a598E6
 
 [system]
 command=~/.local/bin/get-cpu-and-ram-usage.sh
 interval=1
 background=#1d2021E6
-color=#fe8019
+color=#83a598E6
 
 [seperator]
 background=#1d2021E6
-color=#fb4934
+color=#83a598E6
 
 [date]
 command=echo "   $(date) "
 interval=1
 background=#1d2021E6
-color=#fb4934
+color=#83a598E6
