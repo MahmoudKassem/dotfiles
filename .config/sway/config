@@ -96,6 +96,10 @@ bindsym XF86AudioRaiseVolume exec amixer -q set PCM 4%+ unmute && pkill -SIGRTMI
 bindsym XF86AudioLowerVolume exec amixer -q set PCM 4%- unmute && pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -SIGRTMIN+10 i3blocks
 
+#keybindings for screenshots
+bindsym Print exec grim -t png ~/pics/$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym $mod+Print exec grim -t png -g "$(slurp)" ~/pics/$(date +%Y-%m-%d_%H-%M-%S).png
+
 #keybindings for resize mode
 bindsym $mod+shift+r mode "resize"
 mode "resize" {
