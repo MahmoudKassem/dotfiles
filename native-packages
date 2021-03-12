@@ -22,6 +22,7 @@ git
 go
 gopls
 grafx2
+grim
 grub
 gvfs
 haskell-random
@@ -63,6 +64,7 @@ qt5ct
 qterminal
 ripgrep
 shellcheck
+slurp
 stack
 starship
 sway
