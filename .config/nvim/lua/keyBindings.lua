@@ -3,7 +3,7 @@ local keyMappingOptions = {noremap = true, silent = true}
 
 vim.g.mapleader = ' '
 keyMapping('n', '<leader>a', ':Telescope lsp_code_actions<cr>', keyMappingOptions)
-keyMapping('n', '<leader>b', ':buffers<cr>:buffer<space>', keyMappingOptions)
+keyMapping('n', '<leader>b', ':Telescope buffers show_all_buffers=true<cr>', keyMappingOptions)
 keyMapping('n', '<leader>c', ':bwipeout<cr>', keyMappingOptions)
 keyMapping('n', '<leader>d', ':Telescope lsp_definitions<cr>', keyMappingOptions)
 keyMapping('n', '<leader>e', ':Telescope file_browser<cr>', keyMappingOptions)
