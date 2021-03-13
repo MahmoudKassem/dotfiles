@@ -28,9 +28,3 @@ export LESS_TERMCAP_so=$(printf "\e[1;33m")
 export LESS_TERMCAP_se=$(printf "\e[0m")
 export LESS_TERMCAP_us=$(printf "\e[1;36m")
 export LESS_TERMCAP_ue=$(printf "\e[0m")
-
-#setting for fzf
-export FZF_ALT_C_COMMAND="rg --hidden --files --null 2> /dev/null | xargs -0 dirname | uniq"
-export FZF_CTRL_T_COMMAND='rg --files --ignore-case --hidden -g "!{.git}/*"'
-export FZF_DEFAULT_OPS='--extended'
-export FZF_DEFAULT_COMMAND=$FZF_CTRL_T_COMMAND
