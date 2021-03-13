@@ -13,6 +13,7 @@ keyMapping('n', '<leader>g', ':w<cr>:!groff -k -ms % -T pdf -U > %:r.pdf<cr><cr>
 keyMapping('n', '<leader>j', ':wincmd j<cr>', keyMappingOptions)
 keyMapping('n', '<leader>k', ':wincmd k<cr>', keyMappingOptions)
 keyMapping('n', '<leader>l', ':wincmd l<cr>', keyMappingOptions)
+keyMapping('n', '<leader>p', ':Telescope oldfiles<cr>', keyMappingOptions)
 keyMapping('n', '<leader>o', ':badd<space>', keyMappingOptions)
 keyMapping('n', '<leader>q', ':quit!<cr>', keyMappingOptions)
 keyMapping('n', '<leader>r', ':Telescope lsp_references<cr>', keyMappingOptions)
