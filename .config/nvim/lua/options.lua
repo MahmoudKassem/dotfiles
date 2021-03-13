@@ -7,7 +7,6 @@ globalOptions.background = 'dark'
 globalOptions.backup = false
 globalOptions.clipboard = 'unnamedplus'
 globalOptions.completeopt = 'menuone,noinsert,noselect'
-globalOptions.colorcolumn = '128'
 globalOptions.ignorecase = true
 globalOptions.hlsearch = false
 globalOptions.scrolloff = 2
@@ -19,6 +18,7 @@ globalOptions.termguicolors = true
 globalOptions.updatetime = 64
 globalOptions.writebackup = false
 
+windowLocalOptions.colorcolumn = '128'
 windowLocalOptions.cursorline = true
 windowLocalOptions.number = true
 windowLocalOptions.relativenumber = true
