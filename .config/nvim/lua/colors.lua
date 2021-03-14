@@ -1,15 +1,8 @@
 local command = vim.api.nvim_command
 local globalVariables = vim.g
-
-globalVariables.gruvbox_italics = 0
-globalVariables.gruvbox_transp_bg = 1
-command('syntax enable')
-command('colorscheme gruvbox8_hard')
-
-local function highlight(highlightGroup, foreGroundHexColorCode)
-  command('highlight ' .. highlightGroup .. ' guifg=' .. foreGroundHexColorCode)
+local function highlight(highlightGroup, foregroundHexColorCode)
+  command('highlight ' .. highlightGroup .. ' guifg=' .. foregroundHexColorCode)
 end
-
 local grey = '#928374'
 local lightBlue = '#83a598'
 local lightCyan = '#8ec07c'
@@ -18,6 +11,11 @@ local lightMagenta = '#d3869b'
 local lightOrange ='#fe8019'
 local lightRed = '#fb4934'
 local white = '#ebdbb2'
+
+globalVariables.gruvbox_italics = 0
+globalVariables.gruvbox_transp_bg = 1
+command('syntax enable')
+command('colorscheme gruvbox8_hard')
 
 highlight('Comment', grey)
 highlight('Todo', grey)
