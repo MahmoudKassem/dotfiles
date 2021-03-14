@@ -1,14 +1,9 @@
 local command = vim.api.nvim_command
 local globalVariables = vim.g
 
---enable syntax highlighting
 command('syntax enable')
-
---configure gruvbox 8 colorscheme
 globalVariables.gruvbox_italics = 0
 globalVariables.gruvbox_transp_bg = 1
-
---set gruvbox 8 colorscheme
 command('colorscheme gruvbox8_hard')
 
 --gray
