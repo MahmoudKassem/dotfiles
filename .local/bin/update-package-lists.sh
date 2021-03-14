@@ -1,4 +1,4 @@
 #!/bin/sh
 
-pacman -Qen | awk '{print $1;}' > ~/dotfiles/native-packages
-pacman -Qem | awk '{print $1;}' > ~/dotfiles/foreign-packages
+pacman -Qen | cut -d ' ' -f1 > ~/dotfiles/native-packages
+pacman -Qem | cut -d ' ' -f1 > ~/dotfiles/foreign-packages
