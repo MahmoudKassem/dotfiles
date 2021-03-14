@@ -27,6 +27,7 @@ case $weatherCondition in
   "Patches of fog") icon=  ;;
   "Patchy heavy snow") icon= ;;
   "Patchy light drizzle") icon=  ;;
+  "Patchy light rain") icon=  ;;
   "Patchy moderate snow") icon=ﭽ  ;;
   "Patchy rain possible") icon=  ;;
   "Sunny") icon=  ;;
