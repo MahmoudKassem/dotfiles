@@ -2,7 +2,7 @@
 
 masterInfo="amixer -M get Master"
 pcmInfo="amixer -M get PCM"
-currentVolume=$($pcmInfo | grep 'Front Left' | awk '/%/ {gsub("[%\\[\\]]",""); print $5}')
+currentVolume=$($pcmInfo | sed -n -E 's/^.*Front Left:.*\[([0-9]+)%\].*$/\1/p')
 $masterInfo | grep -q off && printf "婢 $currentVolume%% \\n" && exit
 if [ "$currentVolume" -gt 70 ]
   then icon=墳

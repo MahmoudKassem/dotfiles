@@ -1,8 +1,8 @@
 #!/bin/sh
 
-networkStatus=$(nmcli d | awk '!/--/ && NR==2 {print $2; for (i=4; i<=NF; i++) print $i}' | xargs)
-connectionType=$(printf "%s" "$networkStatus" | awk '{print $1}')
-connectionName=$(printf "%s" "$networkStatus" | awk '{print $2}')
+networkStatus=$(nmcli d | sed -n -E 's/^\w+\s+(\w+)\s+connected\s+(.*)$/\1 \2/p')
+connectionType=$(printf "%s" "$networkStatus" | cut -d ' ' -f1)
+connectionName=$(printf "%s" "$networkStatus" | cut -d ' ' -f2)
 if [ "$connectionType" = "wifi" ]
   then icon=
 elif [ "$connectionType" = "ethernet" ]
