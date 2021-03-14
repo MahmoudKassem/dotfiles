@@ -1,16 +1,19 @@
-vim.api.nvim_command([[
-packadd auto-pairs
-packadd completion-nvim
-packadd haskell-vim
-packadd lualine.nvim
-packadd nvim-lspconfig
-packadd nvim-treesitter
-packadd nvim-web-devicons
-packadd plenary.nvim
-packadd popup.nvim
-packadd telescope.nvim
-packadd vim-commentary
-packadd vim-fugitive
-packadd vim-rooter
-packadd vim-surround
-packadd vim-signify ]])
+local function packAdd(package)
+  vim.api.nvim_command('packadd ' .. package)
+end
+
+packAdd('auto-pairs')
+packAdd('completion-nvim')
+packAdd('haskell-vim')
+packAdd('lualine.nvim')
+packAdd('nvim-lspconfig')
+packAdd('nvim-treesitter')
+packAdd('nvim-web-devicons')
+packAdd('plenary.nvim')
+packAdd('popup.nvim')
+packAdd('telescope.nvim')
+packAdd('vim-commentary')
+packAdd('vim-fugitive')
+packAdd('vim-rooter')
+packAdd('vim-surround')
+packAdd('vim-signify')

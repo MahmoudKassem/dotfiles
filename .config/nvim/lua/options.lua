@@ -23,6 +23,7 @@ windowLocalOptions.cursorline = true
 windowLocalOptions.number = true
 windowLocalOptions.relativenumber = true
 windowLocalOptions.signcolumn = 'yes'
+windowLocalOptions.wrap = false
 
 bufferLocalOptions.expandtab = true
 bufferLocalOptions.shiftwidth = 2

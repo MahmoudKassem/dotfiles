@@ -1,63 +1,67 @@
 local command = vim.api.nvim_command
 local globalVariables = vim.g
 
-command('syntax enable')
 globalVariables.gruvbox_italics = 0
 globalVariables.gruvbox_transp_bg = 1
+command('syntax enable')
 command('colorscheme gruvbox8_hard')
 
---gray
-command([[
-highlight Comment guifg=#928374
-highlight Todo guifg=#928374 ]])
+local function highlight(highlightGroup, foreGroundHexColorCode)
+  command('highlight ' .. highlightGroup .. ' guifg=' .. foreGroundHexColorCode)
+end
 
---light blue
-command([[
-highlight Function guifg=#83a598
-highlight Type guifg=#83a598
-highlight Typedef guifg=#83a598 ]])
+local grey = '#928374'
+local lightBlue = '#83a598'
+local lightCyan = '#8ec07c'
+local lightGreen = '#b8bb26'
+local lightMagenta = '#d3869b'
+local lightOrange ='#fe8019'
+local lightRed = '#fb4934'
+local white = '#ebdbb2'
 
---light cyan
-command([[
-highlight Conditional guifg=#8ec07c
-highlight Debug guifg=#8ec07c
-highlight Exception guifg=#8ec07c
-highlight Keyword guifg=#8ec07c
-highlight Label guifg=#8ec07c
-highlight LspDiagnosticsDefaultInformation guifg=#8ec07c
-highlight Repeat guifg=#8ec07c
-highlight SignifySignChange guifg=#8ec07c
-highlight Special guifg=#8ec07c
-highlight Statement guifg=#8ec07c
-highlight StorageClass guifg=#8ec07c
-highlight Structure guifg=#8ec07c ]])
+highlight('Comment', grey)
+highlight('Todo', grey)
 
---light green
-command([[
-highlight Constant guifg=#b8bb26
-highlight String guifg=#b8bb26
-highlight Character guifg=#b8bb26
-highlight Number guifg=#b8bb26
-highlight Boolean guifg=#b8bb26
-highlight Float guifg=#b8bb26
-highlight SignifySignAdd guifg=#b8bb26 ]])
+highlight('Function', lightBlue)
+highlight('Type', lightBlue)
+highlight('Typedef', lightBlue)
 
---light magenta
-command([[
-highlight LspDiagnosticsDefaultHint guifg=#d3869b
-highlight Operator guifg=#d3869b
-highlight SpecialComment guifg=#d3869b ]])
+highlight('Conditional', lightCyan)
+highlight('Debug', lightCyan)
+highlight('Exception', lightCyan)
+highlight('Keyword', lightCyan)
+highlight('Label', lightCyan)
+highlight('LspDiagnosticsDefaultInformation', lightCyan)
+highlight('Conditional', lightCyan)
+highlight('Debug', lightCyan)
+highlight('Exception', lightCyan)
+highlight('Keyword', lightCyan)
+highlight('Label', lightCyan)
+highlight('LspDiagnosticsDefaultInformation', lightCyan)
+highlight('Repeat', lightCyan)
+highlight('SignifySignChange', lightCyan)
+highlight('Special', lightCyan)
+highlight('Statement', lightCyan)
+highlight('StorageClass', lightCyan)
+highlight('Structure', lightCyan)
 
---light orange
-command([[
-highlight Delimiter guifg=#fe8019
-highlight LspDiagnosticsDefaultWarning guifg=#fe8019
-highlight SpecialChar guifg=#fe8019 ]])
+highlight('Constant', lightGreen)
+highlight('String', lightGreen)
+highlight('Character', lightGreen)
+highlight('Number', lightGreen)
+highlight('Boolean', lightGreen)
+highlight('Float', lightGreen)
+highlight('SignifySignAdd', lightGreen)
 
---light red
-command([[
-highlight LspDiagnosticsDefaultError guifg=#fb4934
-highlight SignifySignDelete guifg=#fb4934 ]])
+highlight('LspDiagnosticsDefaultHint', lightMagenta)
+highlight('Operator', lightMagenta)
+highlight('SpecialComment', lightMagenta)
 
---white
-command('highlight Identifier guifg=#ebdbb2')
+highlight('Delimiter', lightOrange)
+highlight('LspDiagnosticsDefaultWarning', lightOrange)
+highlight('SpecialChar', lightOrange)
+
+highlight('LspDiagnosticsDefaultError', lightRed)
+highlight('SignifySignDelete', lightRed)
+
+highlight('Identifier', white)
