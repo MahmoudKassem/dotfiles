@@ -1,4 +1,3 @@
---configure completion
 local on_attach = function (client)
   require('completion').on_attach(client)
 end
@@ -6,12 +5,10 @@ vim.g.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
 
 local lsp_config = require('lspconfig')
 
---gopls for golang
 lsp_config.gopls.setup {
   on_attach = on_attach
 }
 
---haskell language server for haskell
 lsp_config.hls.setup {
   on_attach = on_attach,
   root_dir = lsp_config.util.root_pattern(
@@ -19,7 +16,6 @@ lsp_config.hls.setup {
   )
 }
 
---sumneko for lua
 lsp_config.sumneko_lua.setup {
   on_attach = on_attach,
   cmd = { "lua-language-server", "-E", "/usr/local/share/lua-language-server/main.lua" },
@@ -42,7 +38,6 @@ lsp_config.sumneko_lua.setup {
   }
 }
 
---configure diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     signs = false,
