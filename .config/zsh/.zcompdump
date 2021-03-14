@@ -25,7 +25,6 @@ _comps=(
 'add-zle-hook-widget' '_add-zle-hook-widget'
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
-'alacritty' '_alacritty'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -852,6 +851,7 @@ _comps=(
 'pacman.static' '_pacman'
 'pandoc' '_pandoc'
 '-parameter-' '_parameter'
+'pass' '_pass'
 'passwd' '_users'
 'paste' '_paste'
 'patch' '_patch'
@@ -1583,9 +1583,9 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _alacritty _curl _email-notmuch _libinput _loginctl \
-            _mako _makoctl _mkinitcpio _mpv _notmuch \
-            _pacman _rg _sway _swaylock _swaymsg \
+autoload -Uz _curl _email-notmuch _libinput _loginctl _mako \
+            _makoctl _mkinitcpio _mpv _notmuch _pacman \
+            _pass _rg _sway _swaylock _swaymsg \
             _youtube-dl _zathura _cdr _all_labels _all_matches \
             _alternative _approximate _arg_compile _arguments _bash_completions \
             _cache_invalid _call_function _combination _complete _complete_debug \
