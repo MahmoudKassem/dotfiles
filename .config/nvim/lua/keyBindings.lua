@@ -23,6 +23,4 @@ keyMapping('n', '<leader>v', '<cmd>lua vim.lsp.buf.hover()<cr>', keyMappingOptio
 keyMapping('n', '<leader>w', ':write<cr>', keyMappingOptions)
 keyMapping('n', '<leader>x', ':xit<cr>', keyMappingOptions)
 keyMapping('n', '<leader><leader>', ':', keyMappingOptions)
-keyMapping('n', '<s-k>', ':bnext<cr>', keyMappingOptions)
-keyMapping('n', '<s-j>', ':bprevious<cr>', keyMappingOptions)
 keyMapping('t', '<esc>', '<c-\\><c-n>', keyMappingOptions)
