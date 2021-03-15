@@ -9,6 +9,6 @@ fileExtension=$(printf "%s\\n" "$1" | sed 's/ /\\ /g' | xargs basename | sed -n 
 case $fileExtension in
   "gif" | "jpg" | "jpeg" | "png" | "svg") $IMAGE "$1";;
   "pdf") $READER "$1";;
-  "mkv" | "mp3" | "mp4"| "wav") $VIDEO "$1";;
+  "mkv" | "mp3" | "mp4" | "wav") $VIDEO "$1";;
   *) $EDITOR "$1";;
 esac
