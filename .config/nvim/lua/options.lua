@@ -9,6 +9,7 @@ globalOptions.clipboard = 'unnamedplus'
 globalOptions.completeopt = 'menuone,noinsert,noselect'
 globalOptions.ignorecase = true
 globalOptions.hlsearch = false
+globalOptions.lazyredraw = true
 globalOptions.scrolloff = 2
 globalOptions.showmode = false
 globalOptions.smartcase = true
