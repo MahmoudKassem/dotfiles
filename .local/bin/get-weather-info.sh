@@ -5,18 +5,17 @@ weatherCondition=$(printf "%s" "$weatherInfo" | head -1 | xargs)
 temperature=$(printf "%s" "$weatherInfo" | head -2 | tail -1 | xargs)
 case $weatherCondition in
   "Clear" | "Sunny") icon= ;;
-  "Cloudy" | "Overcast" | "Very cloudy") icon=摒;;
+  "Cloudy" | "Overcast" | "Very cloudy") icon= ;;
   "Fog" | "Mist" | "Patches of fog") icon= ;;
   "Heavy rain" | "Heavy showers") icon= ;;
   "Heavy snow" | "Heavy snow showers" | "Patchy heavy snow") icon= ;;
   "Light drizzle" | "Light rain" | "Light rain shower" | "Light showers" | "Moderate rain" | "Patchy light drizzle" | \
-  "Patchy light rain" | "Patchy rain possible") icon= ;;
   "Light sleet" | "Light sleet showers" | "Moderate snow" | "Patchy moderate snow" | "Light snow" | \
   "Light snow showers") icon= ;;
   "Partly cloudy") icon= ;;
+  "Patchy light rain" | "Patchy rain possible") icon= ;;
   "Thundery heavy rain" | "Thundery outbreaks possible") icon= ;;
-  "Thundery showers") icon=ﭼ ;;
-  "Thundery snow showers") icon= ;;
+  "Thundery showers" | "Thundery snow showers") icon= ;;
   *) icon="???";;
 esac
 printf " %s  %s \\n" "$icon" "$temperature"
