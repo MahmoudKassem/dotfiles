@@ -23,9 +23,9 @@ compinit
 
 #aliases
 alias a='update-git-repos-in-directory.sh "AUR packages" "$(find $HOME/aur/* -maxdepth 0 -type d)" "makepkg -sirc"'
-alias d='cd $(find . -type d | fzy)'
-alias f='v $(find . -type f | fzy)'
-alias h='eval $(cat ~/.cache/command-history | fzy)'
+alias d='cd "$(find . -type d | fzy)"'
+alias f='open-file.sh "$(rg --files --hidden | fzy)"'
+alias h='eval "$(fzy < ~/.cache/command-history)"'
 alias m='nohup qterminal -e mpv --shuffle --loop-playlist=inf $HOME/music > /dev/null &'
 alias n='update-git-repos-in-directory.sh "NeoVim plugins" "$(find $HOME/.local/share/nvim/site/pack/plugins/opt/* -maxdepth 0 -type d)" "true"'
 alias l="ls -A --color=auto"
