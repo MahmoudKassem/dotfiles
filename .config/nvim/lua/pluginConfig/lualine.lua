@@ -8,8 +8,8 @@ require('lualine').status {
     lualine_z = { 'location'  },
   },
   inactive_sections = {
-    lualine_a = { {'branch', icon = ''}, 'diff' },
-    lualine_b = { {'filename', file_status = true} },
+    lualine_a = { {'filename', file_status = true} },
+    lualine_b = {  },
     lualine_c = {  },
     lualine_x = {  },
     lualine_y = {  },
