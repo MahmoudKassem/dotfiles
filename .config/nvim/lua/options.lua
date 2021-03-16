@@ -19,8 +19,6 @@ globalOptions.termguicolors = true
 globalOptions.updatetime = 64
 globalOptions.writebackup = false
 
-windowLocalOptions.colorcolumn = '128'
-windowLocalOptions.cursorline = true
 windowLocalOptions.number = true
 windowLocalOptions.relativenumber = true
 windowLocalOptions.signcolumn = 'yes'

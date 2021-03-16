@@ -55,6 +55,7 @@ highlight('LspDiagnosticsDefaultHint', lightMagenta)
 highlight('Operator', lightMagenta)
 highlight('SpecialComment', lightMagenta)
 
+highlight('CursorLineNR', lightOrange)
 highlight('Delimiter', lightOrange)
 highlight('LspDiagnosticsDefaultWarning', lightOrange)
 highlight('SpecialChar', lightOrange)
