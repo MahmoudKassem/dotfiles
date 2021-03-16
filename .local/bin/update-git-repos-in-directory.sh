@@ -7,7 +7,7 @@ fi
 
 printf "\e[0;34m:: \e[0;0mSync %s\\n" "$1"
 currentWorkingDirectory="$PWD"
-for directory in $2
+for directory in $(find $2/* -maxdepth 0 -type d)
 do
   if cd "$directory" > /dev/null 2>&1
     then
