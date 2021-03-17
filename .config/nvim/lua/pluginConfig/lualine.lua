@@ -1,4 +1,4 @@
-require('lualine').status {
+require('lualine').setup {
   sections = {
     lualine_a = { {'mode', upper = true} },
     lualine_b = { 'diff', {'branch', icon = ''} },
