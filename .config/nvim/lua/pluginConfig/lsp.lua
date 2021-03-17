@@ -1,9 +1,10 @@
-local on_attach = function (client)
-  require('completion').on_attach(client)
-end
-vim.g.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
+local globalVariables = vim.g
+globalVariables.completion_matching_smart_case = 1
+globalVariables.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
+globalVariables.completion_sorting = "none"
 
 local lsp_config = require('lspconfig')
+local on_attach = require('completion').on_attach()
 
 lsp_config.gopls.setup {
   on_attach = on_attach

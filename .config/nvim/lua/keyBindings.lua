@@ -2,6 +2,8 @@ local keyMapping = vim.api.nvim_set_keymap
 local keyMappingOptions = {noremap = true, silent = true}
 
 vim.g.mapleader = ' '
+keyMapping('i', '<c-j>', '<c-n>', keyMappingOptions)
+keyMapping('i', '<c-k>', '<c-p>', keyMappingOptions)
 keyMapping('n', '<leader>a', ':Telescope lsp_code_actions<cr>', keyMappingOptions)
 keyMapping('n', '<leader>b', ':Telescope buffers show_all_buffers=true<cr>', keyMappingOptions)
 keyMapping('n', '<leader>c', ':bwipeout<cr>', keyMappingOptions)
