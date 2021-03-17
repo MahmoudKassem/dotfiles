@@ -59,8 +59,10 @@ highlight('CursorLineNR', lightOrange)
 highlight('Delimiter', lightOrange)
 highlight('LspDiagnosticsDefaultWarning', lightOrange)
 highlight('SpecialChar', lightOrange)
+highlight('TelescopeMatching', lightOrange)
 
 highlight('LspDiagnosticsDefaultError', lightRed)
 highlight('SignifySignDelete', lightRed)
 
 highlight('Identifier', white)
+highlight('NonText', white)
