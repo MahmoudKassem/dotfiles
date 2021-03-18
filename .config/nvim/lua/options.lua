@@ -1,6 +1,10 @@
+local command = vim.api.nvim_command
 local globalOptions = vim.o
 local windowLocalOptions = vim.wo
 local bufferLocalOptions = vim.bo
+
+command('filetype on')
+command('syntax on')
 
 globalOptions.autowrite = true
 globalOptions.background = 'dark'

@@ -14,8 +14,6 @@ local white = '#ebdbb2'
 
 globalVariables.gruvbox_italics = 0
 globalVariables.gruvbox_transp_bg = 1
-command('filetype on')
-command('syntax enable')
 command('colorscheme gruvbox8_hard')
 
 highlight('Comment', grey)
