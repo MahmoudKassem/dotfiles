@@ -6,7 +6,6 @@ local bufferLocalOptions = vim.bo
 command('filetype on')
 command('syntax on')
 
-globalOptions.autowrite = true
 globalOptions.background = 'dark'
 globalOptions.backup = false
 globalOptions.clipboard = 'unnamedplus'
