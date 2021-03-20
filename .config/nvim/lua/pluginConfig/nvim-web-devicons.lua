@@ -8,7 +8,7 @@ require('nvim-web-devicons').setup {
   mom = {
     icon = "",
     color = "#6d8086",
-    name = "Groff-Mom"
+    name = "Groff_Mom"
   }
  }
 }
