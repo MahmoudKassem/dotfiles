@@ -8,7 +8,7 @@ fi
 lightBlue=$(tput setaf 12)
 lightYellow=$(tput setaf 11)
 normal=$(tput sgr0)
-printf "${lightBlue}:: ${normal}Sync %s\\n" "$1"
+printf "${lightBlue}:: ${normal}Sync %s...\\n" "$1"
 currentWorkingDirectory="$PWD"
 for directory in $(find $2/* -maxdepth 0 -type d)
 do
