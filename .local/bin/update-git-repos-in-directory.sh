@@ -6,6 +6,7 @@ if [ $# -ne 3 ]
 fi
 
 lightBlue=$(tput setaf 12)
+lightYellow=$(tput setaf 11)
 normal=$(tput sgr0)
 printf "${lightBlue}:: ${normal}Sync %s\\n" "$1"
 currentWorkingDirectory="$PWD"
@@ -22,7 +23,7 @@ do
 done
 if cd "$currentWorkingDirectory" > /dev/null 2>&1
   then true
-  else printf "\e[0;33mWARNING\e[0;0m:"
+  else printf "${lightYellow}WARNING${normal}:"
        printf "%s\\n" " failed to change back into working directory ($currentWorkingDirectory),
  this implies that the directory you started this command from has been renamed, moved,
  its permissions have changed or it doesn't exist anymore"
