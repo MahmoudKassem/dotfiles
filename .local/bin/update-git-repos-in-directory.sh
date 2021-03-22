@@ -5,7 +5,9 @@ if [ $# -ne 3 ]
        exit 1
 fi
 
-printf "\e[0;34m:: \e[0;0mSync %s\\n" "$1"
+lightBlue=$(tput setaf 12)
+normal=$(tput sgr0)
+printf "${lightBlue}:: ${normal}Sync %s\\n" "$1"
 currentWorkingDirectory="$PWD"
 for directory in $(find $2/* -maxdepth 0 -type d)
 do
