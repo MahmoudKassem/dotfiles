@@ -23,10 +23,14 @@ export PASSWORD_STORE_DIR=$XDG_DATA_HOME/pass
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 #set colors for less and disable its history file
+cyan=$(tput setaf 6)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+normal=$(tput sgr0)
 export LESSHISTFILE="-"
-export LESS_TERMCAP_md=$(printf "\e[1;34m")
-export LESS_TERMCAP_me=$(printf "\e[0m")
-export LESS_TERMCAP_so=$(printf "\e[1;33m")
-export LESS_TERMCAP_se=$(printf "\e[0m")
-export LESS_TERMCAP_us=$(printf "\e[1;36m")
-export LESS_TERMCAP_ue=$(printf "\e[0m")
+export LESS_TERMCAP_md=$(printf "${cyan}")
+export LESS_TERMCAP_me=$(printf "${normal}")
+export LESS_TERMCAP_so=$(printf "${yellow}")
+export LESS_TERMCAP_se=$(printf "${normal}")
+export LESS_TERMCAP_us=$(printf "${green}")
+export LESS_TERMCAP_ue=$(printf "${normal}")
