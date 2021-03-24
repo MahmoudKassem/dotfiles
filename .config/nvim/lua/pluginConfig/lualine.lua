@@ -42,9 +42,9 @@ require('lualine').setup {
       file
     },
     lualine_x = {
-      'encoding',
-      'fileformat',
       'filetype',
+      'fileformat',
+      'encoding',
       'progress',
       'location'
     },

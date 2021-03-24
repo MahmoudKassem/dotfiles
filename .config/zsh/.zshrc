@@ -38,7 +38,7 @@ alias f='open-file.sh "$(rg --files --hidden | fzy)"'
 alias h='eval "$(tac ~/.cache/command-history | fzy)"'
 alias m='nohup qterminal -e mpv --shuffle --loop-playlist=inf $HOME/music > /dev/null &'
 alias n='update-git-repos-in-directory.sh "NeoVim plugins" $HOME/.local/share/nvim/site/pack/plugins/opt true'
-alias l="ls -A --color=auto"
+alias l="ls -hA --color=auto"
 alias u='doas -- pacman -Syu && a && n'
 alias v="nvim"
 
