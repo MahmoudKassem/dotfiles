@@ -5,7 +5,9 @@ globalVariables.completion_matching_strategy_list = {"exact", "substring", "fuzz
 globalVariables.completion_sorting = "none"
 
 local lsp_config = require('lspconfig')
-local on_attach = require('completion').on_attach()
+local on_attach = function(client, bufnr)
+  require('completion').on_attach(client, bufnr)
+end
 
 lsp_config.gopls.setup {
   on_attach = on_attach
@@ -36,6 +38,9 @@ lsp_config.sumneko_lua.setup {
           [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
         },
       },
+      telemetry = {
+        enable = false
+      }
     }
   }
 }
