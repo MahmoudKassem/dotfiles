@@ -53,7 +53,7 @@ bindsym $mod+F3 exec doas reboot
 
 #keybindings for applications
 bindsym $mod+a exec pcmanfm menu://applications/ > /dev/null 2>&1
-bindsym $mod+b exec librewolf
+bindsym $mod+b exec brave-nightly
 bindsym $mod+f exec pcmanfm ~ > /dev/null 2>&1
 bindsym $mod+m exec qterminal -e neomutt > /dev/null 2>&1
 bindsym $mod+n exec qterminal -e newsboat > /dev/null 2>&1

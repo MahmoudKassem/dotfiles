@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #default applications
-export BROWSER="librewolf"
+export BROWSER="brave"
 export EDITOR="nvim"
 export FILE="pcmanfm"
 export IMAGE="imv"
