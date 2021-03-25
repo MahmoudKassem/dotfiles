@@ -35,10 +35,12 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 alias a='update-git-repos-in-directory.sh "AUR packages" $HOME/aur "makepkg -sirc"'
 alias d='cd "$(find . -type d | fzy)"'
 alias f='open-file.sh "$(rg --files --hidden | fzy)"'
+alias g='git'
 alias h='eval "$(tac ~/.cache/command-history | fzy)"'
 alias m='nohup qterminal -e mpv --shuffle --loop-playlist=inf $HOME/music > /dev/null &'
 alias n='update-git-repos-in-directory.sh "NeoVim plugins" $HOME/.local/share/nvim/site/pack/plugins/opt true'
 alias l="ls -hA --color=auto"
+alias t="tree -aC"
 alias u='doas -- pacman -Syu && a && n'
 alias v="nvim"
 
