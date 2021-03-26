@@ -6,5 +6,10 @@ lua-language-server-git
 neovim-nightly-bin
 nerd-fonts-iosevka
 redshift-wayland-git
+sway-git
+sway-git-debug
+swaybg-git
 unimatrix-git
 wlrobs
+wlroots-git
+wlroots-git-debug
