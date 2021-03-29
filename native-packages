@@ -2,8 +2,6 @@ acpid-openrc
 alsa-utils
 amd-ucode
 arc-gtk-theme
-autoconf
-automake
 base
 binutils
 ca-certificates
@@ -13,7 +11,6 @@ efibootmgr
 fakeroot
 ffmpeg
 flac
-flex
 fzy
 geoclue
 ghc
@@ -37,8 +34,6 @@ linux-firmware
 linux-zen
 linux-zen-headers
 lynx
-m4
-make
 mako
 mesa
 mlocate
@@ -54,11 +49,7 @@ opendoas
 openrc
 papirus-icon-theme
 pass
-patch
 pcmanfm
-pkgconf
-python-gobject
-python-pyxdg
 qt5-styleplugins
 qt5ct
 qterminal
@@ -70,11 +61,9 @@ starship
 swaylock
 swi-prolog
 syncthing
-texinfo
 ttf-hanazono
 unzip
 vulkan-icd-loader
-webrtc-audio-processing
 wqy-zenhei
 xarchiver
 xcursor-breeze
