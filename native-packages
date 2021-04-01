@@ -58,12 +58,15 @@ shellcheck
 slurp
 stack
 starship
+sway
+swaybg
 swaylock
 swi-prolog
 syncthing
 ttf-hanazono
 unzip
 vulkan-icd-loader
+wlroots
 wqy-zenhei
 xarchiver
 xcursor-breeze
