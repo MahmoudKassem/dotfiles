@@ -1,67 +1,90 @@
-local command = vim.api.nvim_command
-local globalVariables = vim.g
-local function highlight(highlightGroup, foregroundHexColorCode)
-  command('highlight ' .. highlightGroup .. ' guifg=' .. foregroundHexColorCode)
+--colors from https://github.com/morhetz/gruvbox
+local gruvboxDarkMode = {
+  background2 = '#504945',
+  foreground = '#ebdbb2',
+  grey = '#928374',
+  lightBlue = '#83a598',
+  lightCyan = '#8ec07c',
+  lightGreen = '#b8bb26',
+  lightMagenta = '#d3869b',
+  lightOrange ='#fe8019',
+  lightRed = '#fb4934'
+}
+
+local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexColorCode, reverseColors)
+  local colors
+  if reverseColors then
+    colors = ' gui=reverse guibg=none'
+  else
+    foregroundHexColorCode = foregroundHexColorCode or 'normal'
+    backgroundHexColorCode = backgroundHexColorCode or 'none'
+    colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode
+  end
+  vim.api.nvim_command('highlight ' .. highlightGroup .. colors)
 end
-local grey = '#928374'
-local lightBlue = '#83a598'
-local lightCyan = '#8ec07c'
-local lightGreen = '#b8bb26'
-local lightMagenta = '#d3869b'
-local lightOrange ='#fe8019'
-local lightRed = '#fb4934'
-local white = '#ebdbb2'
 
-globalVariables.gruvbox_italics = 0
-globalVariables.gruvbox_transp_bg = 1
-command('colorscheme gruvbox8_hard')
+highlight('MatchParen', nil, nil, true)
+highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
+highlight('PmenuSel', gruvboxDarkMode.background, gruvboxDarkMode.lightBlue)
+highlight('PmenuSbar', nil, gruvboxDarkMode.background2)
+highlight('PmenuThumb', nil, gruvboxDarkMode.lightBlue)
+highlight('SignColumn')
+highlight('Visual', nil, nil, true)
 
-highlight('Comment', grey)
-highlight('Todo', grey)
+highlight('Identifier', gruvboxDarkMode.foreground)
+highlight('NonText', gruvboxDarkMode.foreground)
 
-highlight('Function', lightBlue)
-highlight('Type', lightBlue)
-highlight('Typedef', lightBlue)
+highlight('Comment', gruvboxDarkMode.grey)
+highlight('LineNr', gruvboxDarkMode.grey)
+highlight('Todo', gruvboxDarkMode.grey)
 
-highlight('Conditional', lightCyan)
-highlight('Debug', lightCyan)
-highlight('Exception', lightCyan)
-highlight('Keyword', lightCyan)
-highlight('Label', lightCyan)
-highlight('LspDiagnosticsDefaultInformation', lightCyan)
-highlight('Conditional', lightCyan)
-highlight('Debug', lightCyan)
-highlight('Exception', lightCyan)
-highlight('Keyword', lightCyan)
-highlight('Label', lightCyan)
-highlight('LspDiagnosticsDefaultInformation', lightCyan)
-highlight('Repeat', lightCyan)
-highlight('SignifySignChange', lightCyan)
-highlight('Special', lightCyan)
-highlight('Statement', lightCyan)
-highlight('StorageClass', lightCyan)
-highlight('Structure', lightCyan)
+highlight('Function', gruvboxDarkMode.lightBlue)
+highlight('Type', gruvboxDarkMode.lightBlue)
+highlight('Typedef', gruvboxDarkMode.lightBlue)
+highlight('Question', gruvboxDarkMode.lightBlue)
 
-highlight('Constant', lightGreen)
-highlight('String', lightGreen)
-highlight('Character', lightGreen)
-highlight('Number', lightGreen)
-highlight('Boolean', lightGreen)
-highlight('Float', lightGreen)
-highlight('SignifySignAdd', lightGreen)
+highlight('Conditional', gruvboxDarkMode.lightCyan)
+highlight('Debug', gruvboxDarkMode.lightCyan)
+highlight('Exception', gruvboxDarkMode.lightCyan)
+highlight('Keyword', gruvboxDarkMode.lightCyan)
+highlight('Label', gruvboxDarkMode.lightCyan)
+highlight('LspDiagnosticsDefaultInformation', gruvboxDarkMode.lightCyan)
+highlight('Conditional', gruvboxDarkMode.lightCyan)
+highlight('Debug', gruvboxDarkMode.lightCyan)
+highlight('Exception', gruvboxDarkMode.lightCyan)
+highlight('Keyword', gruvboxDarkMode.lightCyan)
+highlight('Label', gruvboxDarkMode.lightCyan)
+highlight('LspDiagnosticsDefaultInformation', gruvboxDarkMode.lightCyan)
+highlight('PreProc', gruvboxDarkMode.lightCyan)
+highlight('Repeat', gruvboxDarkMode.lightCyan)
+highlight('SignifySignChange', gruvboxDarkMode.lightCyan)
+highlight('Special', gruvboxDarkMode.lightCyan)
+highlight('SpecialKey', gruvboxDarkMode.lightCyan)
+highlight('Statement', gruvboxDarkMode.lightCyan)
+highlight('StorageClass', gruvboxDarkMode.lightCyan)
+highlight('Structure', gruvboxDarkMode.lightCyan)
+highlight('Title', gruvboxDarkMode.lightCyan)
 
-highlight('LspDiagnosticsDefaultHint', lightMagenta)
-highlight('Operator', lightMagenta)
-highlight('SpecialComment', lightMagenta)
+highlight('Constant', gruvboxDarkMode.lightGreen)
+highlight('Directory', gruvboxDarkMode.lightGreen)
+highlight('String', gruvboxDarkMode.lightGreen)
+highlight('Character', gruvboxDarkMode.lightGreen)
+highlight('Number', gruvboxDarkMode.lightGreen)
+highlight('Boolean', gruvboxDarkMode.lightGreen)
+highlight('Float', gruvboxDarkMode.lightGreen)
+highlight('SignifySignAdd', gruvboxDarkMode.lightGreen)
 
-highlight('CursorLineNR', lightOrange)
-highlight('Delimiter', lightOrange)
-highlight('LspDiagnosticsDefaultWarning', lightOrange)
-highlight('SpecialChar', lightOrange)
-highlight('TelescopeMatching', lightOrange)
+highlight('LspDiagnosticsDefaultHint', gruvboxDarkMode.lightMagenta)
+highlight('Operator', gruvboxDarkMode.lightMagenta)
+highlight('SpecialComment', gruvboxDarkMode.lightMagenta)
+highlight('Underlined', gruvboxDarkMode.lightMagenta)
 
-highlight('LspDiagnosticsDefaultError', lightRed)
-highlight('SignifySignDelete', lightRed)
+highlight('CursorLineNR', gruvboxDarkMode.lightOrange)
+highlight('Delimiter', gruvboxDarkMode.lightOrange)
+highlight('LspDiagnosticsDefaultWarning', gruvboxDarkMode.lightOrange)
+highlight('SpecialChar', gruvboxDarkMode.lightOrange)
+highlight('TelescopeMatching', gruvboxDarkMode.lightOrange)
 
-highlight('Identifier', white)
-highlight('NonText', white)
+highlight('Error', gruvboxDarkMode.lightRed)
+highlight('LspDiagnosticsDefaultError', gruvboxDarkMode.lightRed)
+highlight('SignifySignDelete', gruvboxDarkMode.lightRed)
