@@ -1,5 +1,6 @@
 --colors from https://github.com/morhetz/gruvbox
 local gruvboxDarkMode = {
+  background0Hard = '#1d2021',
   background2 = '#504945',
   foreground = '#ebdbb2',
   grey = '#928374',
@@ -25,7 +26,7 @@ end
 
 highlight('MatchParen', nil, nil, true)
 highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
-highlight('PmenuSel', gruvboxDarkMode.background, gruvboxDarkMode.lightBlue)
+highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
 highlight('PmenuSbar', nil, gruvboxDarkMode.background2)
 highlight('PmenuThumb', nil, gruvboxDarkMode.lightBlue)
 highlight('SignColumn')
