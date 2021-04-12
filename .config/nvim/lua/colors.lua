@@ -87,5 +87,6 @@ highlight('SpecialChar', gruvboxDarkMode.lightOrange)
 highlight('TelescopeMatching', gruvboxDarkMode.lightOrange)
 
 highlight('Error', gruvboxDarkMode.lightRed)
+highlight('ErrorMsg', gruvboxDarkMode.lightRed)
 highlight('LspDiagnosticsDefaultError', gruvboxDarkMode.lightRed)
 highlight('SignifySignDelete', gruvboxDarkMode.lightRed)
