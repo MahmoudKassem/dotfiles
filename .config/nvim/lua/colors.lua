@@ -24,6 +24,7 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
   vim.api.nvim_command('highlight ' .. highlightGroup .. colors)
 end
 
+highlight('FloatBorder')
 highlight('MatchParen', nil, nil, true)
 highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
 highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
@@ -34,6 +35,7 @@ highlight('Visual', nil, nil, true)
 
 highlight('Identifier', gruvboxDarkMode.foreground)
 highlight('NonText', gruvboxDarkMode.foreground)
+highlight('NormalFloat', gruvboxDarkMode.foreground)
 
 highlight('Comment', gruvboxDarkMode.grey)
 highlight('LineNr', gruvboxDarkMode.grey)
