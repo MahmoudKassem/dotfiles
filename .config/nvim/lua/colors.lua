@@ -1,6 +1,7 @@
 --colors from https://github.com/morhetz/gruvbox
 local gruvboxDarkMode = {
   background0Hard = '#1d2021',
+  background1 = '#3c3836',
   background2 = '#504945',
   foreground = '#ebdbb2',
   grey = '#928374',
@@ -35,6 +36,9 @@ highlight('Search', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange
 highlight('SignColumn')
 highlight('VertSplit', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
 highlight('Visual', nil, nil, true)
+
+highlight('StatusLine', gruvboxDarkMode.background1)
+highlight('StatusLineNC', gruvboxDarkMode.background1)
 
 highlight('Identifier', gruvboxDarkMode.foreground)
 highlight('NonText', gruvboxDarkMode.foreground)
