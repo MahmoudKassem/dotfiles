@@ -9,7 +9,7 @@ command('syntax on')
 globalOptions.background = 'dark'
 globalOptions.backup = false
 globalOptions.clipboard = 'unnamedplus'
-globalOptions.completeopt = 'menuone,noinsert,noselect'
+globalOptions.completeopt = 'menuone,noinsert,noselect,longest'
 globalOptions.ignorecase = true
 globalOptions.hlsearch = false
 globalOptions.lazyredraw = true
