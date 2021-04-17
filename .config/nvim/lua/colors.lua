@@ -30,6 +30,7 @@ highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
 highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
 highlight('PmenuSbar', nil, gruvboxDarkMode.background2)
 highlight('PmenuThumb', nil, gruvboxDarkMode.lightBlue)
+highlight('Search', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
 highlight('SignColumn')
 highlight('Visual', nil, nil, true)
 
