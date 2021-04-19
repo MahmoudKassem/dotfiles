@@ -16,7 +16,7 @@ keyMapping('n', '<leader>i', ':Telescope lsp_document_diagnostics<cr>', keyMappi
 keyMapping('n', '<leader>j', ':wincmd j<cr>', keyMappingOptions)
 keyMapping('n', '<leader>k', ':wincmd k<cr>', keyMappingOptions)
 keyMapping('n', '<leader>l', ':wincmd l<cr>', keyMappingOptions)
-keyMapping('n', '<leader>m', ':lua vim.lsp.diagnostic.show_line_diagnostics({ border = "single" })<cr>', keyMappingOptions)
+keyMapping('n', '<leader>m', ':lua vim.lsp.diagnostic.show_line_diagnostics()<cr>', keyMappingOptions)
 keyMapping('n', '<leader>n', ':Telescope buffers show_all_buffers=true<cr>', keyMappingOptions)
 keyMapping('n', '<leader>o', ':Telescope lsp_references<cr>', keyMappingOptions)
 keyMapping('n', '<leader>p', ':Telescope oldfiles<cr>', keyMappingOptions)

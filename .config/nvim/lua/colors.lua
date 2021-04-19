@@ -26,7 +26,6 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
 end
 
 highlight('EndOfBuffer', gruvboxDarkMode.background0Hard)
-highlight('FloatBorder')
 highlight('MatchParen', nil, nil, true)
 highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
 highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
@@ -42,7 +41,6 @@ highlight('StatusLineNC', gruvboxDarkMode.background1)
 
 highlight('Identifier', gruvboxDarkMode.foreground)
 highlight('NonText', gruvboxDarkMode.foreground)
-highlight('NormalFloat', gruvboxDarkMode.foreground)
 
 highlight('Comment', gruvboxDarkMode.grey)
 highlight('LineNr', gruvboxDarkMode.grey)
