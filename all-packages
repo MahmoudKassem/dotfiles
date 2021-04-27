@@ -237,7 +237,6 @@ haskell-path-pieces
 haskell-pem
 haskell-persistent
 haskell-persistent-sqlite
-haskell-persistent-template
 haskell-primitive
 haskell-profunctors
 haskell-project-template
