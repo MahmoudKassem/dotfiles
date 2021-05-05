@@ -61,6 +61,8 @@ efivar
 elfutils
 elogind
 elogind-openrc
+erlang
+erlang_ls-git
 esysusers
 etmpfiles
 eudev
@@ -81,6 +83,7 @@ fuse2
 fuse3
 fzy
 gawk
+gc
 gcc
 gcc-libs
 gcr
@@ -118,9 +121,12 @@ groff
 grub
 gsettings-desktop-schemas
 gsm
+gst-plugins-base-libs
+gstreamer
 gtk-update-icon-cache
 gtk2
 gtk3
+guile
 gumbo-parser
 gvfs
 gzip
@@ -502,6 +508,7 @@ lxmenu-data
 lynx
 lz4
 lzo
+make
 mako
 man-db
 mbedtls
@@ -545,6 +552,7 @@ openrc
 openssh
 openssl
 opus
+orc
 p11-kit
 pacman
 pahole
@@ -580,6 +588,7 @@ qterminal
 qtermwidget
 rav1e
 readline
+rebar3
 redshift-wayland-git
 rest
 ripgrep
@@ -613,6 +622,7 @@ sysfsutils
 talloc
 tar
 tdb
+texinfo
 thin-provisioning-tools
 tree
 tslib
@@ -637,6 +647,8 @@ wlrobs
 wlroots
 wpa_supplicant
 wqy-zenhei
+wxgtk-common
+wxgtk3
 x264
 x265
 xapian-core

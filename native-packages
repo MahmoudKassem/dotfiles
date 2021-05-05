@@ -8,6 +8,7 @@ ca-certificates
 dash
 diffpdf
 efibootmgr
+erlang
 fakeroot
 ffmpeg
 flac
@@ -34,6 +35,7 @@ linux-firmware
 linux-zen
 linux-zen-headers
 lynx
+make
 mako
 mesa
 mlocate
