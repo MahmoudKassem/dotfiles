@@ -14,7 +14,7 @@ case $weatherCondition in
   "Light sleet" | "Light sleet showers" | "Light snow" |  "Light snow showers" | "Moderate snow" | \
     "Patchy light snow" | "Patchy moderate snow" | "Patchy sleet possible" | "Patchy snow possible") icon= ;;
   "Partly cloudy") icon= ;;
-  "Thundery heavy rain" | "Thundery outbreaks possible") icon= ;;
+  "Moderate or heavy rain with thunder" | "Thundery heavy rain" | "Thundery outbreaks possible") icon= ;;
   "Thundery showers" | "Thundery snow showers") icon= ;;
   *) icon="???";;
 esac
