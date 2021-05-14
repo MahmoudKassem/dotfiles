@@ -8,5 +8,6 @@ require('telescope').setup{
         ["<esc>"] = actions.close
       },
     },
+    color_devicons = false
   }
 }
