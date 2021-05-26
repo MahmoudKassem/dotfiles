@@ -25,7 +25,7 @@ globalOptions.writebackup = false
 windowLocalOptions.number = true
 windowLocalOptions.relativenumber = true
 windowLocalOptions.signcolumn = 'yes'
-windowLocalOptions.wrap = true
+windowLocalOptions.wrap = false
 
 bufferLocalOptions.expandtab = true
 bufferLocalOptions.shiftwidth = 2
