@@ -1,6 +1,7 @@
 auto-reload yes
 reload-threads 4
 browser "brave-nightly > /dev/null 2>&1"
+max-items 32
 
 bind-key h quit
 bind-key j down
