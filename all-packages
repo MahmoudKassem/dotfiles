@@ -227,6 +227,7 @@ haskell-fuzzy
 haskell-generic-deriving
 haskell-generic-lens
 haskell-generic-lens-core
+haskell-ghc-api-compat
 haskell-ghc-check
 haskell-ghc-exactprint
 haskell-ghc-lib-parser-ex
@@ -252,9 +253,16 @@ haskell-hls-brittany-plugin
 haskell-hls-class-plugin
 haskell-hls-eval-plugin
 haskell-hls-explicit-imports-plugin
+haskell-hls-floskell-plugin
+haskell-hls-fourmolu-plugin
+haskell-hls-graph
 haskell-hls-haddock-comments-plugin
 haskell-hls-hlint-plugin
+haskell-hls-module-name-plugin
+haskell-hls-ormolu-plugin
 haskell-hls-plugin-api
+haskell-hls-pragmas-plugin
+haskell-hls-refine-imports-plugin
 haskell-hls-retrie-plugin
 haskell-hls-splice-plugin
 haskell-hls-stylish-haskell-plugin
@@ -271,6 +279,7 @@ haskell-http-client-tls
 haskell-http-conduit
 haskell-http-download
 haskell-http-types
+haskell-hyphenation
 haskell-implicit-hie
 haskell-implicit-hie-cradle
 haskell-indexed-profunctors
