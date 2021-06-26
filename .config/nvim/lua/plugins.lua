@@ -4,7 +4,6 @@ end
 
 packAdd('auto-pairs')
 packAdd('completion-nvim')
-packAdd('haskell-vim')
 packAdd('lualine.nvim')
 packAdd('nvim-lspconfig')
 packAdd('nvim-treesitter')
