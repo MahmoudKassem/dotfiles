@@ -9,6 +9,10 @@ local on_attach = function(client, bufnr)
   require('completion').on_attach(client, bufnr)
 end
 
+lsp_config.prolog_lsp.setup {
+  on_attach = on_attach
+}
+
 lsp_config.erlangls.setup {
   on_attach = on_attach
 }

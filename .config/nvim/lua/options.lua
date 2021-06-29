@@ -28,6 +28,6 @@ windowLocalOptions.signcolumn = 'yes'
 windowLocalOptions.wrap = false
 
 bufferLocalOptions.expandtab = true
-bufferLocalOptions.shiftwidth = 2
+bufferLocalOptions.shiftwidth = 4
 bufferLocalOptions.swapfile = false
-bufferLocalOptions.tabstop = 2
+bufferLocalOptions.tabstop = 4
