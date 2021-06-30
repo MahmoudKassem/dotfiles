@@ -573,6 +573,7 @@ libraw1394
 librsvg
 libsamplerate
 libsasl
+libseat
 libseccomp
 libsecret
 libsm
