@@ -1,33 +1,25 @@
-local command = vim.api.nvim_command
-local globalOptions = vim.o
-local windowLocalOptions = vim.wo
-local bufferLocalOptions = vim.bo
-
-command('filetype on')
-command('syntax on')
-
-globalOptions.background = 'dark'
-globalOptions.backup = false
-globalOptions.clipboard = 'unnamedplus'
-globalOptions.completeopt = 'menuone,noinsert,noselect,longest'
-globalOptions.ignorecase = true
-globalOptions.hlsearch = false
-globalOptions.lazyredraw = true
-globalOptions.scrolloff = 2
-globalOptions.showmode = false
-globalOptions.smartcase = true
-globalOptions.splitbelow = true
-globalOptions.splitright = true
-globalOptions.termguicolors = true
-globalOptions.updatetime = 64
-globalOptions.writebackup = false
-
-windowLocalOptions.number = true
-windowLocalOptions.relativenumber = true
-windowLocalOptions.signcolumn = 'yes'
-windowLocalOptions.wrap = false
-
-bufferLocalOptions.expandtab = true
-bufferLocalOptions.shiftwidth = 4
-bufferLocalOptions.swapfile = false
-bufferLocalOptions.tabstop = 4
+vim.opt.background = 'dark'
+vim.opt.backup = false
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.completeopt = 'menuone,noinsert,noselect,longest'
+vim.opt.expandtab = true
+vim.opt.filetype = 'on'
+vim.opt.syntax = 'on'
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true
+vim.opt.lazyredraw = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 2
+vim.opt.shiftwidth = 4
+vim.opt.signcolumn = 'yes'
+vim.opt.showmode = false
+vim.opt.smartcase = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.swapfile = false
+vim.opt.tabstop = 4
+vim.opt.termguicolors = true
+vim.opt.updatetime = 64
+vim.opt.wrap = false
+vim.opt.writebackup = false
