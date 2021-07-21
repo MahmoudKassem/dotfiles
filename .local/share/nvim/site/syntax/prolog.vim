@@ -62,7 +62,7 @@ if !exists("prolog_highlighting_clean")
     syn keyword prologKeyword   current_char_conversion open    write_term
     syn keyword prologKeyword   current_input   peek_byte       writeq
     syn keyword prologKeyword   current_op      peek_char
-    syn keyword prologKeyword   initialization nil string_chars false select format writeln mod is_list random random_between maplist member
+    syn keyword prologKeyword   initialization nil string_chars false select format writeln div mod is_list random random_between maplist member use_module
   endif
 
   syn match   prologOperator "+\|-\|\*\*\|*\|=\\=\|=:=\|\\==\|=<\|==\|>=\|\\=\|\\+\|=\.\.\|\.\|/\\\|\\/\|-->\|->\|<\|>\|=\|;\|!\|:-\|,\||\|@<\|@>"
