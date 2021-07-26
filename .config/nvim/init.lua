@@ -1,6 +1,5 @@
 require('autoCommands')
 require('options')
-require('colors')
 require('keyBindings')
 require('plugins')
 require('pluginConfig.lsp')
