@@ -1,3 +1,4 @@
+vim.g.colors_name = 'gruvbox'
 vim.opt.background = 'dark'
 vim.opt.backup = false
 vim.opt.clipboard = 'unnamedplus'
