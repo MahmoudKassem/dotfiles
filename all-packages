@@ -519,6 +519,7 @@ libfm
 libfm-extra
 libfm-gtk2
 libfontenc
+libfreeaptx
 libgcrypt
 libgit2
 libglvnd
@@ -556,7 +557,6 @@ libnsgif
 libnsl
 libogg
 libomxil-bellagio
-libopenaptx
 libp11-kit
 libpaper
 libpcap
