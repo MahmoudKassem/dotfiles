@@ -11,6 +11,7 @@ keyMapping('n', '<leader>d', ':lua vim.lsp.buf.definition()<cr>', keyMappingOpti
 keyMapping('n', '<leader>D', ':Telescope lsp_definitions<cr>', keyMappingOptions)
 keyMapping('n', '<leader>e', ':Telescope file_browser<cr>', keyMappingOptions)
 keyMapping('n', '<leader>f', ':Telescope find_files<cr>', keyMappingOptions)
+keyMapping('n', '<leader>F', ':lua vim.lsp.buf.formatting()<cr>', keyMappingOptions)
 keyMapping('n', '<leader>g', ':G', keyMappingOptions)
 keyMapping('n', '<leader>H', ':wincmd h<cr>', keyMappingOptions)
 keyMapping('n', '<leader>i', ':Telescope lsp_document_diagnostics<cr>', keyMappingOptions)
