@@ -1,5 +1,5 @@
 local globalVariables = vim.g
-globalVariables.completion_enable_auto_hover = 0
+globalVariables.completion_enable_auto_hover = 1
 globalVariables.completion_matching_smart_case = 1
 globalVariables.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
 globalVariables.completion_sorting = "none"

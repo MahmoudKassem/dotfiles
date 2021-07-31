@@ -2,8 +2,8 @@ local keyMapping = vim.api.nvim_set_keymap
 local keyMappingOptions = {noremap = true, silent = true}
 
 vim.g.mapleader = ' '
-keyMapping('i', '<leader>j', '<esc>:m .+1<cr>==', keyMappingOptions)
-keyMapping('i', '<leader>k', '<esc>:m .-2<cr>==', keyMappingOptions)
+keyMapping('i', '<c-j>', '<c-n>', keyMappingOptions)
+keyMapping('i', '<c-k>', '<c-p>', keyMappingOptions)
 keyMapping('n', '<leader>a', ':Telescope lsp_code_actions<cr>', keyMappingOptions)
 keyMapping('n', '<leader>b', ':Telescope git_branches<cr>', keyMappingOptions)
 keyMapping('n', '<leader>c', ':bwipeout<cr>', keyMappingOptions)
