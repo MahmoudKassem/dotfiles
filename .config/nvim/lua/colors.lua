@@ -25,6 +25,7 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
   vim.api.nvim_command('highlight ' .. highlightGroup .. colors)
 end
 
+highlight('CursorLine')
 highlight('EndOfBuffer', gruvboxDarkMode.background0Hard)
 highlight('MatchParen', nil, nil, true)
 highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
