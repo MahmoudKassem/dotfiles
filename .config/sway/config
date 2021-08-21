@@ -119,7 +119,7 @@ bar {
   workspace_buttons no
   status_command i3blocks
   colors {
-      statusline $white
+      statusline $blue
       background $black
   }
 }
