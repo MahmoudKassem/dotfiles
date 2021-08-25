@@ -1,8 +1,7 @@
-local globalVariables = vim.g
-globalVariables.completion_enable_auto_hover = 1
-globalVariables.completion_matching_smart_case = 1
-globalVariables.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
-globalVariables.completion_sorting = "none"
+vim.g.completion_enable_auto_hover = 1
+vim.g.completion_matching_smart_case = 1
+vim.g.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
+vim.g.completion_sorting = "none"
 
 local lsp_config = require('lspconfig')
 local on_attach = function(client, bufnr)
