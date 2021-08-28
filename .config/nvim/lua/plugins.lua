@@ -3,7 +3,6 @@ local function packAdd(package)
 end
 
 packAdd('auto-pairs')
--- packAdd('completion-nvim')
 packAdd('lualine.nvim')
 packAdd('nvim-cmp')
 packAdd('cmp-nvim-lsp')
