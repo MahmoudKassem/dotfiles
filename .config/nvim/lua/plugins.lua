@@ -3,8 +3,11 @@ local function packAdd(package)
 end
 
 packAdd('auto-pairs')
-packAdd('completion-nvim')
+-- packAdd('completion-nvim')
 packAdd('lualine.nvim')
+packAdd('nvim-cmp')
+packAdd('cmp-nvim-lsp')
+packAdd('cmp-nvim-lua')
 packAdd('nvim-lspconfig')
 packAdd('nvim-treesitter')
 packAdd('nvim-web-devicons')

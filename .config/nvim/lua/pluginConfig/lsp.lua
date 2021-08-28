@@ -1,34 +1,28 @@
-vim.g.completion_enable_auto_hover = 1
-vim.g.completion_matching_smart_case = 1
-vim.g.completion_matching_strategy_list = {"exact", "substring", "fuzzy"}
-vim.g.completion_sorting = "none"
-
 local lsp_config = require('lspconfig')
-local on_attach = function(client, bufnr)
-  require('completion').on_attach(client, bufnr)
-end
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 lsp_config.prolog_lsp.setup {
-  on_attach = on_attach
+  capabilities = capabilities
 }
 
 lsp_config.erlangls.setup {
-  on_attach = on_attach
+  capabilities = capabilities
 }
 
 lsp_config.gopls.setup {
-  on_attach = on_attach
+  capabilities = capabilities
 }
 
 lsp_config.hls.setup {
-  on_attach = on_attach,
+  capabilities = capabilities,
   root_dir = lsp_config.util.root_pattern(
     "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
   )
 }
 
 lsp_config.sumneko_lua.setup {
-  on_attach = on_attach,
+  capabilities = capabilities,
   cmd = { "lua-language-server", "-E", "/usr/local/share/lua-language-server/main.lua" },
   settings = {
     Lua = {

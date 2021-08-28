@@ -2,7 +2,6 @@ vim.g.colors_name = 'gruvbox'
 vim.opt.background = 'dark'
 vim.opt.backup = false
 vim.opt.clipboard = 'unnamedplus'
-vim.opt.completeopt = 'menuone,noinsert,noselect,longest'
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.filetype = 'on'
