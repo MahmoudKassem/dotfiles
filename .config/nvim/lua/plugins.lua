@@ -2,10 +2,10 @@ local function packAdd(package)
   vim.api.nvim_command('packadd ' .. package)
 end
 
-packAdd('auto-pairs')
 packAdd('cmp-nvim-lsp')
 packAdd('cmp-nvim-lua')
 packAdd('lualine.nvim')
+packAdd('nvim-autopairs')
 packAdd('nvim-cmp')
 packAdd('nvim-lspconfig')
 packAdd('nvim-treesitter')
