@@ -18,7 +18,6 @@ vim.opt.smartcase = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.swapfile = false
-vim.opt.syntax = 'on'
 vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 vim.opt.updatetime = 64
