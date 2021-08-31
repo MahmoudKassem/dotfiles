@@ -8,6 +8,7 @@ vim.opt.filetype = 'on'
 vim.opt.hlsearch = false
 vim.opt.ignorecase = true
 vim.opt.lazyredraw = true
+vim.opt.mouse = 'a'
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 2
