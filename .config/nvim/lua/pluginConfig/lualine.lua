@@ -3,6 +3,7 @@ local file = {
   file_status = true
 }
 
+local lightCyan = '#8ec07c'
 local lightMagenta = '#d3869b'
 local lightOrange = '#fe8019'
 local lightRed = '#fb4934'
@@ -15,10 +16,12 @@ local lspDiagnostics = {
   sections = ({
     'error',
     'warn',
+    'hint',
     'info'
   }),
   color_error = lightRed,
   color_warn = lightOrange,
+  color_hint = lightCyan,
   color_info = lightMagenta
 }
 
