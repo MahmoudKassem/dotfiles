@@ -21,8 +21,8 @@ local lspDiagnostics = {
   }),
   color_error = lightRed,
   color_warn = lightOrange,
-  color_hint = lightCyan,
-  color_info = lightMagenta
+  color_hint = lightMagenta,
+  color_info = lightCyan
 }
 
 require('lualine').setup {
