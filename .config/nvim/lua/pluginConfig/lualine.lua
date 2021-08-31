@@ -48,7 +48,6 @@ require('lualine').setup {
       },
       'fileformat',
       'encoding',
-      'progress',
       'location'
     },
     lualine_y = {},
