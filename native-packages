@@ -8,7 +8,6 @@ ca-certificates
 dash
 diffpdf
 efibootmgr
-erlang
 fakeroot
 ffmpeg
 flac

@@ -6,10 +6,6 @@ lsp_config.prolog_lsp.setup {
   capabilities = capabilities
 }
 
-lsp_config.erlangls.setup {
-  capabilities = capabilities
-}
-
 lsp_config.gopls.setup {
   capabilities = capabilities
 }
