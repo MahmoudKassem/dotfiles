@@ -31,6 +31,7 @@ imagemagick
 imv
 jack2
 libnotify
+libva-mesa-driver
 linux-firmware
 linux-zen
 linux-zen-headers
@@ -47,7 +48,6 @@ networkmanager-openrc
 newsboat
 noto-fonts-emoji
 ntfs-3g
-obs-studio
 opendoas
 openrc
 papirus-icon-theme

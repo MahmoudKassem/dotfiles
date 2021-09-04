@@ -3,7 +3,6 @@ acpid
 acpid-openrc
 adobe-source-code-pro-fonts
 adwaita-icon-theme
-alsa-card-profiles
 alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
@@ -509,13 +508,11 @@ libeudev
 libevdev
 libevent
 libexif
-libfdk-aac
 libffi
 libfm
 libfm-extra
 libfm-gtk2
 libfontenc
-libfreeaptx
 libgcrypt
 libgit2
 libglvnd
@@ -532,7 +529,6 @@ libinih
 libinput
 libjpeg-turbo
 libksba
-libldac
 libldap
 liblqr
 libmfx
@@ -592,6 +588,7 @@ libunistring
 libunwind
 libusb
 libva
+libva-mesa-driver
 libvdpau
 libvorbis
 libvpx
@@ -645,7 +642,6 @@ lzo
 make
 mako
 man-db
-mbedtls
 md4c
 mdadm
 menu-cache
@@ -676,7 +672,6 @@ npth
 nspr
 nss
 ntfs-3g
-obs-studio
 opencore-amr
 opendoas
 openexr
@@ -704,7 +699,6 @@ perl-error
 perl-mailtools
 perl-timedate
 pinentry
-pipewire
 pixman
 polkit
 poppler
@@ -725,10 +719,8 @@ readline
 redshift-wayland-git
 rest
 ripgrep
-rtkit
 rubberband
 run-parts
-sbc
 sdl2
 sdl2_image
 sdl2_ttf
@@ -779,9 +771,7 @@ volume_key
 vulkan-icd-loader
 wayland
 wayland-protocols
-webrtc-audio-processing
 which
-wlrobs
 wlroots
 wpa_supplicant
 wqy-zenhei
