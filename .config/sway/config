@@ -20,6 +20,8 @@ input type:touchpad {
     natural_scroll disabled
 }
 
+floating_modifier $mod normal
+
 #enable gaps between windows
 gaps outer 0
 gaps inner 8
@@ -34,11 +36,12 @@ default_border pixel
 #define colors the E6 at the end causes transparency of about 8%
 set $black "#1d2021E6"
 set $blue "#83a598E6"
+set $orange "#fe8019E6"
 set $white "#ebdbb2E6"
 
 #color for window decoration  title border  title background  title text  window border child window border
-client.focused                $blue         $black            $blue       $blue         $blue
-client.focused_inactive       $blue         $black            $blue       $blue         $black
+client.focused                $orange       $black            $orange     $orange       $orange
+client.focused_inactive       $orange       $black            $orange     $orange       $black
 client.unfocused              $black        $black            $blue       $black        $black
 
 #home row direction keys, like vim

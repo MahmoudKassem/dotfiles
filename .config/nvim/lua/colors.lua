@@ -2,7 +2,6 @@
 local gruvboxDarkMode = {
   background0Hard = '#1d2021',
   background1 = '#3c3836',
-  background2 = '#504945',
   foreground = '#ebdbb2',
   grey = '#928374',
   lightBlue = '#83a598',
@@ -28,10 +27,10 @@ end
 highlight('CursorLine')
 highlight('EndOfBuffer', gruvboxDarkMode.background0Hard)
 highlight('MatchParen', nil, nil, true)
-highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background2)
-highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
-highlight('PmenuSbar', nil, gruvboxDarkMode.background2)
-highlight('PmenuThumb', nil, gruvboxDarkMode.lightBlue)
+highlight('Pmenu', gruvboxDarkMode.foreground, gruvboxDarkMode.background1)
+highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
+highlight('PmenuSbar', nil, gruvboxDarkMode.background1)
+highlight('PmenuThumb', nil, gruvboxDarkMode.lightOrange)
 highlight('Search', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
 highlight('SignColumn')
 highlight('VertSplit', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightBlue)
