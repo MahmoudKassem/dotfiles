@@ -566,7 +566,6 @@ libraw1394
 librsvg
 libsamplerate
 libsasl
-libseat
 libseccomp
 libsecret
 libsm
@@ -724,6 +723,7 @@ run-parts
 sdl2
 sdl2_image
 sdl2_ttf
+seatd
 sed
 shaderc
 shadow

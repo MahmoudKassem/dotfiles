@@ -22,9 +22,6 @@ export STACK_ROOT=$XDG_DATA_HOME/stack
 export PASSWORD_STORE_DIR=$XDG_DATA_HOME/pass
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
-#set libseat backend to logind
-export LIBSEAT_BACKEND=logind
-
 #set colors for less and disable its history file
 cyan=$(tput setaf 6)
 green=$(tput setaf 2)
