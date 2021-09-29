@@ -57,6 +57,7 @@ e2fsprogs
 efibootmgr
 efivar
 elfutils
+elogind
 elogind-openrc
 esysusers
 etmpfiles
@@ -571,6 +572,7 @@ libsm
 libsndfile
 libsodium
 libsoup
+libsoup3
 libsoxr
 libssh
 libssh2
@@ -658,7 +660,6 @@ ndctl
 neofetch
 neomutt
 neovim-nightly-bin
-nerd-fonts-iosevka
 netifrc
 nettle
 networkmanager
@@ -757,6 +758,7 @@ tracker3
 tree
 tslib
 ttf-hanazono
+ttf-iosevka-nerd
 tzdata
 uchardet
 udisks2
@@ -771,7 +773,6 @@ vmaf
 volume_key
 vulkan-icd-loader
 wayland
-wayland-protocols
 which
 wlroots
 wpa_supplicant
