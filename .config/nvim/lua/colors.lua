@@ -39,6 +39,8 @@ highlight('Visual', nil, nil, true)
 highlight('StatusLine', gruvboxDarkMode.background1)
 highlight('StatusLineNC', gruvboxDarkMode.background1)
 
+highlight('CmpItemAbbr', gruvboxDarkMode.foreground)
+highlight('CmpItemKind', gruvboxDarkMode.foreground)
 highlight('Identifier', gruvboxDarkMode.foreground)
 highlight('NonText', gruvboxDarkMode.foreground)
 
@@ -94,6 +96,7 @@ highlight('SpecialComment', gruvboxDarkMode.lightMagenta)
 highlight('Underlined', gruvboxDarkMode.lightMagenta)
 
 highlight('CursorLineNR', gruvboxDarkMode.lightOrange)
+highlight('CmpItemAbbrMatch', gruvboxDarkMode.lightOrange)
 highlight('Delimiter', gruvboxDarkMode.lightOrange)
 highlight('DiagnosticWarn', gruvboxDarkMode.lightOrange)
 highlight('LspDiagnosticsDefaultWarning', gruvboxDarkMode.lightOrange)

@@ -5,6 +5,7 @@ end
 packAdd('cmp-nvim-lsp')
 packAdd('cmp-nvim-lua')
 packAdd('lualine.nvim')
+packAdd('lspkind-nvim')
 packAdd('nvim-autopairs')
 packAdd('nvim-cmp')
 packAdd('nvim-lspconfig')
