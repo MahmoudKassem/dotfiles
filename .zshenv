@@ -1,14 +1,14 @@
 #!/bin/zsh
 
 #default applications
-export BROWSER="brave"
-export EDITOR="nvim"
-export FILE="pcmanfm"
-export IMAGE="imv"
-export READER="zathura"
-export SHELL="zsh"
-export TERMINAL="qterminal"
-export VIDEO="mpv"
+export BROWSER=brave
+export EDITOR=nvim
+export FILE=pcmanfm
+export IMAGE=imv
+export READER=zathura
+export SHELL=zsh
+export TERMINAL=qterminal
+export VIDEO=mpv
 
 #follow XDG Base Dir Spec
 export XDG_CACHE_HOME=$HOME/.cache
