@@ -106,6 +106,7 @@ gnupg
 gnutls
 go
 gopls
+gperftools
 gpgme
 gpm
 gptfdisk
@@ -215,20 +216,17 @@ haskell-filepattern
 haskell-filtrable
 haskell-fingertree
 haskell-floskell
-haskell-foldl
 haskell-fourmolu
 haskell-free
 haskell-fsnotify
 haskell-fuzzy
 haskell-generic-deriving
-haskell-generic-lens
-haskell-generic-lens-core
 haskell-ghc-api-compat
 haskell-ghc-check
 haskell-ghc-exactprint
+haskell-ghc-lib-parser
 haskell-ghc-lib-parser-ex
 haskell-ghc-paths
-haskell-ghc-source-gen
 haskell-ghc-trace-events
 haskell-ghcide
 haskell-githash
@@ -246,7 +244,7 @@ haskell-hie-compat
 haskell-hiedb
 haskell-hinotify
 haskell-hls-brittany-plugin
-haskell-hls-class-plugin
+haskell-hls-call-hierarchy-plugin
 haskell-hls-eval-plugin
 haskell-hls-explicit-imports-plugin
 haskell-hls-floskell-plugin
@@ -258,11 +256,8 @@ haskell-hls-module-name-plugin
 haskell-hls-ormolu-plugin
 haskell-hls-plugin-api
 haskell-hls-pragmas-plugin
-haskell-hls-refine-imports-plugin
 haskell-hls-retrie-plugin
-haskell-hls-splice-plugin
 haskell-hls-stylish-haskell-plugin
-haskell-hls-tactics-plugin
 haskell-hourglass
 haskell-hpack
 haskell-hscolour
@@ -275,10 +270,8 @@ haskell-http-client-tls
 haskell-http-conduit
 haskell-http-download
 haskell-http-types
-haskell-hyphenation
 haskell-implicit-hie
 haskell-implicit-hie-cradle
-haskell-indexed-profunctors
 haskell-indexed-traversable
 haskell-indexed-traversable-instances
 haskell-infer-license
@@ -295,13 +288,11 @@ haskell-libyaml
 haskell-lift-type
 haskell-lifted-async
 haskell-lifted-base
-haskell-logict
 haskell-lsp
 haskell-lsp-test
 haskell-lsp-types
 haskell-lucid
 haskell-lukko
-haskell-math-functions
 haskell-megaparsec
 haskell-memory
 haskell-microlens
@@ -320,7 +311,6 @@ haskell-mono-traversable
 haskell-monoid-subclasses
 haskell-multistate
 haskell-mustache
-haskell-mwc-random
 haskell-neat-interpolation
 haskell-network
 haskell-network-bsd
@@ -358,7 +348,6 @@ haskell-quickcheck
 haskell-random
 haskell-random-shuffle
 haskell-refact
-haskell-refinery
 haskell-reflection
 haskell-regex-applicative
 haskell-regex-applicative-text
@@ -376,7 +365,6 @@ haskell-safe
 haskell-safe-exceptions
 haskell-scientific
 haskell-semigroupoids
-haskell-semigroups
 haskell-shake
 haskell-shelly
 haskell-silently
@@ -398,6 +386,7 @@ haskell-tagged
 haskell-tar
 haskell-tar-conduit
 haskell-temporary
+haskell-terminal-size
 haskell-text-metrics
 haskell-th-abstraction
 haskell-th-compat
@@ -413,6 +402,7 @@ haskell-transformers-base
 haskell-transformers-compat
 haskell-type-equality
 haskell-typed-process
+haskell-unicode-data
 haskell-unicode-transforms
 haskell-uniplate
 haskell-unix-compat
@@ -628,6 +618,7 @@ linux-api-headers
 linux-firmware
 linux-zen
 linux-zen-headers
+llvm
 llvm-libs
 lm_sensors
 lmdb
@@ -672,6 +663,7 @@ npth
 nspr
 nss
 ntfs-3g
+numactl
 opencore-amr
 opendoas
 openexr
