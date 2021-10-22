@@ -10,7 +10,7 @@ case $weatherCondition in
   "Heavy rain" | "Heavy rain at times" | "Heavy showers" | "Moderate or heavy rain shower") icon= ;;
   "Blizzard" | "Heavy snow" | "Heavy snow showers" | "Patchy heavy snow") icon= ;;
   "Light drizzle" | "Light rain" | "Light rain shower" | "Light showers" | "Moderate rain" | \
-    "Patchy light drizzle" | "Patchy light rain" | "Patchy rain possible") icon= ;;
+    "Patchy light drizzle" | "Patchy light rain" | "Patchy rain possible" | "Rain shower") icon= ;;
   "Light sleet" | "Light sleet showers" | "Light snow" |  "Light snow showers" | "Moderate snow" | \
     "Patchy light snow" | "Patchy moderate snow" | "Patchy sleet possible" | "Patchy snow possible") icon= ;;
   "Partly cloudy") icon= ;;
