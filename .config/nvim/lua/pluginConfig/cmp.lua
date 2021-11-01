@@ -1,6 +1,11 @@
-require('cmp').setup {
+require('nvim-autopairs').setup {}
+local cmp = require('cmp')
+cmp.setup {
   formatting = {
       format = require('lspkind').cmp_format()
+  },
+  mapping = {
+    ['<CR>'] = cmp.mapping.confirm()
   },
   sources = {
     { name = 'nvim_lsp' },
