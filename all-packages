@@ -154,8 +154,6 @@ haskell-blaze-builder
 haskell-blaze-html
 haskell-blaze-markup
 haskell-blaze-textual
-haskell-brittany
-haskell-butcher
 haskell-byteable
 haskell-byteorder
 haskell-bytestring-encoding
@@ -183,18 +181,15 @@ haskell-cryptohash-sha1
 haskell-cryptohash-sha256
 haskell-cryptonite
 haskell-cryptonite-conduit
-haskell-czipwith
 haskell-data-default
 haskell-data-default-class
 haskell-data-default-instances-containers
 haskell-data-default-instances-dlist
 haskell-data-default-instances-old-locale
 haskell-data-fix
-haskell-data-tree-print
 haskell-dependent-map
 haskell-dependent-sum
 haskell-dependent-sum-template
-haskell-deque
 haskell-diff
 haskell-digest
 haskell-direct-sqlite
@@ -243,7 +238,6 @@ haskell-hie-bios
 haskell-hie-compat
 haskell-hiedb
 haskell-hinotify
-haskell-hls-brittany-plugin
 haskell-hls-call-hierarchy-plugin
 haskell-hls-eval-plugin
 haskell-hls-explicit-imports-plugin
@@ -305,11 +299,9 @@ haskell-monad-control
 haskell-monad-dijkstra
 haskell-monad-logger
 haskell-monad-loops
-haskell-monad-memo
 haskell-monadrandom
 haskell-mono-traversable
 haskell-monoid-subclasses
-haskell-multistate
 haskell-mustache
 haskell-neat-interpolation
 haskell-network
@@ -379,7 +371,6 @@ haskell-statevar
 haskell-stm-chans
 haskell-streaming-commons
 haskell-strict
-haskell-strict-list
 haskell-syb
 haskell-system-filepath
 haskell-tagged
@@ -410,7 +401,6 @@ haskell-unix-time
 haskell-unliftio
 haskell-unliftio-core
 haskell-unordered-containers
-haskell-unsafe
 haskell-utf8-string
 haskell-uuid
 haskell-uuid-types
@@ -562,11 +552,9 @@ libsm
 libsndfile
 libsodium
 libsoup
-libsoup3
 libsoxr
 libssh
 libssh2
-libstemmer
 libsynctex
 libtasn1
 libteam
@@ -591,6 +579,7 @@ libxcb
 libxcomposite
 libxcrypt
 libxcursor
+libxcvt
 libxdamage
 libxdmcp
 libxext
@@ -746,7 +735,6 @@ tar
 tdb
 texinfo
 thin-provisioning-tools
-tracker3
 tree
 tslib
 ttf-hanazono
