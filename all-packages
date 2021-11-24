@@ -565,6 +565,7 @@ libtirpc
 libtool
 libunistring
 libunwind
+liburcu
 libusb
 libva
 libva-mesa-driver
