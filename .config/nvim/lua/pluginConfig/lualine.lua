@@ -11,7 +11,7 @@ local lightRed = '#fb4934'
 local lspDiagnostics = {
   'diagnostics',
   sources = {
-    'nvim_lsp'
+    'nvim_diagnostic'
   },
   sections = ({
     'error',
