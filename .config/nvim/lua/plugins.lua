@@ -4,9 +4,11 @@ end
 
 packAdd('Comment.nvim')
 packAdd('cmp-buffer')
+packAdd('cmp_luasnip')
 packAdd('cmp-nvim-lsp')
 packAdd('cmp-nvim-lua')
 packAdd('cmp-path')
+packAdd('LuaSnip')
 packAdd('lualine.nvim')
 packAdd('lspkind-nvim')
 packAdd('nvim-autopairs')
