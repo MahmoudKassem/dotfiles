@@ -10,6 +10,7 @@ alsa-utils
 amd-ucode
 aom
 arc-gtk-theme
+archlinux-keyring
 argon2
 artix-keyring
 artix-mirrorlist
@@ -198,7 +199,6 @@ haskell-dlist
 haskell-easy-file
 haskell-echo
 haskell-ed25519
-haskell-either
 haskell-enclosed-exceptions
 haskell-entropy
 haskell-erf
@@ -430,6 +430,7 @@ imath
 imlib2
 imv
 inetutils
+iniparser
 iproute2
 iptables
 iputils
@@ -692,6 +693,7 @@ python
 qt5-base
 qt5-styleplugins
 qt5-svg
+qt5-translations
 qt5-x11extras
 qt5ct
 qterminal
