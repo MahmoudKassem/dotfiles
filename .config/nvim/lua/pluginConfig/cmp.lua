@@ -1,3 +1,4 @@
+require("luasnip.loaders.from_vscode").lazy_load()
 require('nvim-autopairs').setup {}
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
