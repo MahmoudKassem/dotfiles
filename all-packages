@@ -62,7 +62,6 @@ elogind
 elogind-openrc
 esysusers
 etmpfiles
-eudev
 expat
 fakeroot
 ffmpeg
@@ -485,7 +484,6 @@ libedit
 libelf
 libelogind
 libepoxy
-libeudev
 libevdev
 libevent
 libexif
@@ -564,6 +562,7 @@ libtheora
 libtiff
 libtirpc
 libtool
+libudev
 libunistring
 libunwind
 liburcu
@@ -744,6 +743,7 @@ ttf-hanazono
 ttf-iosevka-nerd
 tzdata
 uchardet
+udev
 udisks2
 unimatrix-git
 unzip

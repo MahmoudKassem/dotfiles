@@ -33,6 +33,7 @@ imagemagick
 imv
 jack2
 libnotify
+libplacebo
 libva-mesa-driver
 linux-firmware
 linux-zen
