@@ -555,6 +555,7 @@ libsoxr
 libssh
 libssh2
 libsynctex
+libsysprof-capture
 libtasn1
 libteam
 libthai
