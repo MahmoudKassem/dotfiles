@@ -418,7 +418,7 @@ hidapi
 hlint
 htop
 http-parser
-hwids
+hwdata
 hwloc
 i3blocks
 iana-etc
