@@ -13,7 +13,7 @@ vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope find_files<cr>', keyMappin
 vim.api.nvim_set_keymap('n', '<leader>F', ':lua vim.lsp.buf.formatting()<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>g', ':G', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>h', ':wincmd h<cr>', keyMappingOptions)
-vim.api.nvim_set_keymap('n', '<leader>i', ':Telescope lsp_document_diagnostics<cr>', keyMappingOptions)
+vim.api.nvim_set_keymap('n', '<leader>i', ':Telescope diagnostics bufnr=0<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>j', ':wincmd j<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>J', ':m .+1<cr>==', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>k', ':wincmd k<cr>', keyMappingOptions)

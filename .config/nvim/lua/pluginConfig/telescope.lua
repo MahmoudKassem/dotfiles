@@ -1,5 +1,6 @@
+local telescope = require('telescope')
 local actions = require('telescope.actions')
-require('telescope').setup{
+telescope.setup{
   defaults = {
     mappings = {
       i = {
@@ -11,3 +12,5 @@ require('telescope').setup{
     color_devicons = false
   }
 }
+
+telescope.load_extension "file_browser"
