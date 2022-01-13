@@ -216,6 +216,7 @@ haskell-fsnotify
 haskell-fuzzy
 haskell-generic-deriving
 haskell-ghc-api-compat
+haskell-ghc-bignum-orphans
 haskell-ghc-check
 haskell-ghc-exactprint
 haskell-ghc-lib-parser
