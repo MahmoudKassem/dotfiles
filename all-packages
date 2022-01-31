@@ -35,7 +35,6 @@ ca-certificates-mozilla
 ca-certificates-utils
 cairo
 cantarell-fonts
-celt
 coreutils
 cryptsetup
 curl
@@ -608,6 +607,7 @@ libyaml
 licenses
 linux-api-headers
 linux-firmware
+linux-firmware-whence
 linux-zen
 linux-zen-headers
 llvm
@@ -616,8 +616,8 @@ lm_sensors
 lmdb
 lua
 lua-language-server-git
-lua52
 lua53
+luajit
 lvm2
 lxmenu-data
 lynx
@@ -752,7 +752,6 @@ unzip
 util-linux
 util-linux-libs
 v4l-utils
-vamp-plugin-sdk
 vid.stab
 vmaf
 volume_key
@@ -795,8 +794,6 @@ zathura
 zathura-pdf-mupdf
 zeromq
 zimg
-zita-alsa-pcmi
-zita-resampler
 zlib
 zsh
 zsh-autosuggestions
