@@ -4,6 +4,7 @@ end
 
 packAdd('Comment.nvim')
 packAdd('cmp-buffer')
+packAdd('cmp-cmdline')
 packAdd('cmp_luasnip')
 packAdd('cmp-nvim-lsp')
 packAdd('cmp-nvim-lua')

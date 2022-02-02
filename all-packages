@@ -209,6 +209,7 @@ haskell-filepattern
 haskell-filtrable
 haskell-fingertree
 haskell-floskell
+haskell-foldl
 haskell-fourmolu
 haskell-free
 haskell-fsnotify
@@ -281,6 +282,8 @@ haskell-libyaml
 haskell-lift-type
 haskell-lifted-async
 haskell-lifted-base
+haskell-list-t
+haskell-logict
 haskell-lsp
 haskell-lsp-test
 haskell-lsp-types

@@ -48,3 +48,15 @@ cmp.setup {
     { name = 'buffer' }
   }
 }
+
+cmp.setup.cmdline(':', {
+  sources = {
+    { name = 'cmdline' }
+  }
+})
+
+cmp.setup.cmdline('/', {
+  sources = {
+    { name = 'buffer' }
+  }
+})
