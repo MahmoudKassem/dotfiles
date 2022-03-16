@@ -56,7 +56,6 @@ double-conversion
 e2fsprogs
 efibootmgr
 efivar
-elfutils
 elogind
 elogind-openrc
 esysusers
@@ -312,6 +311,7 @@ haskell-network-info
 haskell-network-uri
 haskell-old-locale
 haskell-old-time
+haskell-onetuple
 haskell-only
 haskell-open-browser
 haskell-opentelemetry
@@ -467,7 +467,6 @@ libblockdev
 libbluray
 libbytesize
 libcaca
-libcanberra
 libcap
 libcap-ng
 libcddb
@@ -475,7 +474,6 @@ libcdio
 libcdio-paranoia
 libcloudproviders
 libcolord
-libcroco
 libcups
 libdaemon
 libdatrie
@@ -509,6 +507,7 @@ libidn2
 libiec61883
 libinih
 libinput
+libisl
 libjpeg-turbo
 libksba
 libldap
@@ -720,7 +719,6 @@ shared-mime-info
 shellcheck
 slang
 slurp
-sound-theme-freedesktop
 speex
 speexdsp
 spirv-tools
@@ -739,9 +737,9 @@ syncthing
 sysfsutils
 talloc
 tar
-tdb
 texinfo
 thin-provisioning-tools
+tpm2-tss
 tree
 tslib
 ttf-hanazono
