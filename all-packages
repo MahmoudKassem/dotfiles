@@ -205,7 +205,6 @@ haskell-file-embed
 haskell-filelock
 haskell-filemanip
 haskell-filepattern
-haskell-filtrable
 haskell-fingertree
 haskell-floskell
 haskell-foldl
@@ -343,8 +342,6 @@ haskell-random
 haskell-random-shuffle
 haskell-refact
 haskell-reflection
-haskell-regex-applicative
-haskell-regex-applicative-text
 haskell-regex-base
 haskell-regex-tdfa
 haskell-resource-pool
@@ -553,6 +550,7 @@ libsm
 libsndfile
 libsodium
 libsoup
+libsoup3
 libsoxr
 libssh
 libssh2
@@ -785,6 +783,7 @@ xorg-server-common
 xorg-setxkbmap
 xorg-xkbcomp
 xorg-xprop
+xorg-xrandr
 xorg-xset
 xorg-xwayland
 xorgproto
