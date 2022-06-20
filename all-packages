@@ -69,6 +69,7 @@ filesystem
 findutils
 flac
 fontconfig
+freeglut
 freeimage
 freetype2
 fribidi
@@ -498,7 +499,6 @@ libglvnd
 libgpg-error
 libgudev
 libheif
-libibus
 libice
 libid3tag
 libidn
@@ -573,6 +573,7 @@ libusb
 libva
 libva-mesa-driver
 libvdpau
+libverto
 libvorbis
 libvpx
 libwacom
@@ -663,6 +664,7 @@ opendoas
 openexr
 openjpeg2
 openmpi
+openpmix
 openrc
 openssh
 openssl
