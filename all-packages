@@ -53,6 +53,7 @@ dmraid
 dnssec-anchors
 dosfstools
 double-conversion
+duktape
 e2fsprogs
 efibootmgr
 efivar
