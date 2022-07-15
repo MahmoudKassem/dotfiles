@@ -463,6 +463,7 @@ libassuan
 libasyncns
 libatasmart
 libavc1394
+libavif
 libblockdev
 libbluray
 libbpf
@@ -509,6 +510,7 @@ libinih
 libinput
 libisl
 libjpeg-turbo
+libjxl
 libksba
 libldap
 liblqr
@@ -608,6 +610,7 @@ libxtst
 libxv
 libxxf86vm
 libyaml
+libyuv
 licenses
 linux-api-headers
 linux-firmware
