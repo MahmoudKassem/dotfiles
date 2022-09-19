@@ -150,6 +150,7 @@ haskell-base16-bytestring
 haskell-base64-bytestring
 haskell-basement
 haskell-bifunctors
+haskell-bitvec
 haskell-blaze-builder
 haskell-blaze-html
 haskell-blaze-markup
@@ -467,6 +468,7 @@ libavif
 libblockdev
 libbluray
 libbpf
+libbs2b
 libbytesize
 libcaca
 libcap
@@ -663,6 +665,7 @@ nspr
 nss
 ntfs-3g
 numactl
+ocl-icd
 opencore-amr
 opendoas
 openexr
@@ -699,6 +702,7 @@ popt
 procps-ng
 psmisc
 python
+python-certifi
 qt5-base
 qt5-styleplugins
 qt5-svg
@@ -719,6 +723,7 @@ sdl2_image
 sdl2_ttf
 seatd
 sed
+sfsexp
 shaderc
 shadow
 shared-mime-info
@@ -797,7 +802,7 @@ xorg-xwayland
 xorgproto
 xvidcore
 xz
-youtube-dl
+yt-dlp
 zathura
 zathura-pdf-mupdf
 zeromq
