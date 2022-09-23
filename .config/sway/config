@@ -32,6 +32,7 @@ output eDP-1 resolution 1920x1080
 
 #disable title bar
 default_border pixel
+default_floating_border pixel
 
 #define colors the E6 at the end causes transparency of about 8%
 set $black "#1d2021E6"
