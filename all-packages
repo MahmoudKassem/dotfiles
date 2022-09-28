@@ -14,9 +14,7 @@ archlinux-keyring
 argon2
 artix-keyring
 artix-mirrorlist
-at-spi2-atk
 at-spi2-core
-atk
 attr
 audit
 avahi
@@ -419,6 +417,7 @@ haskell-zip-archive
 haskell-zlib
 hicolor-icon-theme
 hidapi
+highway
 hlint
 htop
 http-parser
@@ -561,6 +560,7 @@ libsoup3
 libsoxr
 libssh
 libssh2
+libstemmer
 libsynctex
 libsysprof-capture
 libtasn1
@@ -714,7 +714,6 @@ qtermwidget
 rav1e
 readline
 redshift-wayland-git
-rest
 ripgrep
 rubberband
 run-parts
@@ -751,6 +750,7 @@ tar
 texinfo
 thin-provisioning-tools
 tpm2-tss
+tracker3
 tree
 tslib
 ttf-hanazono
