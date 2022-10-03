@@ -277,6 +277,7 @@ haskell-js-jquery
 haskell-kan-extensions
 haskell-language-server
 haskell-lens
+haskell-lens-aeson
 haskell-libyaml
 haskell-lift-type
 haskell-lifted-async
@@ -356,6 +357,7 @@ haskell-rope-utf16-splay
 haskell-safe
 haskell-safe-exceptions
 haskell-scientific
+haskell-semialign
 haskell-semigroupoids
 haskell-shake
 haskell-shelly
@@ -376,9 +378,12 @@ haskell-system-filepath
 haskell-tagged
 haskell-tar
 haskell-tar-conduit
+haskell-tasty
+haskell-tasty-hunit
 haskell-temporary
 haskell-terminal-size
 haskell-text-metrics
+haskell-text-short
 haskell-th-abstraction
 haskell-th-compat
 haskell-th-expand-syns
@@ -393,6 +398,7 @@ haskell-transformers-base
 haskell-transformers-compat
 haskell-type-equality
 haskell-typed-process
+haskell-unbounded-delays
 haskell-unicode-data
 haskell-unicode-transforms
 haskell-uniplate
@@ -408,6 +414,8 @@ haskell-vault
 haskell-vector
 haskell-vector-algorithms
 haskell-void
+haskell-wcwidth
+haskell-witherable
 haskell-x509
 haskell-x509-store
 haskell-x509-system
