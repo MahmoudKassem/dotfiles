@@ -215,6 +215,7 @@ haskell-free
 haskell-fsnotify
 haskell-fuzzy
 haskell-generic-deriving
+haskell-generically
 haskell-ghc-api-compat
 haskell-ghc-bignum-orphans
 haskell-ghc-check
@@ -482,7 +483,6 @@ libbytesize
 libcaca
 libcap
 libcap-ng
-libcddb
 libcdio
 libcdio-paranoia
 libcloudproviders
