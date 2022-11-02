@@ -84,7 +84,6 @@ gcr
 gdbm
 gdk-pixbuf2
 geoclue
-geocode-glib
 gettext
 ghc
 ghc-libs
@@ -452,7 +451,6 @@ jack2
 jansson
 jasper
 jbig2dec
-js78
 json-c
 json-glib
 jxrlib
