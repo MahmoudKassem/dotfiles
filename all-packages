@@ -705,6 +705,7 @@ pinentry
 pixman
 polkit
 poppler
+poppler-data
 poppler-qt5
 popt
 procps-ng
