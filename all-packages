@@ -40,7 +40,7 @@ curl
 dash
 dashbinsh
 dav1d
-db
+db5.3
 dbus
 dbus-openrc
 dconf
@@ -570,7 +570,6 @@ libsoup3
 libsoxr
 libssh
 libssh2
-libstemmer
 libsynctex
 libsysprof-capture
 libtasn1
@@ -758,10 +757,8 @@ syncthing
 sysfsutils
 talloc
 tar
-texinfo
 thin-provisioning-tools
 tpm2-tss
-tracker3
 tree
 tslib
 ttf-hanazono
@@ -780,7 +777,6 @@ vmaf
 volume_key
 vulkan-icd-loader
 wayland
-which
 wlroots
 wpa_supplicant
 wqy-zenhei
