@@ -107,6 +107,16 @@ bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -SIGRTMIN+10 i3b
 bindsym Print exec grim -t png ~/pics/$(date +%Y-%m-%d_%H-%M-%S).png
 bindsym $mod+Print exec grim -t png -g "$(slurp)" ~/pics/$(date +%Y-%m-%d_%H-%M-%S).png
 
+#switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+
+#move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+
 #keybindings for resize mode
 bindsym $mod+shift+r mode "resize"
 mode "resize" {
@@ -144,4 +154,4 @@ exec mako &
 exec pcmanfm -d > /dev/null 2>&1
 
 #set screen brightness to 32%
-exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl0/brightness
+exec echo 82 | doas -- tee -a /sys/class/backlight/amdgpu_bl1/brightness
