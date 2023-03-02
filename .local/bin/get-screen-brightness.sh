@@ -1,8 +1,8 @@
 #!/bin/sh
 
 currentBrightness=$((
-  $(head /sys/class/backlight/amdgpu_bl1/brightness)*100 /
-  $(head /sys/class/backlight/amdgpu_bl1/max_brightness)))
+  $(head /sys/class/backlight/amdgpu_bl0/brightness)*100 /
+  $(head /sys/class/backlight/amdgpu_bl0/max_brightness)))
 if [ $currentBrightness -gt 70 ]
   then icon=
 elif [ $currentBrightness -lt 30 ]
