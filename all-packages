@@ -762,7 +762,6 @@ readline
 redshift-wayland-git
 ripgrep
 rubberband
-run-parts
 sdl2
 sdl2_image
 sdl2_ttf
