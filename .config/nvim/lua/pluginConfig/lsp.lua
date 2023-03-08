@@ -2,7 +2,7 @@ local lsp_config = require('lspconfig')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-lsp_config.prolog_lsp.setup {
+lsp_config.prolog_ls.setup {
   capabilities = capabilities
 }
 
@@ -17,7 +17,7 @@ lsp_config.hls.setup {
   )
 }
 
-lsp_config.sumneko_lua.setup {
+lsp_config.lua_ls.setup {
   capabilities = capabilities,
   cmd = { "lua-language-server", "-E", "/usr/local/share/lua-language-server/main.lua" },
   settings = {
