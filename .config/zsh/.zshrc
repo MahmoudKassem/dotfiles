@@ -37,7 +37,6 @@ alias d='cd "$(find . -type d | fzy)"'
 alias f='open-file.sh "$(rg --files --hidden | fzy)"'
 alias g='git'
 alias h='eval "$(tac ~/.cache/command-history | fzy)"'
-alias m='nohup qterminal -e mpv --shuffle --loop-playlist=inf $HOME/music > /dev/null &'
 alias n='update-git-repos-in-directory.sh "NeoVim plugins" $HOME/.local/share/nvim/site/pack/plugins/opt "git diff --stat @{1}"'
 alias l="ls -hA --color=auto"
 alias t="tree -aC"
