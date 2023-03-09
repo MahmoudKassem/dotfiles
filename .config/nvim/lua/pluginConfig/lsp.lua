@@ -11,10 +11,7 @@ lsp_config.gopls.setup {
 }
 
 lsp_config.hls.setup {
-  capabilities = capabilities,
-  root_dir = lsp_config.util.root_pattern(
-    "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git"
-  )
+  capabilities = capabilities
 }
 
 lsp_config.lua_ls.setup {
