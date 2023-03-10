@@ -574,6 +574,7 @@ libnsgif
 libnsl
 libogg
 libomxil-bellagio
+libopenmpt
 libp11-kit
 libpaper
 libpcap
@@ -690,7 +691,6 @@ mpg123
 mpv
 mtdev
 mujs
-mupdf
 ncurses
 ndctl
 neofetch
@@ -746,6 +746,7 @@ poppler
 poppler-data
 poppler-qt5
 popt
+portaudio
 procps-ng
 psmisc
 python
