@@ -23,6 +23,7 @@ vim.api.nvim_set_keymap('n', '<leader>m', ':lua vim.diagnostic.open_float({borde
 vim.api.nvim_set_keymap('n', '<leader>n', ':Telescope buffers<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>o', ':Telescope lsp_references<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>p', ':Telescope oldfiles<cr>', keyMappingOptions)
+vim.api.nvim_set_keymap('n', '<leader>P', ':Telescope projects<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>q', ':quit!<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>Q', ':qall!<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>r', ':lua vim.lsp.buf.rename()<cr>', keyMappingOptions)
