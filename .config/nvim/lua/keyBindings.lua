@@ -10,7 +10,7 @@ vim.api.nvim_set_keymap('n', '<leader>d', ':lua vim.lsp.buf.definition()<cr>', k
 vim.api.nvim_set_keymap('n', '<leader>D', ':Telescope lsp_definitions<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>e', ':Telescope file_browser<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope find_files<cr>', keyMappingOptions)
-vim.api.nvim_set_keymap('n', '<leader>F', ':lua vim.lsp.buf.formatting()<cr>', keyMappingOptions)
+vim.api.nvim_set_keymap('n', '<leader>F', ':lua vim.lsp.buf.format()<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>g', ':G', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>h', ':wincmd h<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>i', ':Telescope diagnostics bufnr=0<cr>', keyMappingOptions)
