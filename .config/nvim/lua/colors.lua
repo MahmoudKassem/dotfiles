@@ -25,6 +25,7 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
 end
 
 highlight('CursorLine')
+highlight('DiffText', nil, nil, true)
 highlight('EndOfBuffer', gruvboxDarkMode.background0Hard)
 highlight('MatchParen', nil, nil, true)
 highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
