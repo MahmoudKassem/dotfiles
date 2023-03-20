@@ -1,4 +1,5 @@
 gui:
+  showBottomLine: false
   showIcons: true
   authorColors:
     '*': '#8ec07c'
