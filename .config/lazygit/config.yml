@@ -1,4 +1,5 @@
 gui:
+  border: 'rounded'
   showBottomLine: false
   showIcons: true
   authorColors:
