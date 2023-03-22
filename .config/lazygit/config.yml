@@ -1,6 +1,10 @@
 gui:
+  authorColors:
+    '*': '#8ec07c'
   border: 'rounded'
   showBottomLine: false
   showIcons: true
-  authorColors:
-    '*': '#8ec07c'
+  theme:
+    activeBorderColor:
+      - '#fe8019'
+      - bold
