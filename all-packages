@@ -817,7 +817,6 @@ vulkan-icd-loader
 wayland
 wlroots
 wpa_supplicant
-wqy-zenhei
 x264
 x265
 xapian-core
