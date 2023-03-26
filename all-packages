@@ -703,8 +703,6 @@ networkmanager
 networkmanager-openrc
 newsboat
 notmuch-runtime
-noto-fonts
-noto-fonts-emoji
 npth
 nspr
 nss
@@ -801,6 +799,7 @@ tree
 tslib
 ttf-hack-nerd
 ttf-hanazono
+ttf-liberation
 tzdata
 uchardet
 udev
