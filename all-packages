@@ -12,7 +12,6 @@ amd-ucode
 aom
 arc-gtk-theme
 archlinux-keyring
-argon2
 artix-keyring
 artix-mirrorlist
 at-spi2-core
@@ -27,7 +26,6 @@ brave-nightly-bin
 brotli
 browserpass
 browserpass-chrome
-btrfs-progs
 bzip2
 ca-certificates
 ca-certificates-mozilla
@@ -35,7 +33,6 @@ ca-certificates-utils
 cairo
 cantarell-fonts
 coreutils
-cryptsetup
 curl
 dash
 dashbinsh
@@ -49,9 +46,7 @@ desktop-file-utils
 device-mapper
 diffpdf
 diffutils
-dmraid
 dnssec-anchors
-dosfstools
 double-conversion
 duktape
 e2fsprogs
@@ -76,13 +71,11 @@ freetype2
 fribidi
 fuse-common
 fuse2
-fuse3
 fzy
 gawk
 gc
 gcc
 gcc-libs
-gcr
 gdbm
 gdk-pixbuf2
 geoclue
@@ -108,7 +101,6 @@ gopls
 gperftools
 gpgme
 gpm
-gptfdisk
 grafx2
 graphite
 grep
@@ -122,7 +114,6 @@ gtk2
 gtk3
 guile
 gumbo-parser
-gvfs
 gzip
 harfbuzz
 haskell-adjunctions
@@ -474,7 +465,6 @@ imath
 imlib2
 imv
 inetutils
-iniparser
 iproute2
 iptables
 iputils
@@ -498,21 +488,16 @@ lazygit
 lcms2
 ldns
 less
-libaio
 libarchive
 libass
 libassuan
 libasyncns
-libatasmart
 libavc1394
 libavif
-libblockdev
 libbluray
 libbpf
 libbs2b
-libbytesize
 libcaca
-libcamera
 libcap
 libcap-ng
 libcdio
@@ -615,7 +600,6 @@ libtool
 libudev
 libunistring
 libunwind
-liburcu
 libusb
 libva
 libva-mesa-driver
@@ -671,7 +655,6 @@ lua
 lua-language-server-git
 lua53
 luajit
-lvm2
 lxmenu-data
 lynx
 lz4
@@ -680,7 +663,6 @@ make
 mako
 man-db
 md4c
-mdadm
 menu-cache
 mesa
 mkinitcpio
@@ -693,7 +675,6 @@ mpv
 mtdev
 mujs
 ncurses
-ndctl
 neofetch
 neomutt
 neovim-nightly-bin
@@ -726,7 +707,6 @@ pam
 pambase
 pango
 papirus-icon-theme
-parted
 pass
 pciutils
 pcmanfm
@@ -738,7 +718,6 @@ perl-error
 perl-mailtools
 perl-timedate
 pinentry
-pipewire
 pixman
 polkit
 poppler
@@ -793,7 +772,6 @@ syncthing
 sysfsutils
 talloc
 tar
-thin-provisioning-tools
 tpm2-tss
 tree
 tslib
@@ -803,7 +781,6 @@ ttf-hanazono
 tzdata
 uchardet
 udev
-udisks2
 unimatrix-git
 unzip
 util-linux
@@ -811,7 +788,6 @@ util-linux-libs
 v4l-utils
 vid.stab
 vmaf
-volume_key
 vulkan-icd-loader
 wayland
 wlroots
@@ -830,7 +806,6 @@ xcb-util-wm
 xclip
 xcursor-breeze
 xdg-utils
-xfsprogs
 xkeyboard-config
 xorg-docs
 xorg-fonts-encodings
