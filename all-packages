@@ -469,6 +469,7 @@ iproute2
 iptables
 iputils
 iso-codes
+itools
 jack2
 jansson
 jasper
@@ -537,6 +538,7 @@ libiec61883
 libinih
 libinput
 libisl
+libitl
 libjpeg-turbo
 libjxl
 libksba
@@ -708,6 +710,7 @@ pambase
 pango
 papirus-icon-theme
 pass
+patch
 pciutils
 pcmanfm
 pcre
