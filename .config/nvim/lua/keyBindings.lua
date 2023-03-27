@@ -4,7 +4,7 @@ vim.g.mapleader = ' '
 vim.api.nvim_set_keymap('i', '<c-j>', '<c-n>', keyMappingOptions)
 vim.api.nvim_set_keymap('i', '<c-k>', '<c-p>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>a', ':lua vim.lsp.buf.code_action()<cr>', keyMappingOptions)
-vim.api.nvim_set_keymap('n', '<leader>b', ':Telescope git_branches<cr>', keyMappingOptions)
+vim.api.nvim_set_keymap('n', '<leader>b', ':Gitsigns toggle_current_line_blame<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>c', ':bwipeout<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>d', ':lua vim.lsp.buf.definition()<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>D', ':Telescope lsp_definitions<cr>', keyMappingOptions)
