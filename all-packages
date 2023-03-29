@@ -101,7 +101,6 @@ gopls
 gperftools
 gpgme
 gpm
-grafx2
 graphite
 grep
 grim
@@ -494,7 +493,6 @@ libass
 libassuan
 libasyncns
 libavc1394
-libavif
 libbluray
 libbpf
 libbs2b
@@ -641,7 +639,6 @@ libxtst
 libxv
 libxxf86vm
 libyaml
-libyuv
 licenses
 linux-api-headers
 linux-firmware
@@ -653,7 +650,6 @@ llvm14
 llvm14-libs
 lm_sensors
 lmdb
-lua
 lua-language-server-git
 lua53
 luajit
@@ -746,8 +742,6 @@ redshift-wayland-git
 ripgrep
 rubberband
 sdl2
-sdl2_image
-sdl2_ttf
 seatd
 sed
 sfsexp

@@ -61,7 +61,6 @@ bindsym $mod+b exec brave-nightly > /dev/null 2>&1
 bindsym $mod+f exec pcmanfm ~ > /dev/null 2>&1
 bindsym $mod+m exec qterminal -e neomutt > /dev/null 2>&1
 bindsym $mod+n exec qterminal -e newsboat > /dev/null 2>&1
-bindsym $mod+p exec grafx2
 bindsym $mod+t exec qterminal > /dev/null 2>&1
 bindsym $mod+y exec syncthing > /dev/null 2>&1
 bindsym $mod+z exec zathura
