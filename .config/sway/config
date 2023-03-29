@@ -2,10 +2,10 @@
 set $mod mod5
 
 #set cursor
-seat seat0 xcursor_theme Breeze 12
+seat seat0 xcursor_theme Breeze 13
 
 #set font
-font pango:Hack Nerd Font 11
+font pango:Hack Nerd Font 13
 
 #set keyboard layout and map caps to escape
 input type:keyboard {
