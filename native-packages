@@ -26,7 +26,6 @@ haskell-random
 htop
 i3blocks
 imagemagick
-imv
 lazygit
 libnotify
 libva-mesa-driver
@@ -61,6 +60,7 @@ stack
 starship
 sway
 swaybg
+swayimg
 swaylock
 swi-prolog
 syncthing

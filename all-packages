@@ -65,8 +65,6 @@ filesystem
 findutils
 flac
 fontconfig
-freeglut
-freeimage
 freetype2
 fribidi
 fuse-common
@@ -91,7 +89,6 @@ glib-networking
 glib2
 glibc
 glslang
-glu
 gmime3
 gmp
 gnupg
@@ -462,7 +459,6 @@ ijs
 imagemagick
 imath
 imlib2
-imv
 inetutils
 iproute2
 iptables
@@ -471,11 +467,9 @@ iso-codes
 itools
 jack2
 jansson
-jasper
 jbig2dec
 json-c
 json-glib
-jxrlib
 kbd
 kexec-tools
 keyutils
@@ -533,7 +527,6 @@ libid3tag
 libidn
 libidn2
 libiec61883
-libinih
 libinput
 libisl
 libitl
@@ -556,7 +549,6 @@ libnghttp2
 libnl
 libnm
 libnotify
-libnsgif
 libnsl
 libogg
 libomxil-bellagio
@@ -574,7 +566,6 @@ libproxy
 libpsl
 libpulse
 libraqm
-libraw
 libraw1394
 librsvg
 libsamplerate
@@ -763,6 +754,7 @@ stylish-haskell
 svt-av1
 sway
 swaybg
+swayimg
 swaylock
 swi-prolog
 syncthing

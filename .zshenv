@@ -4,7 +4,7 @@
 export BROWSER=brave
 export EDITOR=nvim
 export FILE=pcmanfm
-export IMAGE=imv
+export IMAGE=swayimg
 export READER=zathura
 export SHELL=zsh
 export TERMINAL=qterminal
