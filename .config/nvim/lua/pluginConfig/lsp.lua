@@ -3,7 +3,10 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 lsp_config.prolog_ls.setup {
-  capabilities = capabilities
+  on_attach = function (client)
+    client.server_capabilities.semanticTokensProvider = nil
+  end,
+  capabilities = capabilities,
 }
 
 lsp_config.gopls.setup {

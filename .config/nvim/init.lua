@@ -1,3 +1,4 @@
+require('disableBuiltinPlugins')
 require('autoCommands')
 require('colors')
 require('keyBindings')
