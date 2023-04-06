@@ -30,6 +30,7 @@ bzip2
 ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
+cabal-fmt
 cairo
 cantarell-fonts
 coreutils
@@ -238,6 +239,8 @@ haskell-hiedb
 haskell-hinotify
 haskell-hls-alternate-number-format-plugin
 haskell-hls-brittany-plugin
+haskell-hls-cabal-fmt-plugin
+haskell-hls-cabal-plugin
 haskell-hls-call-hierarchy-plugin
 haskell-hls-change-type-signature-plugin
 haskell-hls-class-plugin
@@ -245,6 +248,7 @@ haskell-hls-code-range-plugin
 haskell-hls-eval-plugin
 haskell-hls-explicit-fixity-plugin
 haskell-hls-explicit-imports-plugin
+haskell-hls-explicit-record-fields-plugin
 haskell-hls-floskell-plugin
 haskell-hls-fourmolu-plugin
 haskell-hls-gadt-plugin
@@ -275,6 +279,8 @@ haskell-http-client-tls
 haskell-http-conduit
 haskell-http-download
 haskell-http-types
+haskell-hw-fingertree
+haskell-hw-prim
 haskell-hyphenation
 haskell-implicit-hie
 haskell-implicit-hie-cradle
@@ -310,6 +316,7 @@ haskell-microlens-mtl
 haskell-microlens-th
 haskell-mime-types
 haskell-mintty
+haskell-mmap
 haskell-mmorph
 haskell-mod
 haskell-monad-control
