@@ -21,7 +21,7 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
     backgroundHexColorCode = backgroundHexColorCode or 'none'
     colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode
   end
-  vim.api.nvim_command('highlight ' .. highlightGroup .. colors)
+  vim.cmd.highlight(highlightGroup .. colors)
 end
 
 highlight('CursorLine')
