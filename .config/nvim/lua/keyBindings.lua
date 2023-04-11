@@ -11,7 +11,23 @@ vim.api.nvim_set_keymap('n', '<leader>D', ':Telescope lsp_definitions<cr>', keyM
 vim.api.nvim_set_keymap('n', '<leader>e', ':Telescope file_browser<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope find_files<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>F', ':lua vim.lsp.buf.format()<cr>', keyMappingOptions)
-vim.api.nvim_set_keymap('n', '<leader>g', ':lua require("FTerm").toggle()<cr>', keyMappingOptions)
+vim.keymap.set('n', '<leader>g', function ()
+    local buf = vim.api.nvim_create_buf(false, true)
+    local width = math.ceil(vim.o.columns * 0.9)
+    local height = math.ceil(vim.o.lines * 0.9 - 4)
+    local columns = math.ceil((vim.o.columns - width) * 0.5)
+    local rows = math.ceil((vim.o.lines - height) * 0.5 - 2)
+    vim.api.nvim_open_win(buf, true, {
+        border = 'rounded',
+        relative = 'editor',
+        style = 'minimal',
+        width = width,
+        height = height,
+        col = columns,
+        row = rows
+    })
+    vim.cmd.terminal('lazygit')
+end, keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>h', ':wincmd h<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>i', ':Telescope diagnostics bufnr=0<cr>', keyMappingOptions)
 vim.api.nvim_set_keymap('n', '<leader>j', ':wincmd j<cr>', keyMappingOptions)
