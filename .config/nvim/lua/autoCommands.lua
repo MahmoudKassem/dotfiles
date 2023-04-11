@@ -1,7 +1,9 @@
-local function autoCommand(command)
-  vim.api.nvim_command('autocmd ' .. command)
+local function autoCommand(event, callback, options)
+    vim.api.nvim_create_autocmd(event, {
+        callback = function() callback(options) end
+    })
 end
 
-autoCommand('TermClose * bwipeout')
-autoCommand('TermOpen * startinsert')
-autoCommand('TextYankPost * silent! lua vim.highlight.on_yank()')
+autoCommand('TermClose', vim.cmd.bwipeout)
+autoCommand('TermOpen', vim.cmd.startinsert)
+autoCommand('TextYankPost', vim.highlight.on_yank)
