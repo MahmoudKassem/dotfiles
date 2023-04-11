@@ -1,5 +1,5 @@
 local function packAdd(package)
-  vim.api.nvim_command('packadd ' .. package)
+  vim.cmd.packadd(package)
 end
 
 packAdd('Comment.nvim')
