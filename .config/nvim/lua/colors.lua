@@ -54,6 +54,7 @@ highlight('Type', gruvboxDarkMode.lightBlue)
 highlight('Typedef', gruvboxDarkMode.lightBlue)
 highlight('Question', gruvboxDarkMode.lightBlue)
 
+highlight('Conceal', gruvboxDarkMode.lightCyan)
 highlight('Conditional', gruvboxDarkMode.lightCyan)
 highlight('Debug', gruvboxDarkMode.lightCyan)
 highlight('Define', gruvboxDarkMode.lightCyan)
