@@ -230,8 +230,6 @@ haskell-glob
 haskell-hackage-security
 haskell-haddock-library
 haskell-hashable
-haskell-hashtables
-haskell-heapsize
 haskell-hi-file-parser
 haskell-hie-bios
 haskell-hie-compat
