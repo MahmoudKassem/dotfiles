@@ -32,7 +32,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 #aliases
-alias a='update-git-repos-in-directory.sh "AUR packages" $HOME/aur "makepkg -sirc"'
+alias a='update-git-repos-in-directory.sh "AUR packages" $HOME/aur build-aur-package-and-clean-up.sh'
 alias d='cd "$(find . -type d | fzy)"'
 alias f='open-file.sh "$(rg --files --hidden | fzy)"'
 alias g='git'
