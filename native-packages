@@ -5,6 +5,7 @@ arc-gtk-theme
 base
 binutils
 ca-certificates
+cmake
 dash
 diffpdf
 efibootmgr
@@ -43,6 +44,7 @@ neomutt
 networkmanager
 networkmanager-openrc
 newsboat
+ninja
 ntfs-3g
 opendoas
 openrc

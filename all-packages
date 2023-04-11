@@ -33,6 +33,7 @@ ca-certificates-utils
 cabal-fmt
 cairo
 cantarell-fonts
+cmake
 coreutils
 curl
 dash
@@ -475,6 +476,7 @@ jansson
 jbig2dec
 json-c
 json-glib
+jsoncpp
 kbd
 kexec-tools
 keyutils
@@ -597,6 +599,7 @@ libudev
 libunistring
 libunwind
 libusb
+libuv
 libva
 libva-mesa-driver
 libvdpau
@@ -671,12 +674,12 @@ mujs
 ncurses
 neofetch
 neomutt
-neovim-nightly-bin
 netifrc
 nettle
 networkmanager
 networkmanager-openrc
 newsboat
+ninja
 notmuch-runtime
 npth
 nspr
@@ -735,6 +738,7 @@ qtermwidget
 rav1e
 readline
 redshift-wayland-git
+rhash
 ripgrep
 rubberband
 sdl2
