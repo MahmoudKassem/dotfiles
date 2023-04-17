@@ -312,10 +312,10 @@ require('lazy').setup({
     },
     {
         'nvim-treesitter/nvim-treesitter',
-        ft = {'go', 'haskell', 'lua', 'sh', 'query'},
+        ft = {'go', 'haskell', 'lua', 'sh', 'query', 'yaml'},
         config = function()
             require('nvim-treesitter.configs').setup {
-                ensure_installed = {'go', 'haskell', 'lua', 'bash', 'query'},
+                ensure_installed = {'go', 'haskell', 'lua', 'bash', 'query', 'yaml'},
                 highlight = {
                     enable = true
                 },
