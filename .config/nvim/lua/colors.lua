@@ -1,4 +1,8 @@
 --colors from https://github.com/morhetz/gruvbox
+
+vim.g.colors_name = 'gruvbox'
+vim.cmd.syntax('off')
+
 local gruvboxDarkMode = {
   background0Hard = '#1d2021',
   background1 = '#3c3836',
