@@ -76,13 +76,6 @@ require('lazy').setup({
         end
     },
     {
-        'nvim-treesitter/playground',
-        cmd = 'TSPlaygroundToggle',
-        dependencies = {
-            'nvim-treesitter/nvim-treesitter'
-        }
-    },
-    {
         'ahmedkhalf/project.nvim',
         event = 'VeryLazy',
         config = function()
