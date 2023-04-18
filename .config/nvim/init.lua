@@ -17,72 +17,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     {
-        import = "plugins"
-    },
-    {
-        'numToStr/Comment.nvim',
-        keys = 'gc',
-        config = true
-    },
-    {
-        'lewis6991/gitsigns.nvim',
-        event = 'VeryLazy',
-        config = function()
-            require('gitsigns').setup({
-                current_line_blame_opts = {
-                    delay = 0
-                },
-                preview_config = {
-                    border = 'rounded'
-                },
-                signs = {
-                    add = { text = '+' },
-                    change = { text = '~' },
-                    delete = { text = '-' }
-                }
-            })
-        end
-    },
-    {
-        'ggandor/leap.nvim',
-        keys = {'s', 'S', 'gs'},
-        config = function()
-            require('leap').add_default_mappings()
-        end
-    },
-    {
-        'kylechui/nvim-surround',
-        keys = {'ys', 'cs', 'ds'},
-        config = true
-    },
-    {
-        'nvim-tree/nvim-web-devicons',
-        lazy = true,
-        config = function()
-            require('nvim-web-devicons').setup {
-                override = {
-                    pro = {
-                        icon = "",
-                        color = "#e37933",
-                        name = "Prolog"
-                    },
-                    mom = {
-                        icon = "",
-                        color = "#6d8086",
-                        name = "Groff_Mom"
-                    }
-                }
-            }
-        end
-    },
-    {
-        'ahmedkhalf/project.nvim',
-        event = 'VeryLazy',
-        config = function()
-            require("project_nvim").setup({
-                show_hidden = true
-            })
-        end
+        import = 'plugins'
     }
 },
 {
