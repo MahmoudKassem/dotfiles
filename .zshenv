@@ -11,10 +11,12 @@ export TERMINAL=qterminal
 export VIDEO=mpv
 
 #follow XDG Base Dir Spec
+export XDG_BIN_HOME=$HOME/.local/bin
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export CARGO_HOME=$XDG_DATA_HOME/cargo
+export GHCUP_USE_XDG_DIRS=true
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
 export GOPATH=$XDG_DATA_HOME/go
 export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
