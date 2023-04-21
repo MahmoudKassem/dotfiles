@@ -16,28 +16,24 @@ local gruvboxDarkMode = {
   lightRed = '#fb4934'
 }
 
-local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexColorCode, reverseColors)
-  local colors
-  if reverseColors then
-    colors = ' gui=reverse guibg=none'
-  else
+local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexColorCode, guiOption)
     foregroundHexColorCode = foregroundHexColorCode or 'normal'
     backgroundHexColorCode = backgroundHexColorCode or 'none'
-    colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode
-  end
-  vim.cmd.highlight(highlightGroup .. colors)
+    guiOption = guiOption or 'none'
+    local colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode .. ' gui='  ..guiOption
+    vim.cmd.highlight(highlightGroup .. colors)
 end
 
 highlight('CursorLine')
-highlight('DiffText', nil, nil, true)
+highlight('DiffText', nil, nil, 'reverse')
 highlight('EndOfBuffer', gruvboxDarkMode.background0Hard)
-highlight('MatchParen', nil, nil, true)
+highlight('MatchParen', nil, nil, 'reverse')
 highlight('PmenuSel', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
 highlight('PmenuSbar', nil, gruvboxDarkMode.background1)
 highlight('PmenuThumb', nil, gruvboxDarkMode.lightOrange)
 highlight('Search', gruvboxDarkMode.background0Hard, gruvboxDarkMode.lightOrange)
 highlight('SignColumn')
-highlight('Visual', nil, nil, true)
+highlight('Visual', nil, nil, 'reverse')
 
 highlight('StatusLine', gruvboxDarkMode.background1)
 highlight('StatusLineNC', gruvboxDarkMode.background1)

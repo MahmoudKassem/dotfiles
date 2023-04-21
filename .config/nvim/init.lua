@@ -30,9 +30,17 @@ require('lazy').setup({
     performance = {
         rtp = {
             disabled_plugins = {
+                'editorconfig',
                 'gzip',
+                'health',
+                'man',
                 'matchit',
+                'matchparen',
                 'netrwPlugin',
+                'nvim',
+                'rplugin',
+                'shada',
+                'spellfile',
                 'tarPlugin',
                 'tohtml',
                 'tutor',
@@ -41,3 +49,5 @@ require('lazy').setup({
         },
     }
 })
+
+vim.keymap.set('n', '<leader>L', function() vim.cmd.Lazy() end)
