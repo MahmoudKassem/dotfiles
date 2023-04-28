@@ -12,11 +12,9 @@ return {
         'onsails/lspkind.nvim',
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
-        'windwp/nvim-autopairs'
     },
     config = function()
         require('luasnip.loaders.from_vscode').lazy_load()
-        require('nvim-autopairs').setup()
 
         local luasnip = require('luasnip')
         local cmp = require('cmp')
@@ -33,7 +31,7 @@ return {
                 ['<C-d>'] = cmp.mapping.scroll_docs(4),
                 ['<C-u>'] = cmp.mapping.scroll_docs(-4),
                 ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-                ["<C-j>"] = cmp.mapping(function(fallback)
+                ['<C-j>'] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
                     elseif luasnip.expand_or_jumpable() then
@@ -41,8 +39,8 @@ return {
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
-                ["<C-k>"] = cmp.mapping(function(fallback)
+                end, { 'i', 's' }),
+                ['<C-k>'] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_prev_item()
                     elseif luasnip.jumpable(-1) then
@@ -50,7 +48,7 @@ return {
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
+                end, { 'i', 's' }),
             }),
             window = {
                 completion = cmp.config.window.bordered(),
