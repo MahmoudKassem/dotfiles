@@ -11,11 +11,10 @@ return {
         'L3MON4D3/LuaSnip',
         'onsails/lspkind.nvim',
         'rafamadriz/friendly-snippets',
-        'saadparwaiz1/cmp_luasnip',
+        'saadparwaiz1/cmp_luasnip'
     },
     config = function()
         require('luasnip.loaders.from_vscode').lazy_load()
-
         local luasnip = require('luasnip')
         local cmp = require('cmp')
         cmp.setup {

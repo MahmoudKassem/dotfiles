@@ -1,7 +1,13 @@
 return {
     'lewis6991/gitsigns.nvim',
+    dependencies = {
+        'ahmedkhalf/project.nvim'
+    },
+    cond = function(_)
+        vim.fn.system('git rev-parse HEAD')
+        return vim.v.shell_error == 0
+    end,
     event = 'VeryLazy',
-    keys = {{'<leader>b', function() vim.cmd.Gitsigns('toggle_current_line_blame') end}},
     config = function()
         require('gitsigns').setup({
             current_line_blame_opts = {
@@ -16,5 +22,7 @@ return {
                 delete = { text = '-' }
             }
         })
+
+        vim.keymap.set('n', '<leader>b', function() vim.cmd.Gitsigns('toggle_current_line_blame') end)
     end
 }

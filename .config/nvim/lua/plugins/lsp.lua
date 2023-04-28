@@ -5,7 +5,8 @@ return {
     dependencies = {
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
-        'hrsh7th/cmp-nvim-lsp'
+        'hrsh7th/cmp-nvim-lsp',
+        'ahmedkhalf/project.nvim'
     },
     ft = {'go', 'haskell', 'prolog', 'lua'},
     keys = {{'<leader>M', function() vim.cmd.Mason() end}},
