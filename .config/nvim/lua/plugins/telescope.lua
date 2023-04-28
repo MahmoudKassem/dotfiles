@@ -1,5 +1,5 @@
 local function is_git_repo()
-    vim.fn.system('git rev-parse --is-inside-work-tree')
+    vim.fn.system('git rev-parse HEAD')
     return vim.v.shell_error == 0
 end
 
@@ -43,6 +43,12 @@ return {
         local telescope = require('telescope')
         local actions = require('telescope.actions')
         local action_layout = require('telescope.actions.layout')
+        local config = require('telescope.config')
+
+        local vimgrep_arguments = {unpack(config.values.vimgrep_arguments)}
+        table.insert(vimgrep_arguments, '--hidden')
+        table.insert(vimgrep_arguments, '--glob')
+        table.insert(vimgrep_arguments, '!**/.git/*')
         telescope.setup{
             defaults = {
                 color_devicons = false,
@@ -55,6 +61,17 @@ return {
                     n = {
                         ['<c-p>'] = action_layout.toggle_preview
                     }
+                },
+                vimgrep_arguments = vimgrep_arguments
+            },
+            extensions = {
+                file_browser = {
+                    hidden = true
+                }
+            },
+            pickers = {
+                find_files = {
+                    find_command = {'rg', '--files', '--hidden', '--glob', '!**/.git/*'}
                 }
             }
         }
