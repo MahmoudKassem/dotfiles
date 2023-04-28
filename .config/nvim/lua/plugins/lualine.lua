@@ -20,7 +20,7 @@ return {
                 'warn',
                 'hint',
                 'info'
-            })
+            }),
             update_in_insert = true
         }
 
