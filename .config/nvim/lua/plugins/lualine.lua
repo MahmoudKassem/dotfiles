@@ -2,18 +2,13 @@ return {
     'nvim-lualine/lualine.nvim',
     event = 'VeryLazy',
     dependencies = {
-        'nvim-tree/nvim-web-devicons',
+        'nvim-tree/nvim-web-devicons'
     },
     config = function()
         local file = {
             'filename',
             file_status = true
         }
-
-        local lightCyan = '#8ec07c'
-        local lightMagenta = '#d3869b'
-        local lightOrange = '#fe8019'
-        local lightRed = '#fb4934'
 
         local lspDiagnostics = {
             'diagnostics',
@@ -25,11 +20,8 @@ return {
                 'warn',
                 'hint',
                 'info'
-            }),
-            color_error = lightRed,
-            color_warn = lightOrange,
-            color_hint = lightMagenta,
-            color_info = lightCyan
+            })
+            update_in_insert = true
         }
 
         require('lualine').setup {
@@ -41,10 +33,7 @@ return {
                     }
                 },
                 lualine_b = {
-                    {
-                        'branch',
-                        icon = ''
-                    },
+                    'branch',
                     'diff'
                 },
                 lualine_c = {
