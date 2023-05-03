@@ -12,6 +12,7 @@ end,
 autoCommand('Filetype', function()
     vim.cmd.so('~/.local/share/nvim/site/syntax/prolog.vim')
 end, 'prolog')
+autoCommand('UIEnter', vim.cmd.edit)
 autoCommand('TermClose', vim.cmd.bwipeout)
 autoCommand('TermOpen', vim.cmd.startinsert)
 autoCommand('TextYankPost', vim.highlight.on_yank)
