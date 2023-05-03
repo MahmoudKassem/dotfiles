@@ -38,9 +38,9 @@ alias f='open-file.sh "$(rg --files --hidden --glob "!**/.git/*" | fzy)"'
 alias g='git'
 alias h='eval "$(tac ~/.cache/command-history | fzy)"'
 alias l="ls -hA --color=auto"
+alias n="nvim"
 alias t="tree -aC"
 alias u='doas -- pacman -Syu && a'
-alias v="nvim"
 
 #load starship prompt
 eval "$(starship init zsh)"
