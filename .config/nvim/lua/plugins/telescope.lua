@@ -66,7 +66,10 @@ return {
             },
             extensions = {
                 file_browser = {
-                    hidden = true
+                    hidden = {
+                        file_browser = true,
+                        folder_browser = true
+                    }
                 }
             },
             pickers = {
