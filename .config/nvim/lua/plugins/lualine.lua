@@ -52,7 +52,8 @@ return {
                 },
                 lualine_b = {
                     {
-                        'b:gitsigns_head'
+                        'b:gitsigns_head',
+                        icon = ''
                     },
                     diff
                 },
