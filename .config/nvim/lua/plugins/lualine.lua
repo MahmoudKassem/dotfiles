@@ -2,9 +2,24 @@ return {
     'nvim-lualine/lualine.nvim',
     event = 'VeryLazy',
     dependencies = {
+        'lewis6991/gitsigns.nvim',
         'nvim-tree/nvim-web-devicons'
     },
     config = function()
+        local diff = {
+            'diff',
+            source = function ()
+                local gitsigns = vim.b.gitsigns_status_dict
+                if gitsigns then
+                    return {
+                        added = gitsigns.added,
+                        modified = gitsigns.modified,
+                        removed = gitsigns.removed
+                    }
+                end
+            end
+        }
+
         local file = {
             'filename',
             file_status = true
@@ -12,6 +27,9 @@ return {
 
         local lspDiagnostics = {
             'diagnostics',
+            cond = function ()
+                return vim.tbl_count(vim.lsp.get_active_clients({bufnr = 0})) > 0
+            end,
             sources = {
                 'nvim_diagnostic'
             },
@@ -33,8 +51,10 @@ return {
                     }
                 },
                 lualine_b = {
-                    'branch',
-                    'diff'
+                    {
+                        'b:gitsigns_head'
+                    },
+                    diff
                 },
                 lualine_c = {
                     lspDiagnostics,
@@ -52,14 +72,14 @@ return {
                 lualine_y = {},
                 lualine_z = {
                     {
-                        require("lazy.status").updates,
-                        cond = require("lazy.status").has_updates
+                        require('lazy.status').updates,
+                        cond = require('lazy.status').has_updates
                     }
                 }
             },
             inactive_sections = {
                 lualine_a = {
-                    'diff',
+                    diff,
                     lspDiagnostics,
                     file
                 },
