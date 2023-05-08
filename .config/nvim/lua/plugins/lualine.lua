@@ -66,8 +66,6 @@ return {
                         'filetype',
                         colored = false
                     },
-                    'fileformat',
-                    'encoding',
                     'location'
                 },
                 lualine_y = {},
