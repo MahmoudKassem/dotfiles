@@ -8,7 +8,7 @@ end
 autoCommand('Filetype', function()
     vim.cmd.syntax('enable')
 end,
-{'checkhealth','gitcommit', 'groff', 'swayconfig', 'tsplayground', 'zsh'})
+{'checkhealth', 'git', 'gitcommit', 'groff', 'swayconfig', 'tsplayground', 'zsh'})
 autoCommand('Filetype', function()
     vim.cmd.so('~/.local/share/nvim/site/syntax/prolog.vim')
 end, 'prolog')
