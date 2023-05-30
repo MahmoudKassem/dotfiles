@@ -10,7 +10,7 @@ return {
                     name = 'Prolog'
                 },
                 mom = {
-                    icon = '',
+                    icon = '󰈙',
                     color = '#6d8086',
                     name = 'Groff_Mom'
                 }
