@@ -114,7 +114,6 @@ hicolor-icon-theme
 hidapi
 highway
 htop
-http-parser
 hwdata
 hwloc
 i3blocks
@@ -183,7 +182,6 @@ libfm-extra
 libfm-gtk2
 libfontenc
 libgcrypt
-libgit2
 libglvnd
 libgpg-error
 libgudev
@@ -419,7 +417,6 @@ swayimg
 swaylock
 swi-prolog
 syncthing
-sysfsutils
 talloc
 tar
 tpm2-tss
