@@ -3,10 +3,7 @@ return {
     dependencies = {
         'ahmedkhalf/project.nvim'
     },
-    cond = function(_)
-        vim.fn.system('git rev-parse HEAD')
-        return vim.v.shell_error == 0
-    end,
+    cond = vim.system({'git', 'rev-parse', '--is-inside-work-tree'}):wait().code == 0,
     event = 'VeryLazy',
     config = function()
         require('gitsigns').setup({

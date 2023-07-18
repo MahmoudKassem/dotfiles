@@ -1,7 +1,4 @@
-local function is_git_repo()
-    vim.fn.system('git rev-parse HEAD')
-    return vim.v.shell_error == 0
-end
+local is_git_repo = vim.system({'git', 'rev-parse', '--is-inside-work-tree'}):wait().code == 0
 
 return {
     'nvim-telescope/telescope.nvim',
@@ -16,7 +13,7 @@ return {
     keys = {
         {'<leader>e', function () vim.cmd.Telescope('file_browser') end},
         {'<leader>f', function()
-            if is_git_repo() then
+            if is_git_repo then
                 require('telescope.builtin').git_files()
             else
                 require('telescope.builtin').find_files()
@@ -31,7 +28,7 @@ return {
                 return vim.fn.fnamemodify(dot_git_path, ':h')
             end
             local opts = {}
-            if is_git_repo() then
+            if is_git_repo then
                 opts = {
                     cwd = get_git_root(),
                 }
