@@ -34,10 +34,12 @@ cairo
 cantarell-fonts
 cmake
 coreutils
+cppdap
 curl
 dash
 dashbinsh
 dav1d
+db
 db5.3
 dbus
 dbus-openrc
@@ -66,6 +68,7 @@ filesystem
 findutils
 flac
 fontconfig
+freeglut
 freetype2
 fribidi
 fuse-common
@@ -88,6 +91,7 @@ glib-networking
 glib2
 glibc
 glslang
+glu
 gmime3
 gmp
 gnupg
@@ -256,6 +260,7 @@ libudev
 libunistring
 libunwind
 libusb
+libutempter
 libuv
 libva
 libva-mesa-driver
