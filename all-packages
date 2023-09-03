@@ -170,6 +170,7 @@ libcups
 libdaemon
 libdatrie
 libde265
+libdeflate
 libdrm
 libdvdnav
 libdvdread

@@ -2,6 +2,7 @@ acpid-openrc
 alsa-utils
 amd-ucode
 arc-gtk-theme
+archlinux-keyring
 base
 binutils
 ca-certificates
