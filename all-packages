@@ -172,6 +172,7 @@ libdaemon
 libdatrie
 libde265
 libdeflate
+libdovi
 libdrm
 libdvdnav
 libdvdread
@@ -205,11 +206,11 @@ libjxl
 libksba
 libldap
 liblqr
-libmfx
 libmm-glib
 libmnl
 libmodplug
 libmpc
+libmupdf
 libndp
 libnetfilter_conntrack
 libnewt
@@ -347,6 +348,7 @@ nspr
 nss
 ntfs-3g
 ocl-icd
+onevpl
 opencore-amr
 opendoas
 openexr
@@ -473,6 +475,7 @@ xorg-xset
 xorg-xwayland
 xorgproto
 xvidcore
+xxhash
 xz
 yt-dlp
 zathura
