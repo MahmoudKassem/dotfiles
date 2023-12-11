@@ -1,5 +1,6 @@
 --colors from https://github.com/morhetz/gruvbox
 
+vim.cmd.colorscheme('vim')
 vim.g.colors_name = 'gruvbox'
 vim.cmd.syntax('off')
 

@@ -151,6 +151,7 @@ lame
 lazygit
 lcms2
 ldns
+leptonica
 less
 libarchive
 libass
@@ -161,6 +162,7 @@ libbluray
 libbpf
 libbs2b
 libcaca
+libcanberra
 libcap
 libcap-ng
 libcdio
@@ -172,6 +174,7 @@ libdaemon
 libdatrie
 libde265
 libdeflate
+libdisplay-info
 libdovi
 libdrm
 libdvdnav
@@ -260,6 +263,7 @@ libtiff
 libtirpc
 libtool
 libudev
+libunibreak
 libunistring
 libunwind
 libusb
@@ -412,6 +416,8 @@ shadow
 shared-mime-info
 slang
 slurp
+snappy
+sound-theme-freedesktop
 speex
 speexdsp
 spirv-tools
@@ -428,6 +434,10 @@ swi-prolog
 syncthing
 talloc
 tar
+tdb
+tesseract
+tesseract-data-afr
+tesseract-data-osd
 tpm2-tss
 tree
 tslib
@@ -447,6 +457,7 @@ vmaf
 vulkan-icd-loader
 wayland
 wlroots
+wlroots0.16
 wpa_supplicant
 x264
 x265
