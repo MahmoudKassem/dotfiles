@@ -158,6 +158,7 @@ libass
 libassuan
 libasyncns
 libavc1394
+libavif
 libbluray
 libbpf
 libbs2b
@@ -307,6 +308,7 @@ libxtst
 libxv
 libxxf86vm
 libyaml
+libyuv
 licenses
 linux-api-headers
 linux-firmware
