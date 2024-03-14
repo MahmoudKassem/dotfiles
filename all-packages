@@ -277,6 +277,7 @@ libva-mesa-driver
 libvdpau
 libverto
 libvorbis
+libvpl
 libvpx
 libwacom
 libwebp
@@ -357,7 +358,6 @@ nss
 ntfs-3g
 numactl
 ocl-icd
-onevpl
 openal
 opencore-amr
 opendoas
