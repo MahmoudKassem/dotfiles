@@ -21,7 +21,6 @@ avahi
 base
 bash
 binutils
-bluez-libs
 brave-nightly-bin
 brotli
 browserpass
@@ -48,7 +47,6 @@ desktop-file-utils
 device-mapper
 diffpdf
 diffutils
-dnssec-anchors
 double-conversion
 duktape
 e2fsprogs
@@ -118,7 +116,6 @@ hidapi
 highway
 htop
 hwdata
-hwloc
 i3blocks
 iana-etc
 icu
@@ -149,7 +146,6 @@ l-smash
 lame
 lazygit
 lcms2
-ldns
 leptonica
 less
 libarchive
@@ -180,13 +176,13 @@ libdrm
 libdvdnav
 libdvdread
 libedit
+libei
 libelf
 libelogind
 libepoxy
 libevdev
 libevent
 libexif
-libfabric
 libffi
 libfm
 libfm-extra
@@ -356,15 +352,12 @@ npth
 nspr
 nss
 ntfs-3g
-numactl
 ocl-icd
 openal
 opencore-amr
 opendoas
 openexr
 openjpeg2
-openmpi
-openpmix
 openrc
 openssh
 openssl
@@ -396,7 +389,6 @@ poppler-qt5
 popt
 portaudio
 procps-ng
-prrte
 psmisc
 python
 python-certifi
@@ -469,7 +461,6 @@ vmaf
 vulkan-icd-loader
 wayland
 wlroots
-wlroots0.16
 wpa_supplicant
 x264
 x265
