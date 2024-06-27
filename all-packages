@@ -4,6 +4,7 @@ acpid-openrc
 adobe-source-code-pro-fonts
 adwaita-cursors
 adwaita-icon-theme
+adwaita-icon-theme-legacy
 alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
@@ -154,9 +155,11 @@ libassuan
 libasyncns
 libavc1394
 libavif
+libb2
 libbluray
 libbpf
 libbs2b
+libbsd
 libcaca
 libcanberra
 libcap
@@ -206,6 +209,7 @@ libjxl
 libksba
 libldap
 liblqr
+libmd
 libmm-glib
 libmnl
 libmodplug
@@ -333,6 +337,7 @@ mkinitcpio
 mkinitcpio-busybox
 mlocate
 mobile-broadband-provider-info
+mpdecimal
 mpfr
 mpg123
 mpv
@@ -397,11 +402,12 @@ python-idna
 python-requests
 python-urllib3
 qt5-base
-qt5-styleplugins
-qt5-svg
 qt5-translations
 qt5-x11extras
-qt5ct
+qt6-base
+qt6-svg
+qt6-translations
+qt6ct
 qterminal
 qtermwidget
 rav1e
@@ -458,6 +464,7 @@ v4l-utils
 vapoursynth
 vid.stab
 vmaf
+vulkan-headers
 vulkan-icd-loader
 wayland
 wlroots
@@ -468,6 +475,7 @@ xapian-core
 xarchiver
 xcb-proto
 xcb-util
+xcb-util-cursor
 xcb-util-errors
 xcb-util-image
 xcb-util-keysyms

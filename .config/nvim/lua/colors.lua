@@ -1,6 +1,5 @@
 --colors from https://github.com/morhetz/gruvbox
 
-vim.cmd.colorscheme('vim')
 vim.g.colors_name = 'gruvbox'
 vim.cmd.syntax('off')
 
@@ -21,7 +20,7 @@ local function highlight(highlightGroup, foregroundHexColorCode, backgroundHexCo
     foregroundHexColorCode = foregroundHexColorCode or 'normal'
     backgroundHexColorCode = backgroundHexColorCode or 'none'
     guiOption = guiOption or 'none'
-    local colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode .. ' gui='  ..guiOption
+    local colors = ' guibg=' .. backgroundHexColorCode .. ' guifg=' .. foregroundHexColorCode .. ' gui='  .. guiOption
     vim.cmd.highlight(highlightGroup .. colors)
 end
 
@@ -44,8 +43,10 @@ highlight('CmpItemKind', gruvboxDarkMode.foreground)
 highlight('Identifier', gruvboxDarkMode.foreground)
 highlight('LspInfoBorder', gruvboxDarkMode.foreground)
 highlight('NonText', gruvboxDarkMode.foreground)
+highlight('Normal', gruvboxDarkMode.foreground)
 highlight('Pmenu', gruvboxDarkMode.foreground)
 highlight('VertSplit', gruvboxDarkMode.foreground)
+highlight('@variable', gruvboxDarkMode.foreground)
 
 highlight('Comment', gruvboxDarkMode.grey)
 highlight('LineNr', gruvboxDarkMode.grey)

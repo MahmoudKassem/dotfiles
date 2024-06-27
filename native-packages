@@ -49,8 +49,7 @@ papirus-icon-theme
 pass
 patch
 pcmanfm
-qt5-styleplugins
-qt5ct
+qt6ct
 qterminal
 ripgrep
 slurp
