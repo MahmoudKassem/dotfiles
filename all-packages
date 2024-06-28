@@ -408,6 +408,7 @@ qt6-base
 qt6-svg
 qt6-translations
 qt6ct
+qt6gtk2
 qterminal
 qtermwidget
 rav1e
