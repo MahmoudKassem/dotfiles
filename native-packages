@@ -76,7 +76,7 @@ xorg-xset
 xorg-xwayland
 yt-dlp
 zathura
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zip
 zsh
 zsh-autosuggestions

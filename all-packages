@@ -109,7 +109,6 @@ gtk-update-icon-cache
 gtk2
 gtk3
 guile
-gumbo-parser
 gzip
 harfbuzz
 hicolor-icon-theme
@@ -145,9 +144,9 @@ krb5
 kyotocabinet
 l-smash
 lame
+layer-shell-qt
 lazygit
 lcms2
-leptonica
 less
 libarchive
 libass
@@ -214,7 +213,6 @@ libmm-glib
 libmnl
 libmodplug
 libmpc
-libmupdf
 libndp
 libnetfilter_conntrack
 libnewt
@@ -390,6 +388,7 @@ pixman
 polkit
 poppler
 poppler-data
+poppler-glib
 poppler-qt5
 popt
 portaudio
@@ -403,10 +402,11 @@ python-requests
 python-urllib3
 qt5-base
 qt5-translations
-qt5-x11extras
 qt6-base
+qt6-declarative
 qt6-svg
 qt6-translations
+qt6-wayland
 qt6ct
 qt6gtk2
 qterminal
@@ -445,9 +445,6 @@ syncthing
 talloc
 tar
 tdb
-tesseract
-tesseract-data-afr
-tesseract-data-osd
 tpm2-tss
 tree
 tslib
@@ -502,7 +499,7 @@ xxhash
 xz
 yt-dlp
 zathura
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zeromq
 zimg
 zip
