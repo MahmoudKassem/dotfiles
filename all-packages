@@ -104,6 +104,7 @@ grim
 groff
 grub
 gsettings-desktop-schemas
+gsettings-system-schemas
 gsm
 gtk-update-icon-cache
 gtk2
@@ -196,7 +197,6 @@ libgpg-error
 libgudev
 libheif
 libice
-libid3tag
 libidn
 libidn2
 libiec61883
@@ -465,7 +465,7 @@ vmaf
 vulkan-headers
 vulkan-icd-loader
 wayland
-wlroots
+wlroots0.17
 wpa_supplicant
 x264
 x265
