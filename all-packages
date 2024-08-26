@@ -355,6 +355,8 @@ npth
 nspr
 nss
 ntfs-3g
+ntp
+ntp-openrc
 ocl-icd
 openal
 opencore-amr

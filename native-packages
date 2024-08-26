@@ -43,6 +43,8 @@ networkmanager-openrc
 newsboat
 ninja
 ntfs-3g
+ntp
+ntp-openrc
 opendoas
 openrc
 papirus-icon-theme
