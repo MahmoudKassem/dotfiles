@@ -254,6 +254,7 @@ libsoup3
 libsoxr
 libssh
 libssh2
+libstemmer
 libsynctex
 libsysprof-capture
 libtasn1
@@ -447,6 +448,7 @@ syncthing
 talloc
 tar
 tdb
+tinysparql
 tpm2-tss
 tree
 tslib
