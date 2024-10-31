@@ -87,8 +87,6 @@ return {
             end
         }
 
-        vim.cmd.doautocmd('FileType')
-
         require('lspconfig.ui.windows').default_options.border = 'rounded'
 
         vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
