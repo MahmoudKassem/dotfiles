@@ -208,6 +208,7 @@ libjpeg-turbo
 libjxl
 libksba
 libldap
+libliftoff
 liblqr
 libmd
 libmm-glib
@@ -470,7 +471,7 @@ vmaf
 vulkan-headers
 vulkan-icd-loader
 wayland
-wlroots0.17
+wlroots
 wpa_supplicant
 x264
 x265
