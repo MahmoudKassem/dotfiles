@@ -274,7 +274,6 @@ libusb
 libutempter
 libuv
 libva
-libva-mesa-driver
 libvdpau
 libverto
 libvorbis
