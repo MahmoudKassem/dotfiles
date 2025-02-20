@@ -92,6 +92,7 @@ glslang
 glu
 gmime3
 gmp
+gnulib-l10n
 gnupg
 gnutls
 go
@@ -148,6 +149,7 @@ lame
 layer-shell-qt
 lazygit
 lcms2
+leancrypto
 less
 libarchive
 libass
@@ -227,7 +229,6 @@ libnm
 libnotify
 libnsl
 libogg
-libomxil-bellagio
 libopenmpt
 libp11-kit
 libpaper
@@ -271,7 +272,6 @@ libunibreak
 libunistring
 libunwind
 libusb
-libutempter
 libuv
 libva
 libvdpau
@@ -321,7 +321,7 @@ linux-zen-headers
 llvm-libs
 lm_sensors
 lmdb
-lua53
+lua
 luajit
 lxmenu-data
 lynx
