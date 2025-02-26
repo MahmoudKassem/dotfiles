@@ -3,6 +3,7 @@ alsa-utils
 amd-ucode
 arc-gtk-theme
 archlinux-keyring
+artix-archlinux-support
 base
 binutils
 ca-certificates
@@ -33,7 +34,6 @@ lynx
 make
 mako
 mesa
-mlocate
 mpv
 neofetch
 neomutt
@@ -50,6 +50,7 @@ papirus-icon-theme
 pass
 patch
 pcmanfm
+plocate
 qt6ct
 qt6gtk2
 qterminal

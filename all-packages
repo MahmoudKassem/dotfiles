@@ -13,6 +13,8 @@ amd-ucode
 aom
 arc-gtk-theme
 archlinux-keyring
+archlinux-mirrorlist
+artix-archlinux-support
 artix-keyring
 artix-mirrorlist
 at-spi2-core
@@ -271,6 +273,7 @@ libudev
 libunibreak
 libunistring
 libunwind
+liburing
 libusb
 libuv
 libva
@@ -335,7 +338,6 @@ menu-cache
 mesa
 mkinitcpio
 mkinitcpio-busybox
-mlocate
 mobile-broadband-provider-info
 mpdecimal
 mpfr
@@ -389,6 +391,7 @@ perl-mailtools
 perl-timedate
 pinentry
 pixman
+plocate
 polkit
 poppler
 poppler-data
@@ -421,7 +424,8 @@ redshift-wayland-git
 rhash
 ripgrep
 rubberband
-sdl2
+sdl2-compat
+sdl3
 seatd
 sed
 sfsexp
