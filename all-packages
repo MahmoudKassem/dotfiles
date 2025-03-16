@@ -133,6 +133,7 @@ iso-codes
 itools
 jack2
 jansson
+jasper
 jbig2dec
 jbigkit
 json-c
@@ -243,6 +244,7 @@ libproxy
 libpsl
 libpulse
 libraqm
+libraw
 libraw1394
 librsvg
 libsamplerate
