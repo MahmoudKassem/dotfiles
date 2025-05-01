@@ -392,6 +392,7 @@ perl-mailtools
 perl-timedate
 pinentry
 pixman
+pkgconf
 plocate
 polkit
 poppler
