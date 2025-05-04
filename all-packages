@@ -1,7 +1,6 @@
 acl
 acpid
 acpid-openrc
-adobe-source-code-pro-fonts
 adwaita-cursors
 adwaita-fonts
 adwaita-icon-theme
@@ -473,7 +472,6 @@ v4l-utils
 vapoursynth
 vid.stab
 vmaf
-vulkan-headers
 vulkan-icd-loader
 wayland
 wlroots
