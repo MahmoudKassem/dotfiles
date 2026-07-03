@@ -113,7 +113,6 @@ gsettings-desktop-schemas
 gsettings-system-schemas
 gsm
 gtest
-gtk-layer-shell
 gtk-update-icon-cache
 gtk2
 gtk3
@@ -155,7 +154,6 @@ krb5
 kyotocabinet
 l-smash
 lame
-layer-shell-qt
 lazygit
 lcms2
 leancrypto
@@ -174,7 +172,6 @@ libbpf
 libbs2b
 libbsd
 libcaca
-libcanberra
 libcap
 libcap-ng
 libcdio
@@ -212,7 +209,6 @@ libgfortran
 libglvnd
 libgomp
 libgpg-error
-libgtop
 libgudev
 libheif
 libhwasan
@@ -322,8 +318,6 @@ libxcvt
 libxdamage
 libxdmcp
 libxext
-libxfce4ui
-libxfce4util
 libxfixes
 libxfont2
 libxft
@@ -459,8 +453,6 @@ qt6-svg
 qt6-translations
 qt6ct
 qt6gtk2
-qterminal
-qtermwidget
 rav1e
 readline
 redshift-wayland-git
@@ -479,14 +471,12 @@ slang
 slurp
 snappy
 sndio
-sound-theme-freedesktop
 speex
 speexdsp
 spirv-tools
 sqlite
 srt
 starship
-startup-notification
 stfl
 svt-av1
 sway
@@ -497,7 +487,6 @@ swi-prolog
 syncthing
 talloc
 tar
-tdb
 tinysparql
 tlp
 tpm2-tss
@@ -518,11 +507,10 @@ v4l-utils
 vapoursynth
 vid.stab
 vmaf
-vte-common
-vte3
 vulkan-icd-loader
 wayland
 wayland-protocols
+wezterm
 wlroots0.19
 wlroots0.20
 wpa_supplicant
@@ -541,8 +529,6 @@ xcb-util-wm
 xclip
 xcursor-breeze
 xdg-utils
-xfce4-terminal
-xfconf
 xkeyboard-config
 xorg-docs
 xorg-fonts-encodings
