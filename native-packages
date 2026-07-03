@@ -3,6 +3,7 @@ alsa-utils
 amd-ucode
 arc-gtk-theme
 archlinux-keyring
+archlinux-mirrorlist
 base
 binutils
 ca-certificates
@@ -63,12 +64,14 @@ swayimg
 swaylock
 swi-prolog
 syncthing
+tlp
 ttf-hack-nerd
 ttf-ibm-plex
 unzip
 vulkan-icd-loader
 xarchiver
 xcursor-breeze
+xfce4-terminal
 xorg-docs
 xorg-mkfontscale
 xorg-xprop
