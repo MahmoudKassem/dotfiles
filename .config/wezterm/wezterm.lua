@@ -8,6 +8,7 @@ config.colors = {
   scrollbar_thumb = current_scheme.ansi[8]
 }
 config.color_scheme = "GruvboxDarkHard"
+config.front_end = "Software"
 config.enable_tab_bar = false
 config.enable_scroll_bar = true
 config.font = wezterm.font_with_fallback {
@@ -16,7 +17,8 @@ config.font = wezterm.font_with_fallback {
   },
   {
     family = "Kawkab Mono",
-    weight = "Bold"
+    weight = "Regular",
+    scale = 0.85
   }
 }
 config.font_size = 13.0
