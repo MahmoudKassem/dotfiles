@@ -18,5 +18,6 @@ vim.opt.swapfile = false
 vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 vim.opt.updatetime = 64
+vim.opt.winborder = 'rounded'
 vim.opt.wrap = false
 vim.opt.writebackup = false

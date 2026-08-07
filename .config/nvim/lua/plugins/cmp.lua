@@ -49,10 +49,6 @@ return {
                     end
                 end, { 'i', 's' }),
             }),
-            window = {
-                completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered()
-            },
             sources = {
                 {name = 'luasnip'},
                 {name = 'nvim_lsp'},

@@ -11,4 +11,4 @@ end,
 {'checkhealth', 'git', 'gitcommit', 'groff', 'swayconfig', 'tsplayground', 'zsh'})
 autoCommand('TermClose', vim.cmd.bwipeout)
 autoCommand('TermOpen', vim.cmd.startinsert)
-autoCommand('TextYankPost', vim.highlight.on_yank)
+autoCommand('TextYankPost', vim.hl.hl_op)

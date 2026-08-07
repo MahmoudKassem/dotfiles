@@ -8,7 +8,7 @@ return {
     config = function()
         local diff = {
             'diff',
-            source = function ()
+            source = function()
                 local gitsigns = vim.b.gitsigns_status_dict
                 if gitsigns then
                     return {
@@ -27,8 +27,8 @@ return {
 
         local lspDiagnostics = {
             'diagnostics',
-            cond = function ()
-                return vim.tbl_count(vim.lsp.get_active_clients({bufnr = 0})) > 0
+            cond = function()
+                return #vim.lsp.get_clients({ bufnr = 0 }) > 0
             end,
             sources = {
                 'nvim_diagnostic'
@@ -102,7 +102,7 @@ return {
                         end
                     }
                 },
-                lualine_b = {'windows'},
+                lualine_b = { 'windows' },
                 lualine_c = {},
                 lualine_x = {},
                 lualine_y = {},

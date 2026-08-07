@@ -4,41 +4,11 @@ return {
     cmd = 'Mason',
     dependencies = {
         'williamboman/mason.nvim',
-        'williamboman/mason-lspconfig.nvim',
-        'hrsh7th/cmp-nvim-lsp',
-        'ahmedkhalf/project.nvim'
+        'hrsh7th/cmp-nvim-lsp'
     },
-    ft = {'go', 'haskell', 'prolog', 'lua'},
-    keys = {{'<leader>M', function() vim.cmd.Mason() end}},
+    ft = { 'go', 'haskell', 'prolog', 'lua' },
+    keys = { { '<leader>M', function() vim.cmd.Mason() end } },
     config = function()
-        local lsp_config = require('lspconfig')
-        local servers = {
-            gopls = {},
-            hls = {},
-            lua_ls = {
-                settings = {
-                    Lua = {
-                        runtime = {
-                            version = 'LuaJIT',
-                            path = vim.split(package.path, ';'),
-                        },
-                        diagnostics = {
-                            globals = {'vim'},
-                        },
-                        workspace = {
-                            library = {
-                                [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-                                [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-                            },
-                        },
-                        telemetry = {
-                            enable = false
-                        }
-                    }
-                }
-            }
-        }
-
         local capabilities = vim.lsp.protocol.make_client_capabilities()
         capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
@@ -49,12 +19,74 @@ return {
             keymapSet('n', '<leader>a', vim.lsp.buf.code_action)
             keymapSet('n', '<leader>d', function() vim.cmd.Telescope('lsp_definitions') end)
             keymapSet('n', '<leader>F', vim.lsp.buf.format)
-            keymapSet('n', '<leader>i', function() vim.cmd.Telescope({'diagnostics', 'bufnr=0'}) end)
-            keymapSet('n', '<leader>m', function() vim.diagnostic.open_float({border = "rounded"}) end)
+            keymapSet('n', '<leader>i', function() vim.cmd.Telescope({ 'diagnostics', 'bufnr=0' }) end)
+            keymapSet('n', '<leader>m', vim.diagnostic.open_float)
             keymapSet('n', '<leader>r', vim.lsp.buf.rename)
             keymapSet('n', '<leader>o', function() vim.cmd.Telescope('lsp_references') end)
             keymapSet('n', '<leader>v', vim.lsp.buf.hover)
         end
+
+        vim.diagnostic.config({
+            signs = false,
+            underline = true,
+            update_in_insert = true,
+            virtual_text = {
+                spacing = 2,
+                prefix = ''
+            }
+        })
+
+        vim.lsp.config.gopls = {
+            capabilities = capabilities,
+            on_attach = on_attach
+        }
+
+        vim.lsp.config.hls = {
+            capabilities = capabilities,
+            on_attach = on_attach
+        }
+
+        vim.lsp.config.lua_ls = {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+                Lua = {
+                    runtime = {
+                        version = 'LuaJIT',
+                        path = vim.split(package.path, ';'),
+                    },
+                    diagnostics = {
+                        globals = { 'vim' },
+                    },
+                    workspace = {
+                        library = {
+                            [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+                            [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+                        },
+                    },
+                    telemetry = {
+                        enable = false
+                    }
+                }
+            }
+        }
+
+        vim.lsp.config.prolog_ls = {
+            cmd = { 'swipl',
+                '-g', 'use_module(library(lsp_server))',
+                '-g', 'lsp_server:main',
+                '-t', 'halt',
+                '--', 'stdio' },
+            root_markers = { '.git', 'pack.pl' },
+            filetypes = { 'prolog' },
+            capabilities = capabilities,
+            on_attach = function(client)
+                client.server_capabilities.semanticTokensProvider = nil
+                on_attach()
+            end
+        }
+
+        vim.lsp.enable({'gopls', 'hls', 'lua_ls', 'prolog_ls'})
 
         require('mason').setup({
             ui = {
@@ -63,42 +95,5 @@ return {
                 width = 0.8
             }
         })
-
-        local mason_lspconfig = require('mason-lspconfig')
-        mason_lspconfig.setup {
-            ensure_installed = vim.tbl_keys(servers)
-        }
-
-        mason_lspconfig.setup_handlers {
-            function(server_name)
-                lsp_config[server_name].setup {
-                    capabilities = capabilities,
-                    on_attach = on_attach,
-                    settings = servers[server_name].settings
-                }
-            end
-        }
-
-        lsp_config.prolog_ls.setup {
-            capabilities = capabilities,
-            on_attach = function(client)
-                client.server_capabilities.semanticTokensProvider = nil
-                on_attach()
-            end
-        }
-
-        require('lspconfig.ui.windows').default_options.border = 'rounded'
-
-        vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-            vim.lsp.diagnostic.on_publish_diagnostics, {
-                signs = false,
-                underline = true,
-                update_in_insert = true,
-                virtual_text = {
-                    spacing = 2,
-                    prefix = ''
-                },
-            }
-        )
     end
 }
