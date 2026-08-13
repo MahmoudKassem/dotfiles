@@ -121,7 +121,7 @@ gst-plugins-base-libs
 gstreamer
 gtest
 gtk-update-icon-cache
-gtk2
+gtk2-ng-git
 gtk3
 gtk4
 guile
